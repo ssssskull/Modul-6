@@ -1,0 +1,52 @@
+.accordion {
+  margin: 0 auto;
+  max-width: 600px;
+
+  &__elem {
+    border-bottom: 1px solid rgba(0, 0, 5, 0.1);
+  }
+  &__icon {
+    transition: transform 0.3s ease-in-out;
+    transform-origin: center;
+    transform: rotate(0);
+    transform-origin: center center;
+    //border: 1px solid blue;
+    //border-radius: 50%;
+    background-image: url("../../images/iconmonstr-plus-6.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    background-size: 100% 100%;
+  }
+
+  &__visible {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+  }
+
+  &__title {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: $font-sm-fallback;
+    font-size: $font-sm;
+  }
+
+  &__hiddenText {
+    //visibility: hidden; --> visibility: visible;
+    overflow: hidden;
+    height: 0;
+    transition: height 0.3s ease-in-out;
+  }
+}
+
+.show {
+  display: block;
+  // TODO make a function that calculates the height
+}
+
+.rotate {
+  transform: rotate(45deg);
+  transform-origin: center;
+}

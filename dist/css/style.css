@@ -1,0 +1,73 @@
+:root {
+  font-family: "Quicksand", sans-serif;
+}
+
+h1 {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.accordion {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.accordion__elem {
+  border-bottom: 1px solid rgba(0, 0, 5, 0.1);
+}
+
+.accordion__icon {
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  background-image: url("../../images/iconmonstr-plus-6.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  background-size: 100% 100%;
+}
+
+.accordion__visible {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 0;
+}
+
+.accordion__title {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 20px;
+  font-size: 2rem;
+}
+
+.accordion__hiddenText {
+  overflow: hidden;
+  height: 0;
+  -webkit-transition: height 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out;
+}
+
+.show {
+  display: block;
+}
+
+.rotate {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+/*# sourceMappingURL=style.css.map */
