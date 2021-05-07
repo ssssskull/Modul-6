@@ -1,20 +1,16 @@
 "use strict";
-const btnShow = document.querySelector(".accordion__visible");
-console.log(btnShow);
-const accordionPanel = document.querySelector(".accordion__panel");
-const plusIcon = document.querySelector(".accordion__icon");
+const accordionQuestions = document.querySelectorAll(".accordion__question");
 
-btnShow.addEventListener("click", function () {
-  accordionPanel.classList.toggle("show");
-  // console.log(accordionPanel.offsetHeight);
-  // console.log((accordionPanel.style.height = `${accordionPanel.offsetHeight}px`));
-
-  if (accordionPanel.classList.contains("show")) {
-    accordionPanel.style.maxHeight = `${accordionPanel.scrollHeight}px`;
-    // TODO include offsetHeight somehow to detect size of div
-    plusIcon.classList.add("rotate");
-  } else {
-    accordionPanel.style.maxHeight = null;
-    plusIcon.classList.remove("rotate");
-  }
-});
+for (let i = 0; i < accordionQuestions.length; i++) {
+  accordionQuestions[i].addEventListener("click", function () {
+    const accordionContent = this.nextElementSibling;
+    const plusIcon = this.lastElementChild;
+    if (accordionContent.style.maxHeight) {
+      plusIcon.classList.remove("rotate");
+      accordionContent.style.maxHeight = null;
+    } else {
+      plusIcon.classList.add("rotate");
+      accordionContent.style.maxHeight = `${accordionContent.scrollHeight}px`;
+    }
+  });
+}

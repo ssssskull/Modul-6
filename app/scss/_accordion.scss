@@ -1,6 +1,6 @@
 .accordion {
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 1200px;
 
   &__elem {
     border-bottom: 1px solid rgba(0, 0, 5, 0.1);
@@ -20,7 +20,7 @@
     background-size: 100% 100%;
   }
 
-  &__visible {
+  &__question {
     display: flex;
     justify-content: space-between;
     align-items: center;

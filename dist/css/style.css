@@ -4,11 +4,13 @@
 
 h1 {
   font-family: "Roboto Condensed", sans-serif;
+  font-size: 32px;
+  font-size: 3.2rem;
 }
 
 .accordion {
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 1200px;
 }
 
 .accordion__elem {
@@ -34,7 +36,7 @@ h1 {
   background-size: 100% 100%;
 }
 
-.accordion__visible {
+.accordion__question {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -48,11 +50,11 @@ h1 {
   cursor: pointer;
 }
 
-.accordion__visible:hover {
+.accordion__question:hover {
   color: #0066cc;
 }
 
-.accordion__visible:hover .accordion__icon {
+.accordion__question:hover .accordion__icon {
   background-image: url("../../images/plus-hover.svg");
 }
 
