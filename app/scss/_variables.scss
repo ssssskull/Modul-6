@@ -1,11 +1,38 @@
-// Font
-$font-xs-fallback: 16px;
-$font-xs: 1.6rem;
-$font-sm-fallback: 20px;
-$font-sm: 2rem;
-$font-med-fallback: 32px;
-$font-med: 3.2rem;
-$font-l-fallback: 45px;
-$font-l: 4.5rem;
-$font-xl-fallback: 60px;
-$font-xl: 6rem;
+/*======================================
+*            Typografi             *
+======================================*/
+
+/* Paragraf
+    ============================ */
+$font-p-iphone-fallback: 14px;
+$font-p-iphone: 1.4rem;
+$font-p-ipad-fallback: 16px;
+$font-p-ipad: 1.6rem;
+$font-p-computer-fallback: 20px;
+$font-p-computer: 2rem;
+
+/* Overskrift
+    ============================ */
+$font-h1-iphone-fallback: 40px;
+$font-h1-iphone: 4rem;
+$font-h1-ipad-fallback: 45px;
+$font-h1-ipad: 4.5rem;
+$font-h1-computer-fallback: 45px;
+$font-h1-computer: 4.5rem;
+
+/* Underoverskrift
+    ============================ */
+$font-h2-iphone-fallback: 30px;
+$font-h2-iphone: 3rem;
+$font-h2-computer-fallback: 32px;
+$font-h2-computer: 3.2rem;
+
+/*======================================
+*             Farver              *
+======================================*/
+$clr-primary-green: hsl(95, 73%, 42%);
+$clr-secondary-green: hsl(95, 68%, 24%);
+$clr-contrast-green: hsl(120, 2%, 20%);
+$clr-contrast-hover: hsl(75, 9%, 18%);
+$clr-text: hsl(0%, 0%, 0%);
+$clr-divider: hsla(240, 100%, 1%, 0.1);
