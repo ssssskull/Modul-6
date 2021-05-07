@@ -39,7 +39,8 @@ p {
 /* Overskrift
     ============================ */
 h1,
-h2 {
+h2,
+a[class^="btn"] {
   font-family: "Roboto Condensed", sans-serif;
 }
 
@@ -75,3 +76,89 @@ h2 {
 /*======================================
 *            Knapper            *
 ======================================*/
+.btn-primary {
+  background-color: $clr-primary-green;
+  color: $clr-background;
+  padding: 1.2rem 2.4rem;
+  outline: transparent;
+  box-shadow: none;
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 18px;
+  // TODO dynamic line-height
+  // BUG font-family matcher ikke med deres
+  text-transform: uppercase;
+}
+
+/*======================================
+*            Afstande            *
+======================================*/
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+
+  /* Padding på x- og y-aksen
+    ============================ */
+  &--pall {
+    padding-top: 3rem;
+    padding-right: 2.4rem;
+    padding-bottom: 3rem;
+    padding-left: 2.4rem;
+
+    @include breakpoint-up(computer) {
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+      padding-left: 6rem;
+      padding-right: 6rem;
+    }
+  }
+
+  /* Padding på y-aksen
+    ============================ */
+  &--py {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    @include breakpoint-up(computer) {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
+  }
+
+  /* Padding på x-aksen
+    ============================ */
+  &--px {
+    padding-right: 2.4rem;
+    padding-left: 2.4rem;
+  }
+}
+
+/*======================================
+*            Flexbox            *
+======================================*/
+.flex {
+  display: flex;
+
+  &-dr-cl {
+    flex-direction: column;
+  }
+  &-jc-sb {
+    justify-content: space-between;
+  }
+
+  &-jc-c {
+    justify-content: center;
+  }
+
+  &-ai-c {
+    align-items: center;
+  }
+
+  &-ai-st {
+    align-items: flex-start;
+  }
+}

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*======================================
 *            Typografi             *
 ======================================*/
@@ -54,7 +55,8 @@ p {
 /* Overskrift
     ============================ */
 h1,
-h2 {
+h2,
+a[class^="btn"] {
   font-family: "Roboto Condensed", sans-serif;
 }
 
@@ -96,9 +98,108 @@ h2 {
 /*======================================
 *            Knapper            *
 ======================================*/
-.accordion {
+.btn-primary {
+  background-color: #5eb91d;
+  color: white;
+  padding: 1.2rem 2.4rem;
+  outline: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+/*======================================
+*            Afstande            *
+======================================*/
+.container {
+  max-width: 1400px;
   margin: 0 auto;
-  max-width: 1200px;
+  /* Padding på x- og y-aksen
+    ============================ */
+  /* Padding på y-aksen
+    ============================ */
+  /* Padding på x-aksen
+    ============================ */
+}
+
+.container--pall {
+  padding-top: 3rem;
+  padding-right: 2.4rem;
+  padding-bottom: 3rem;
+  padding-left: 2.4rem;
+}
+
+@media (min-width: 64em) {
+  .container--pall {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+
+.container--py {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+@media (min-width: 64em) {
+  .container--py {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+.container--px {
+  padding-right: 2.4rem;
+  padding-left: 2.4rem;
+}
+
+/*======================================
+*            Flexbox            *
+======================================*/
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-dr-cl {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-ai-st {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .accordion__elem {
