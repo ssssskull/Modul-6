@@ -6,14 +6,20 @@ html {
   font-size: 62.5%;
   font-family: "Quicksand", sans-serif;
 }
+
 /*======================================
 *            Typografi            *
 ======================================*/
+
+/* Links
+    ============================ */
 a {
   color: inherit;
   text-decoration: none;
 }
 
+/* Paragraf
+    ============================ */
 p {
   font-size: $font-p-iphone-fallback;
   font-size: $font-p-iphone;
@@ -30,6 +36,42 @@ p {
   }
 }
 
-h1 {
+/* Overskrift
+    ============================ */
+h1,
+h2 {
   font-family: "Roboto Condensed", sans-serif;
 }
+
+h1 {
+  font-size: $font-h1-iphone-fallback;
+  font-size: $font-h1-iphone;
+  line-height: 30px;
+
+  @include breakpoint-up(ipad) {
+    font-size: $font-h1-ipad-fallback;
+    font-size: $font-h1-ipad;
+  }
+
+  @include breakpoint-up(computer) {
+    font-size: $font-h1-computer-fallback;
+    font-size: $font-h1-computer;
+  }
+}
+
+/* Underoverskrift
+    ============================ */
+h2 {
+  font-size: $font-h2-iphone-fallback;
+  font-size: $font-h2-iphone;
+  line-height: 30px;
+
+  @include breakpoint-up(computer) {
+    font-size: $font-h2-computer-fallback;
+    font-size: $font-h2-computer;
+  }
+}
+
+/*======================================
+*            Knapper            *
+======================================*/

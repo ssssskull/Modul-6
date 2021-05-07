@@ -22,11 +22,15 @@ html {
 /*======================================
 *            Typografi            *
 ======================================*/
+/* Links
+    ============================ */
 a {
   color: inherit;
   text-decoration: none;
 }
 
+/* Paragraf
+    ============================ */
 p {
   font-size: 14px;
   font-size: 1.4rem;
@@ -47,10 +51,51 @@ p {
   }
 }
 
-h1 {
+/* Overskrift
+    ============================ */
+h1,
+h2 {
   font-family: "Roboto Condensed", sans-serif;
 }
 
+h1 {
+  font-size: 40px;
+  font-size: 4rem;
+  line-height: 30px;
+}
+
+@media (min-width: 40em) {
+  h1 {
+    font-size: 45px;
+    font-size: 4.5rem;
+  }
+}
+
+@media (min-width: 64em) {
+  h1 {
+    font-size: 45px;
+    font-size: 4.5rem;
+  }
+}
+
+/* Underoverskrift
+    ============================ */
+h2 {
+  font-size: 30px;
+  font-size: 3rem;
+  line-height: 30px;
+}
+
+@media (min-width: 64em) {
+  h2 {
+    font-size: 32px;
+    font-size: 3.2rem;
+  }
+}
+
+/*======================================
+*            Knapper            *
+======================================*/
 .accordion {
   margin: 0 auto;
   max-width: 1200px;
