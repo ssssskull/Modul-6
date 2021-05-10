@@ -320,6 +320,14 @@ h2 {
   top: 0;
 }
 
+.underMenu {
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out;
+  will-change: height;
+}
+
 .accordion__elem {
   border-bottom: 1px solid rgba(0, 0, 5, 0.1);
 }

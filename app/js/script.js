@@ -59,8 +59,10 @@ for (let i = 0; i < accordionQuestions.length; i++) {
   });
 }
 
-//accordion
+/* Dropdown
+    ============================ */
 const dropDown = document.querySelectorAll(".dropDown");
+const underMenu = document.querySelectorAll(".underMenu");
 
 for (let i = 0; i < dropDown.length; i++) {
   dropDown[i].addEventListener("click", function () {
@@ -68,6 +70,9 @@ for (let i = 0; i < dropDown.length; i++) {
       this.removeAttribute("style");
     } else {
       this.style.backgroundColor = "hsl(75, 9%, 18%)";
+      // BUG skulle selecte undermenuen!!
+      // TODO lav en selecetor der vælger sibling children!
+      //console.log(this.nextElementSibling);
     }
   });
 }
