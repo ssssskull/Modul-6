@@ -279,10 +279,6 @@ h2 {
   font-weight: bold;
 }
 
-.header__menu li {
-  padding: 1.5rem 0;
-}
-
 .header__menu li:nth-child(1) a span,
 .header__menu li:nth-child(2) a span {
   position: absolute;
@@ -304,7 +300,7 @@ h2 {
   font-size: 20px;
   font-size: 2rem;
   color: white;
-  padding: 0 2rem;
+  padding: 2rem;
   width: 100%;
 }
 

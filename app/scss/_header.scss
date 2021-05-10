@@ -53,7 +53,6 @@
     font-weight: bold;
 
     li {
-      padding: 1.5rem 0;
       // TODO lav en ID så de under elementer ikke fucker
       &:nth-child(1) a span,
       &:nth-child(2) a span {
@@ -75,7 +74,7 @@
         font-size: $font-p-computer-fallback;
         font-size: $font-p-computer;
         color: $clr-background;
-        padding: 0 2rem;
+        padding: 2rem;
         width: 100%;
         // TODO er det nødvendigt at man kan trykke på hele rækken?
       }

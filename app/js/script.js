@@ -67,7 +67,7 @@ for (let i = 0; i < dropDown.length; i++) {
     if (this.style.backgroundColor) {
       this.removeAttribute("style");
     } else {
-      this.style.backgroundColor = "red";
+      this.style.backgroundColor = "hsl(75, 9%, 18%)";
     }
   });
 }
