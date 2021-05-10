@@ -61,7 +61,7 @@ for (let i = 0; i < accordionQuestions.length; i++) {
 
 /* Dropdown
     ============================ */
-const dropDown = document.querySelectorAll(".dropDown");
+const dropDown = document.querySelectorAll(".header__dropDown");
 
 for (let i = 0; i < dropDown.length; i++) {
   dropDown[i].addEventListener("click", function () {

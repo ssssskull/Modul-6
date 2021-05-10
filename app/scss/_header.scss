@@ -45,6 +45,7 @@
       }
     }
   }
+
   &__menu {
     height: 0;
     overflow: hidden;
@@ -53,21 +54,6 @@
     font-weight: bold;
 
     li {
-      // TODO lav en ID så de under elementer ikke fucker
-      &:nth-child(1) a span,
-      &:nth-child(2) a span {
-        position: absolute;
-        content: " ";
-        width: 12px;
-        height: 12px;
-        background-image: url("../../images/arrowdown.svg");
-        background-repeat: no-repeat;
-        background-position: right center;
-        background-size: 100% 100%;
-        transform: translateY(45%);
-        margin-left: 1rem;
-      }
-
       a {
         display: inline-block;
         position: relative;
@@ -79,31 +65,45 @@
         // TODO er det nødvendigt at man kan trykke på hele rækken?
       }
     }
-    // Hamburger Open Styles
-    &.open {
-      .header__toggle {
-        > span {
-          background-color: transparent;
-        }
+  }
 
-        > span::before {
-          transform: rotate(45deg);
-          top: 0;
-        }
+  &__dropDown a span {
+    position: absolute;
+    content: " ";
+    width: 12px;
+    height: 12px;
+    background-image: url("../../images/arrowdown.svg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 100% 100%;
+    transform: translateY(45%);
+    margin-left: 1rem;
+  }
 
-        > span::after {
-          transform: rotate(-45deg);
-          top: 0;
-        }
+  &__underMenu {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+    will-change: height;
+    background-color: $clr-contrast-hover;
+  }
+
+  // Hamburger Open Styles
+  &.open {
+    .header__toggle {
+      > span {
+        background-color: transparent;
+      }
+
+      > span::before {
+        transform: rotate(45deg);
+        top: 0;
+      }
+
+      > span::after {
+        transform: rotate(-45deg);
+        top: 0;
       }
     }
   }
-}
-
-.underMenu {
-  height: 0;
-  overflow: hidden;
-  transition: height 0.3s ease-in-out;
-  will-change: height;
-  background-color: hsl(75, 9%, 18%);
 }

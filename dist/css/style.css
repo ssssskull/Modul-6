@@ -279,8 +279,17 @@ h2 {
   font-weight: bold;
 }
 
-.header__menu li:nth-child(1) a span,
-.header__menu li:nth-child(2) a span {
+.header__menu li a {
+  display: inline-block;
+  position: relative;
+  font-size: 20px;
+  font-size: 2rem;
+  color: white;
+  padding: 2rem;
+  width: 100%;
+}
+
+.header__dropDown a span {
   position: absolute;
   content: " ";
   width: 12px;
@@ -294,39 +303,29 @@ h2 {
   margin-left: 1rem;
 }
 
-.header__menu li a {
-  display: inline-block;
-  position: relative;
-  font-size: 20px;
-  font-size: 2rem;
-  color: white;
-  padding: 2rem;
-  width: 100%;
-}
-
-.header__menu.open .header__toggle > span {
-  background-color: transparent;
-}
-
-.header__menu.open .header__toggle > span::before {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  top: 0;
-}
-
-.header__menu.open .header__toggle > span::after {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  top: 0;
-}
-
-.underMenu {
+.header__underMenu {
   height: 0;
   overflow: hidden;
   -webkit-transition: height 0.3s ease-in-out;
   transition: height 0.3s ease-in-out;
   will-change: height;
-  background-color: #30322a;
+  background-color: #2b2b2b;
+}
+
+.header.open .header__toggle > span {
+  background-color: transparent;
+}
+
+.header.open .header__toggle > span::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 0;
+}
+
+.header.open .header__toggle > span::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 0;
 }
 
 .accordion__elem {
