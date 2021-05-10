@@ -56,7 +56,8 @@ p {
     ============================ */
 h1,
 h2,
-a[class^="btn"] {
+a[class^="btn"],
+.header__menu {
   font-family: "Roboto Condensed", sans-serif;
 }
 
@@ -200,6 +201,127 @@ h2 {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+/*======================================
+*            Synlighed            *
+======================================*/
+@media (max-width: 63.9375em) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 64em) {
+  .hide-for-desktop {
+    display: none;
+  }
+}
+
+.header {
+  background-color: #323432;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  -webkit-transition: top 0.3s;
+  transition: top 0.3s;
+  z-index: 1;
+}
+
+.header__logo {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-image: url("../../images/NORQI-Logo.svg");
+}
+
+.header__toggle {
+  height: 24px;
+}
+
+.header__toggle span,
+.header__toggle > span::before,
+.header__toggle > span::after {
+  display: block;
+  width: 26px;
+  height: 3px;
+  background-color: white;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.header__toggle span {
+  position: relative;
+  will-change: opacity;
+}
+
+.header__toggle span::before, .header__toggle span::after {
+  content: "";
+  position: absolute;
+  will-change: transform;
+}
+
+.header__toggle span::before {
+  top: -8px;
+}
+
+.header__toggle span::after {
+  top: 8px;
+}
+
+.header__menu {
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out;
+  will-change: height;
+  font-weight: bold;
+}
+
+.header__menu li {
+  padding: 1.5rem 0;
+}
+
+.header__menu li:nth-child(1) a span,
+.header__menu li:nth-child(2) a span {
+  position: absolute;
+  content: " ";
+  width: 12px;
+  height: 12px;
+  background-image: url("../../images/arrowdown.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 100% 100%;
+  -webkit-transform: translateY(45%);
+          transform: translateY(45%);
+  margin-left: 1rem;
+}
+
+.header__menu li a {
+  display: inline-block;
+  position: relative;
+  font-size: 20px;
+  font-size: 2rem;
+  color: white;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+.header__menu.open .header__toggle > span {
+  background-color: transparent;
+}
+
+.header__menu.open .header__toggle > span::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 0;
+}
+
+.header__menu.open .header__toggle > span::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 0;
 }
 
 .accordion__elem {

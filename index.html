@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Brugsanvisning - NORQi</title>
+    <meta
+      name="description"
+      content="NORQi - Find brugsanvisning til dit produkt"
+    />
     <link rel="stylesheet" href="dist/css/reset.css" />
     <link rel="stylesheet" href="dist/css/style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -12,9 +16,97 @@
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&family=Roboto+Condensed:wght@400;700&display=swap"
       rel="stylesheet"
     />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/icons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/images/icons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/images/icons/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="shortcut icon" href="/images/icons/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#ff0000" />
+    <meta
+      name="msapplication-config"
+      content="/images/icons/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#ffffff" />
+
     <script src="app/js/script.js" defer></script>
   </head>
   <body>
+    <header class="header">
+      <div class="overlay"></div>
+      <nav class="container flex flex-jc-sb flex-ai-c container--pall">
+        <div class="header__left flex flex-ai-c">
+          <a class="header__logo" href="#" title="NORQi"></a>
+        </div>
+        <a
+          id="btnHamburger"
+          href="#/"
+          class="header__toggle flex hide-for-desktop flex flex-ai-c"
+          title="Navigation"
+        >
+          <span></span>
+        </a>
+        <ul class="header__right flex hide-for-mobile">
+          <li>
+            <a class="header__links" href="#" tabindex="0" title="Produkter"
+              >Produkter</a
+            >
+          </li>
+          <li>
+            <a class="header__links" href="#" tabindex="0" title="God viden"
+              >God viden</a
+            >
+          </li>
+          <li>
+            <a class="header__links" href="#" tabindex="0" title="Om NORQi"
+              >Om NORQi</a
+            >
+          </li>
+          <li>
+            <a class="header__links" href="#" tabindex="0" title="Kontakt"
+              >Kontakt</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <ul class="header__menu hide-for-desktop">
+        <li>
+          <a href="#" class="dropDown" tabindex="0" title="Produkter"
+            >Produkter<span></span
+          ></a>
+        </li>
+        <li>
+          <a href="#" class="dropDown" tabindex="0" title="God Viden"
+            >God viden<span></span
+          ></a>
+        </li>
+        <li>
+          <a href="#" tabindex="0" title="Om NORQi">Om NORQi</a>
+        </li>
+        <li>
+          <a href="#" tabindex="0" title="Kontakt">Kontakt</a>
+        </li>
+      </ul>
+    </header>
     <main class="container container--pall">
       <h1>Induktions kipgryde</h1>
       <p class="container--py">

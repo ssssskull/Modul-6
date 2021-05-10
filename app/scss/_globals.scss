@@ -40,7 +40,8 @@ p {
     ============================ */
 h1,
 h2,
-a[class^="btn"] {
+a[class^="btn"],
+.header__menu {
   font-family: "Roboto Condensed", sans-serif;
 }
 
@@ -160,5 +161,20 @@ h2 {
 
   &-ai-st {
     align-items: flex-start;
+  }
+}
+
+/*======================================
+*            Synlighed            *
+======================================*/
+.hide-for-mobile {
+  @include breakpoint-down(ipad) {
+    display: none;
+  }
+}
+
+.hide-for-desktop {
+  @include breakpoint-up(computer) {
+    display: none;
   }
 }
