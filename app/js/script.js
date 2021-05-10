@@ -71,14 +71,6 @@ for (let i = 0; i < dropDown.length; i++) {
     } else {
       underMenu.style.height = `${underMenu.scrollHeight}px`;
     }
-
-    if (this.style.backgroundColor) {
-      this.removeAttribute("style");
-    } else {
-      this.style.backgroundColor = "hsl(75, 9%, 18%)";
-      // BUG skulle selecte undermenuen!!
-      // TODO lav en selecetor der vælger sibling children!
-    }
   });
 }
 /*

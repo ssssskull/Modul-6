@@ -326,6 +326,7 @@ h2 {
   -webkit-transition: height 0.3s ease-in-out;
   transition: height 0.3s ease-in-out;
   will-change: height;
+  background-color: #30322a;
 }
 
 .accordion__elem {
