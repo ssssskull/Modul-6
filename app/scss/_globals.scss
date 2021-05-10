@@ -105,9 +105,9 @@ h2 {
   /* Padding på x- og y-aksen
     ============================ */
   &--pall {
-    padding-top: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     padding-right: 2.4rem;
-    padding-bottom: 3rem;
     padding-left: 2.4rem;
 
     @include breakpoint-up(computer) {
@@ -121,12 +121,12 @@ h2 {
   /* Padding på y-aksen
     ============================ */
   &--py {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 
     @include breakpoint-up(computer) {
-      padding-top: 6rem;
-      padding-bottom: 6rem;
+      padding-top: 5rem;
+      padding-bottom: 5rem;
     }
   }
 

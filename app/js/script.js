@@ -25,6 +25,8 @@ window.addEventListener("scroll", function () {
 const body = document.querySelector("body");
 const btnHamburger = document.querySelector("#btnHamburger");
 const headerMenu = document.querySelector(".header__menu");
+const languageElem = document.querySelector(".header__language");
+
 btnHamburger.addEventListener("click", function () {
   if (header.classList.contains("open")) {
     // Luk Hamburger Menu
@@ -36,7 +38,6 @@ btnHamburger.addEventListener("click", function () {
     // Åben Hamburger Menu
     header.classList.add("open");
     body.style.overflow = "hidden";
-
     headerMenu.style.height = `100vh`;
   }
 });
