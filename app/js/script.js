@@ -64,9 +64,11 @@ const dropDown = document.querySelectorAll(".dropDown");
 
 for (let i = 0; i < dropDown.length; i++) {
   dropDown[i].addEventListener("click", function () {
-    //const accordionContent = this.nextElementSibling;
-    //const plusIcon = this.lastElementChild;
-    console.log("hej");
+    if (this.style.backgroundColor) {
+      this.removeAttribute("style");
+    } else {
+      this.style.backgroundColor = "red";
+    }
   });
 }
 /*
