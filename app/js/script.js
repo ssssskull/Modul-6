@@ -65,18 +65,19 @@ const dropDown = document.querySelectorAll(".dropDown");
 
 for (let i = 0; i < dropDown.length; i++) {
   dropDown[i].addEventListener("click", function () {
+    const underMenu = this.nextElementSibling;
+    if (underMenu.style.height) {
+      underMenu.style.height = null;
+    } else {
+      underMenu.style.height = `${underMenu.scrollHeight}px`;
+    }
+
     if (this.style.backgroundColor) {
       this.removeAttribute("style");
     } else {
       this.style.backgroundColor = "hsl(75, 9%, 18%)";
       // BUG skulle selecte undermenuen!!
       // TODO lav en selecetor der vælger sibling children!
-      const underMenu = this.nextElementSibling;
-      if (underMenu.style.height) {
-        underMenu.style.height = null;
-      } else {
-        underMenu.style.height = `${underMenu.scrollHeight}px`;
-      }
     }
   });
 }
