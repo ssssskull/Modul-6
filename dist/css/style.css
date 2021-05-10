@@ -236,6 +236,13 @@ h2 {
   background-image: url("../../images/NORQI-Logo.svg");
 }
 
+@media (min-width: 40em) {
+  .header__logo {
+    width: 60px;
+    height: 60px;
+  }
+}
+
 .header__toggle {
   height: 24px;
 }

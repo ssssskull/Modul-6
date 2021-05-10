@@ -29,13 +29,14 @@ const languageElem = document.querySelector(".header__language");
 
 btnHamburger.addEventListener("click", function () {
   if (header.classList.contains("open")) {
-    // Luk Hamburger Menu
+    /* Luk hamburger menu
+    ============================*/
     header.classList.remove("open");
     body.style.overflow = "auto";
-    console.log(headerMenu);
     headerMenu.style.height = null;
   } else {
-    // Åben Hamburger Menu
+    /* Åben hamburger menu
+    ============================*/
     header.classList.add("open");
     body.style.overflow = "hidden";
     headerMenu.style.height = `100vh`;
@@ -74,12 +75,3 @@ for (let i = 0; i < dropDown.length; i++) {
     }
   });
 }
-/*
-if (accordionContent.style.maxHeight) {
-      plusIcon.classList.remove("rotate");
-      accordionContent.style.maxHeight = null;
-    } else {
-      plusIcon.classList.add("rotate");
-      accordionContent.style.maxHeight = `${accordionContent.scrollHeight}px`;
-    }
-*/

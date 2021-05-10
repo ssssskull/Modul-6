@@ -12,6 +12,11 @@
     height: 45px;
     background-repeat: no-repeat;
     background-image: url("../../images/NORQI-Logo.svg");
+
+    @include breakpoint-up(ipad) {
+      width: 60px;
+      height: 60px;
+    }
   }
 
   &__toggle {
