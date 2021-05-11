@@ -74,7 +74,9 @@ for (let i = 0; i < accordionQuestions.length; i++) {
         const accordionSubpanel = this.nextElementSibling;
         if (accordionSubpanel.style.maxHeight) {
           accordionSubpanel.style.maxHeight = null;
+          console.log(this);
         } else {
+          console.log(this);
           accordionSubpanel.style.maxHeight = `${accordionSubpanel.scrollHeight}px`;
           accordionContent.style.maxHeight = `${
             accordionContent.scrollHeight + accordionSubpanel.scrollHeight
