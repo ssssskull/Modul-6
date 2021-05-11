@@ -23,7 +23,7 @@
     cursor: pointer;
 
     &:hover {
-      color: #0066cc;
+      color: $clr-primary-green;
 
       .accordion__icon {
         background-image: url("../../images/plus-hover.svg");
@@ -51,10 +51,15 @@
   }
 
   &__subtoggle {
+    cursor: pointer;
     background-image: url("../../images/undermenu_plus.svg");
     background-size: 12px 12px;
     background-repeat: no-repeat;
     background-position: left center;
+
+    &:hover {
+      color: $clr-primary-green;
+    }
   }
   &__subtoggle--open {
     background-image: url("../../images/undermenu_minus.svg");

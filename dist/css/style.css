@@ -422,7 +422,7 @@ h3 {
 }
 
 .accordion__question:hover {
-  color: #0066cc;
+  color: #5eb91d;
 }
 
 .accordion__question:hover .accordion__icon {
@@ -450,10 +450,15 @@ h3 {
 }
 
 .accordion__subtoggle {
+  cursor: pointer;
   background-image: url("../../images/undermenu_plus.svg");
   background-size: 12px 12px;
   background-repeat: no-repeat;
   background-position: left center;
+}
+
+.accordion__subtoggle:hover {
+  color: #5eb91d;
 }
 
 .accordion__subtoggle--open {
