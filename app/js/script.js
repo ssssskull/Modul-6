@@ -61,27 +61,33 @@ for (let i = 0; i < accordionQuestions.length; i++) {
       plusIcon.classList.add("rotate");
       accordionPanel.style.maxHeight = `${accordionPanel.scrollHeight}px`;
     }
+  });
+}
 
-    /* Subpanel
+/* Subpanel
     ============================ */
-    const accordionSubquestions = document.querySelectorAll(
-      ".accordion__subtoggle"
-    );
+const accordionSubquestions = document.querySelectorAll(
+  ".accordion__subtoggle"
+);
 
-    for (let i = 0; i < accordionSubquestions.length; i++) {
-      accordionSubquestions[i].addEventListener("click", function () {
-        accordionSubquestions[i].classList.toggle("accordion__subtoggle--open");
-        console.log(this);
-        const accordionSubpanel = this.nextElementSibling;
-        if (accordionSubpanel.style.maxHeight) {
-          accordionSubpanel.style.maxHeight = null;
-        } else {
-          accordionSubpanel.style.maxHeight = `${accordionSubpanel.scrollHeight}px`;
-          accordionPanel.style.maxHeight = `${
-            accordionPanel.scrollHeight + accordionSubpanel.scrollHeight
-          }px`;
-        }
-      });
+for (let i = 0; i < accordionSubquestions.length; i++) {
+  accordionSubquestions[i].addEventListener("click", function () {
+    accordionSubquestions[i].classList.toggle("accordion__subtoggle--open");
+    const accordionPanel = this.nextElementSibling;
+    console.log(this);
+    const accordionSubpanel = this.nextElementSibling;
+    if (accordionSubpanel.style.maxHeight) {
+      accordionSubpanel.style.maxHeight = null;
+    } else {
+      accordionSubpanel.style.maxHeight = `${accordionSubpanel.scrollHeight}px`;
+
+      // TODO den tager højden på subpanelen og ikke det hele
+      // TODO tag fat i parent -- accordionpanel
+      console.log(accordionPanel.scrollHeight);
+      console.log(accordionSubpanel.scrollHeight);
+      accordionPanel.style.maxHeight = `${
+        accordionSubpanel.scrollHeight + accordionPanel.scrollHeight
+      }px`;
     }
   });
 }
