@@ -81,12 +81,13 @@ for (let i = 0; i < accordionSubquestions.length; i++) {
     } else {
       accordionSubpanel.style.maxHeight = `${accordionSubpanel.scrollHeight}px`;
 
-      // TODO den tager højden på subpanelen og ikke det hele
-      // TODO tag fat i parent -- accordionpanel
+      // TODO comprehend this shit
+
       console.log(accordionPanel.scrollHeight);
-      console.log(accordionSubpanel.scrollHeight);
-      accordionPanel.style.maxHeight = `${
-        accordionSubpanel.scrollHeight + accordionPanel.scrollHeight
+      console.log(accordionSubpanel.parentElement.scrollHeight);
+      accordionSubpanel.parentElement.style.maxHeight = `${
+        accordionSubpanel.scrollHeight +
+        accordionSubpanel.parentElement.scrollHeight
       }px`;
     }
   });
