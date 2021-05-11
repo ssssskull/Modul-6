@@ -43,9 +43,30 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-in-out;
+    padding: 0 2rem;
 
-    * {
-      padding: 2rem 0;
+    h3 {
+      padding: 2rem;
+    }
+  }
+
+  &__subtoggle {
+    background-image: url("../../images/undermenu_plus.svg");
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
+    background-position: left center;
+  }
+  &__subtoggle--open {
+    background-image: url("../../images/undermenu_minus.svg");
+  }
+
+  &__subpanel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+
+    :last-child {
+      padding: 0 0 5rem 0;
     }
   }
 }

@@ -40,6 +40,7 @@ p {
     ============================ */
 h1,
 h2,
+h3,
 a[class^="btn"],
 .header__menu {
   font-family: "Roboto Condensed", sans-serif;
@@ -71,6 +72,19 @@ h2 {
   @include breakpoint-up(computer) {
     font-size: $font-h2-computer-fallback;
     font-size: $font-h2-computer;
+  }
+}
+
+/* Underunderoverskrift
+    ============================ */
+h3 {
+  font-size: $font-h3-iphone-fallback;
+  font-size: $font-h3-iphone;
+  line-height: 20px;
+
+  @include breakpoint-up(computer) {
+    font-size: $font-h3-computer-fallback;
+    font-size: $font-h3-computer;
   }
 }
 
@@ -112,9 +126,14 @@ h2 {
     padding-right: 2.4rem;
     padding-left: 2.4rem;
 
-    @include breakpoint-up(computer) {
+    @include breakpoint-up(ipad) {
       padding-top: 5rem;
       padding-bottom: 5rem;
+      padding-left: 3.2rem;
+      padding-right: 3.2rem;
+    }
+
+    @include breakpoint-up(computer) {
       padding-left: 6rem;
       padding-right: 6rem;
     }
@@ -126,7 +145,7 @@ h2 {
     padding-top: 2rem;
     padding-bottom: 2rem;
 
-    @include breakpoint-up(computer) {
+    @include breakpoint-up(ipad) {
       padding-top: 5rem;
       padding-bottom: 5rem;
     }
@@ -137,6 +156,16 @@ h2 {
   &--px {
     padding-right: 2.4rem;
     padding-left: 2.4rem;
+
+    @include breakpoint-up(ipad) {
+      padding-left: 3.2rem;
+      padding-right: 3.2rem;
+    }
+
+    @include breakpoint-up(computer) {
+      padding-left: 6rem;
+      padding-right: 6rem;
+    }
   }
 }
 

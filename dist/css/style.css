@@ -8,6 +8,8 @@
     ============================ */
 /* Underoverskrift
     ============================ */
+/* Underunderoverskrift
+    ============================ */
 /*======================================
 *             Farver              *
 ======================================*/
@@ -56,6 +58,7 @@ p {
     ============================ */
 h1,
 h2,
+h3,
 a[class^="btn"],
 .header__menu {
   font-family: "Roboto Condensed", sans-serif;
@@ -93,6 +96,21 @@ h2 {
   h2 {
     font-size: 32px;
     font-size: 3.2rem;
+  }
+}
+
+/* Underunderoverskrift
+    ============================ */
+h3 {
+  font-size: 24px;
+  font-size: 2.4rem;
+  line-height: 20px;
+}
+
+@media (min-width: 64em) {
+  h3 {
+    font-size: 26px;
+    font-size: 2.6rem;
   }
 }
 
@@ -137,10 +155,17 @@ h2 {
   padding-left: 2.4rem;
 }
 
-@media (min-width: 64em) {
+@media (min-width: 40em) {
   .container--pall {
     padding-top: 5rem;
     padding-bottom: 5rem;
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .container--pall {
     padding-left: 6rem;
     padding-right: 6rem;
   }
@@ -151,7 +176,7 @@ h2 {
   padding-bottom: 2rem;
 }
 
-@media (min-width: 64em) {
+@media (min-width: 40em) {
   .container--py {
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -161,6 +186,20 @@ h2 {
 .container--px {
   padding-right: 2.4rem;
   padding-left: 2.4rem;
+}
+
+@media (min-width: 40em) {
+  .container--px {
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .container--px {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
 }
 
 /*======================================
@@ -222,6 +261,8 @@ h2 {
   background-color: #323432;
   position: fixed;
   top: 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   width: 100%;
   -webkit-transition: top 0.3s;
   transition: top 0.3s;
@@ -401,10 +442,33 @@ h2 {
   overflow: hidden;
   -webkit-transition: max-height 0.3s ease-in-out;
   transition: max-height 0.3s ease-in-out;
+  padding: 0 2rem;
 }
 
-.accordion__panel * {
-  padding: 2rem 0;
+.accordion__panel h3 {
+  padding: 2rem;
+}
+
+.accordion__subtoggle {
+  background-image: url("../../images/undermenu_plus.svg");
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.accordion__subtoggle--open {
+  background-image: url("../../images/undermenu_minus.svg");
+}
+
+.accordion__subpanel {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.3s ease-in-out;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.accordion__subpanel :last-child {
+  padding: 0 0 5rem 0;
 }
 
 .rotate {

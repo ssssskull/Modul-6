@@ -27,6 +27,8 @@ const btnHamburger = document.querySelector("#btnHamburger");
 const headerMenu = document.querySelector(".header__menu");
 const languageElem = document.querySelector(".header__language");
 
+body.style.padding = `${header.clientHeight}px 0 0 0`;
+
 btnHamburger.addEventListener("click", function () {
   if (header.classList.contains("open")) {
     /* Luk hamburger menu
@@ -51,6 +53,7 @@ for (let i = 0; i < accordionQuestions.length; i++) {
   accordionQuestions[i].addEventListener("click", function () {
     const accordionContent = this.nextElementSibling;
     const plusIcon = this.lastElementChild;
+
     if (accordionContent.style.maxHeight) {
       plusIcon.classList.remove("rotate");
       accordionContent.style.maxHeight = null;
@@ -58,10 +61,31 @@ for (let i = 0; i < accordionQuestions.length; i++) {
       plusIcon.classList.add("rotate");
       accordionContent.style.maxHeight = `${accordionContent.scrollHeight}px`;
     }
+
+    /* Subpanel
+    ============================ */
+    const accordionSubquestions = document.querySelectorAll(
+      ".accordion__subtoggle"
+    );
+
+    for (let i = 0; i < accordionSubquestions.length; i++) {
+      accordionSubquestions[i].addEventListener("click", function () {
+        accordionSubquestions[i].classList.toggle("accordion__subtoggle--open");
+        const accordionSubpanel = this.nextElementSibling;
+        if (accordionSubpanel.style.maxHeight) {
+          accordionSubpanel.style.maxHeight = null;
+        } else {
+          accordionSubpanel.style.maxHeight = `${accordionSubpanel.scrollHeight}px`;
+          accordionContent.style.maxHeight = `${
+            accordionContent.scrollHeight + accordionSubpanel.scrollHeight
+          }px`;
+        }
+      });
+    }
   });
 }
 
-/* Dropdown
+/* Mobil menu dropdown
     ============================ */
 const dropDown = document.querySelectorAll(".header__dropDown");
 
