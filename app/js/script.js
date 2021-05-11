@@ -53,7 +53,6 @@ for (let i = 0; i < accordionQuestions.length; i++) {
   accordionQuestions[i].addEventListener("click", function () {
     const accordionPanel = this.nextElementSibling;
     const plusIcon = this.lastElementChild;
-
     if (accordionPanel.style.maxHeight) {
       plusIcon.classList.remove("rotate");
       accordionPanel.style.maxHeight = null;
@@ -72,22 +71,18 @@ const accordionSubquestions = document.querySelectorAll(
 
 for (let i = 0; i < accordionSubquestions.length; i++) {
   accordionSubquestions[i].addEventListener("click", function () {
-    accordionSubquestions[i].classList.toggle("accordion__subtoggle--open");
-    const accordionPanel = this.nextElementSibling;
-    console.log(this);
+    const accordionPanel = this.parentElement;
     const accordionSubpanel = this.nextElementSibling;
+
+    accordionSubquestions[i].classList.toggle("accordion__subtoggle--open");
+
     if (accordionSubpanel.style.maxHeight) {
       accordionSubpanel.style.maxHeight = null;
     } else {
       accordionSubpanel.style.maxHeight = `${accordionSubpanel.scrollHeight}px`;
-
-      // TODO comprehend this shit
-
-      console.log(accordionPanel.scrollHeight);
-      console.log(accordionSubpanel.parentElement.scrollHeight);
-      accordionSubpanel.parentElement.style.maxHeight = `${
-        accordionSubpanel.scrollHeight +
-        accordionSubpanel.parentElement.scrollHeight
+      console.log(accordionSubpanel);
+      accordionPanel.style.maxHeight = `${
+        accordionSubpanel.scrollHeight + accordionPanel.scrollHeight
       }px`;
     }
   });
