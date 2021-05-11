@@ -51,15 +51,15 @@ const accordionQuestions = document.querySelectorAll(".accordion__question");
 
 for (let i = 0; i < accordionQuestions.length; i++) {
   accordionQuestions[i].addEventListener("click", function () {
-    const accordionContent = this.nextElementSibling;
+    const accordionPanel = this.nextElementSibling;
     const plusIcon = this.lastElementChild;
 
-    if (accordionContent.style.maxHeight) {
+    if (accordionPanel.style.maxHeight) {
       plusIcon.classList.remove("rotate");
-      accordionContent.style.maxHeight = null;
+      accordionPanel.style.maxHeight = null;
     } else {
       plusIcon.classList.add("rotate");
-      accordionContent.style.maxHeight = `${accordionContent.scrollHeight}px`;
+      accordionPanel.style.maxHeight = `${accordionPanel.scrollHeight}px`;
     }
 
     /* Subpanel
@@ -71,15 +71,14 @@ for (let i = 0; i < accordionQuestions.length; i++) {
     for (let i = 0; i < accordionSubquestions.length; i++) {
       accordionSubquestions[i].addEventListener("click", function () {
         accordionSubquestions[i].classList.toggle("accordion__subtoggle--open");
+        console.log(this);
         const accordionSubpanel = this.nextElementSibling;
         if (accordionSubpanel.style.maxHeight) {
           accordionSubpanel.style.maxHeight = null;
-          console.log(this);
         } else {
-          console.log(this);
           accordionSubpanel.style.maxHeight = `${accordionSubpanel.scrollHeight}px`;
-          accordionContent.style.maxHeight = `${
-            accordionContent.scrollHeight + accordionSubpanel.scrollHeight
+          accordionPanel.style.maxHeight = `${
+            accordionPanel.scrollHeight + accordionSubpanel.scrollHeight
           }px`;
         }
       });
