@@ -75,12 +75,12 @@ for (let i = 0; i < accordionSubquestions.length; i++) {
     const accordionPanel = this.parentElement;
     const accordionSubpanel = this.nextElementSibling;
     accordionSubquestions[i].classList.toggle("accordion__subtoggle--open");
+    accordionSubquestions[i].classList.toggle("accordion__subtoggle--hover");
 
     if (accordionSubpanel.style.maxHeight) {
       accordionSubpanel.style.maxHeight = null;
     } else {
       accordionSubpanel.style.maxHeight = `${accordionSubpanel.scrollHeight}px`;
-      console.log(accordionSubpanel);
       accordionPanel.style.maxHeight = `${
         accordionSubpanel.scrollHeight + accordionPanel.scrollHeight
       }px`;

@@ -56,13 +56,19 @@
     background-size: 12px 12px;
     background-repeat: no-repeat;
     background-position: left center;
+  }
 
+  &__subtoggle--hover {
     &:hover {
       color: $clr-primary-green;
+
+      background-image: url("../../images/undermenu_plus-hover.svg");
     }
   }
+
   &__subtoggle--open {
     background-image: url("../../images/undermenu_minus.svg");
+    color: $clr-primary-green;
   }
 
   &__subpanel {
@@ -83,8 +89,9 @@
   .accordion__icon {
     background-image: url("../../images/plus-hover.svg");
   }
-  /* TODO svg fill! og link
-  .accordion__subtoggle {
-    background-image: url("../../images/");
-  }*/
+  &:hover {
+    .accordion__subtoggle {
+      background-image: url("../../images/undermenu_plus-hover.svg");
+    }
+  }
 }

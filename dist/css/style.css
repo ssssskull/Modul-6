@@ -462,12 +462,14 @@ h3 {
   background-position: left center;
 }
 
-.accordion__subtoggle:hover {
+.accordion__subtoggle--hover:hover {
   color: #5eb91d;
+  background-image: url("../../images/undermenu_plus-hover.svg");
 }
 
 .accordion__subtoggle--open {
   background-image: url("../../images/undermenu_minus.svg");
+  color: #5eb91d;
 }
 
 .accordion__subpanel {
@@ -488,13 +490,13 @@ h3 {
 
 .panel-open {
   color: #5eb91d;
-  /* TODO svg fill! og link
-  .accordion__subtoggle {
-    background-image: url("../../images/");
-  }*/
 }
 
 .panel-open .accordion__icon {
   background-image: url("../../images/plus-hover.svg");
+}
+
+.panel-open:hover .accordion__subtoggle {
+  background-image: url("../../images/undermenu_plus-hover.svg");
 }
 /*# sourceMappingURL=style.css.map */
