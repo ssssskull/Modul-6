@@ -24,6 +24,7 @@
 
     &:hover {
       color: $clr-primary-green;
+      background-color: $clr-background-hover;
 
       .accordion__icon {
         background-image: url("../../images/plus-hover.svg");
@@ -86,6 +87,9 @@
 }
 .panel-open {
   color: $clr-primary-green;
+
+  //BUG background skulle være på accordion_elem
+  background: $clr-background-hover;
   .accordion__icon {
     background-image: url("../../images/plus-hover.svg");
   }

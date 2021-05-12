@@ -428,6 +428,7 @@ h3 {
 
 .accordion__question:hover {
   color: #5eb91d;
+  background-color: #ededed;
 }
 
 .accordion__question:hover .accordion__icon {
@@ -490,6 +491,7 @@ h3 {
 
 .panel-open {
   color: #5eb91d;
+  background: #ededed;
 }
 
 .panel-open .accordion__icon {
