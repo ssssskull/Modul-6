@@ -22,6 +22,10 @@ html {
   font-family: "Quicksand", sans-serif;
 }
 
+body {
+  background-color: #f7f7f7;
+}
+
 /*======================================
 *            Typografi            *
 ======================================*/
@@ -119,7 +123,7 @@ h3 {
 ======================================*/
 .btn-primary {
   background-color: #5eb91d;
-  color: white;
+  color: #f7f7f7;
   padding: 1.2rem 2.4rem;
   outline: transparent;
   -webkit-box-shadow: none;
@@ -294,7 +298,7 @@ h3 {
   display: block;
   width: 26px;
   height: 3px;
-  background-color: white;
+  background-color: #f7f7f7;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
@@ -332,7 +336,7 @@ h3 {
   position: relative;
   font-size: 20px;
   font-size: 2rem;
-  color: white;
+  color: #f7f7f7;
   padding: 2rem;
   width: 100%;
 }
@@ -361,7 +365,7 @@ h3 {
 }
 
 .header__right {
-  color: white;
+  color: #f7f7f7;
   font-size: 20px;
   font-size: 2rem;
   font-weight: 500;
@@ -422,14 +426,6 @@ h3 {
   cursor: pointer;
 }
 
-.accordion__question--open {
-  color: #5eb91d;
-}
-
-.accordion__question--open .accordion__icon {
-  background-image: url("../../images/plus-hover.svg");
-}
-
 .accordion__question:hover {
   color: #5eb91d;
 }
@@ -488,5 +484,17 @@ h3 {
 .rotate {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+}
+
+.panel-open {
+  color: #5eb91d;
+  /* TODO svg fill! og link
+  .accordion__subtoggle {
+    background-image: url("../../images/");
+  }*/
+}
+
+.panel-open .accordion__icon {
+  background-image: url("../../images/plus-hover.svg");
 }
 /*# sourceMappingURL=style.css.map */

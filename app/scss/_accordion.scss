@@ -22,13 +22,6 @@
     align-items: center;
     cursor: pointer;
 
-    &--open {
-      color: $clr-primary-green;
-      .accordion__icon {
-        background-image: url("../../images/plus-hover.svg");
-      }
-    }
-
     &:hover {
       color: $clr-primary-green;
 
@@ -84,4 +77,14 @@
 }
 .rotate {
   transform: rotate(45deg);
+}
+.panel-open {
+  color: $clr-primary-green;
+  .accordion__icon {
+    background-image: url("../../images/plus-hover.svg");
+  }
+  /* TODO svg fill! og link
+  .accordion__subtoggle {
+    background-image: url("../../images/");
+  }*/
 }

@@ -51,7 +51,7 @@ const accordionQuestions = document.querySelectorAll(".accordion__question");
 
 for (let i = 0; i < accordionQuestions.length; i++) {
   accordionQuestions[i].addEventListener("click", function () {
-    this.classList.toggle("accordion__question--open");
+    this.classList.toggle("panel-open");
     const accordionPanel = this.nextElementSibling;
     const plusIcon = this.lastElementChild;
     if (accordionPanel.style.maxHeight) {
