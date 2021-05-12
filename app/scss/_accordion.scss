@@ -16,7 +16,7 @@
   }
 
   &__question {
-    padding: 2rem 0;
+    padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,7 +24,6 @@
 
     &:hover {
       color: $clr-primary-green;
-      background-color: $clr-background-hover;
 
       .accordion__icon {
         background-image: url("../../images/plus-hover.svg");
@@ -40,13 +39,11 @@
   }
 
   &__panel {
-    background-color: white;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-in-out;
-    padding: 0 2rem;
 
-    h3 {
+    :not(.accordion__subpanel) {
       padding: 2rem;
     }
   }
@@ -76,10 +73,6 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-in-out;
-
-    :last-child {
-      padding: 0 0 3rem 0;
-    }
   }
 }
 .rotate {
@@ -87,12 +80,12 @@
 }
 .panel-open {
   color: $clr-primary-green;
-
-  //BUG background skulle være på accordion_elem
   background: $clr-background-hover;
+
   .accordion__icon {
     background-image: url("../../images/plus-hover.svg");
   }
+
   &:hover {
     .accordion__subtoggle {
       background-image: url("../../images/undermenu_plus-hover.svg");

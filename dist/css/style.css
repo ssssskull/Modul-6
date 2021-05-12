@@ -413,7 +413,7 @@ h3 {
 }
 
 .accordion__question {
-  padding: 2rem 0;
+  padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -428,7 +428,6 @@ h3 {
 
 .accordion__question:hover {
   color: #5eb91d;
-  background-color: #ededed;
 }
 
 .accordion__question:hover .accordion__icon {
@@ -443,15 +442,13 @@ h3 {
 }
 
 .accordion__panel {
-  background-color: white;
   max-height: 0;
   overflow: hidden;
   -webkit-transition: max-height 0.3s ease-in-out;
   transition: max-height 0.3s ease-in-out;
-  padding: 0 2rem;
 }
 
-.accordion__panel h3 {
+.accordion__panel :not(.accordion__subpanel) {
   padding: 2rem;
 }
 
@@ -478,10 +475,6 @@ h3 {
   overflow: hidden;
   -webkit-transition: max-height 0.3s ease-in-out;
   transition: max-height 0.3s ease-in-out;
-}
-
-.accordion__subpanel :last-child {
-  padding: 0 0 3rem 0;
 }
 
 .rotate {
