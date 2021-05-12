@@ -364,6 +364,7 @@ h3 {
   color: white;
   font-size: 20px;
   font-size: 2rem;
+  font-weight: 500;
 }
 
 .header__right li:not(:first-child) {
@@ -419,6 +420,14 @@ h3 {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+}
+
+.accordion__question--open {
+  color: #5eb91d;
+}
+
+.accordion__question--open .accordion__icon {
+  background-image: url("../../images/plus-hover.svg");
 }
 
 .accordion__question:hover {
