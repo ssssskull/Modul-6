@@ -102,3 +102,32 @@ for (let i = 0; i < dropDown.length; i++) {
     }
   });
 }
+
+/*======================================
+*            Victor              *
+======================================*/
+
+const svgPowerButton = document.querySelectorAll(".svg--knap");
+const HovedMenuHover = document.querySelector(".hovedmenu__hover-text");
+
+console.log(svgPowerButton);
+
+
+for (let i = 0; i < svgPowerButton.length; i++) {
+  svgPowerButton[i].addEventListener("click", function(){
+  switch(i){
+    case 0:
+      HovedMenuHover.innerHTML = "Ikke så nemhed";
+      break;
+    case 1:
+      HovedMenuHover.innerHTML = "Nemhed";
+      break;
+    case 2:
+      HovedMenuHover.innerHTML = "Master";
+      break;
+   }
+  })
+}
+
+
+
