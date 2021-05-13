@@ -384,6 +384,37 @@ h3 {
   top: 0;
 }
 
+.product {
+  row-gap: 2rem;
+}
+
+.product__container {
+  row-gap: 3rem;
+}
+
+.product__elem {
+  position: relative;
+}
+
+.product__background {
+  min-width: 230px;
+  background-image: url("../../images/polka-pattern3x7.svg");
+  background-repeat: repeat-x;
+  background-size: contain;
+  width: 60%;
+  height: 100px;
+}
+
+.product__image {
+  top: 0%;
+  /*left: 50%;
+    transform: translate(-50%, -50%);*/
+  position: absolute;
+  background-image: url("../../images/produkt-kipgryder.svg");
+  height: 100px;
+  width: 100px;
+}
+
 .accordion__elem {
   border-bottom: 1px solid rgba(0, 0, 5, 0.1);
 }

@@ -1,0 +1,30 @@
+.product {
+  row-gap: 2rem;
+
+  &__container {
+    row-gap: 3rem;
+  }
+
+  &__elem {
+    position: relative;
+  }
+
+  &__background {
+    min-width: 230px;
+    background-image: url("../../images/polka-pattern3x7.svg");
+    background-repeat: repeat-x;
+    background-size: contain;
+    width: 60%;
+    height: 100px;
+  }
+  &__image {
+    // TODO gør det uden position absolute
+    top: 0%;
+    /*left: 50%;
+    transform: translate(-50%, -50%);*/
+    position: absolute;
+    background-image: url("../../images/produkt-kipgryder.svg");
+    height: 100px;
+    width: 100px;
+  }
+}
