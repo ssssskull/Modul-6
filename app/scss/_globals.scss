@@ -11,6 +11,9 @@ body {
   background-color: $clr-background;
 }
 
+text {
+  pointer-events: none;
+}
 /*======================================
 *            Typografi            *
 ======================================*/
@@ -67,6 +70,7 @@ h2 {
   font-size: $font-h2-iphone-fallback;
   font-size: $font-h2-iphone;
   line-height: 30px;
+  margin-bottom: 2rem;
 
   @include breakpoint-up(computer) {
     font-size: $font-h2-computer-fallback;

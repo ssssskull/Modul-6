@@ -1,30 +1,55 @@
 .product {
+  h2 {
+    text-align: center;
+  }
   row-gap: 2rem;
 
   &__container {
-    row-gap: 3rem;
+    row-gap: 6rem;
   }
 
   &__elem {
     position: relative;
+    width: 100%;
+
+    &:nth-child(2) {
+      .product__image {
+        background-image: url("../../images/produkt-kipgryder.svg");
+      }
+    }
+    &:nth-child(3) {
+      .product__image {
+        background-image: url("../../images/produkt-kogeborde.svg");
+      }
+    }
   }
 
   &__background {
+    position: absolute;
+    left: 0;
+    top: 75px;
+    z-index: -1;
     min-width: 230px;
     background-image: url("../../images/polka-pattern3x7.svg");
     background-repeat: repeat-x;
     background-size: contain;
-    width: 60%;
-    height: 100px;
+    width: 45%;
+    height: 150px;
+
+    @include breakpoint-up(ipad) {
+      height: 200px;
+    }
+
+    @include breakpoint-up(computer) {
+      height: 250px;
+    }
   }
   &__image {
-    // TODO gør det uden position absolute
-    top: 0%;
-    /*left: 50%;
-    transform: translate(-50%, -50%);*/
-    position: absolute;
     background-image: url("../../images/produkt-kipgryder.svg");
-    height: 100px;
-    width: 100px;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 200px;
+    // TODO fix padding på billed element
+    padding: 1rem;
   }
 }
