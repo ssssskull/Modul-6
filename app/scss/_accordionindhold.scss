@@ -3,7 +3,6 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 250px;
     }
 
     &__ppaddingnone {
@@ -11,40 +10,25 @@
     }
 
     &__columngap {
-        column-gap: 15px;
+        column-gap: 20px;
     }
 
     &__ikon {
-        width: 150px;
-        height: 30px;
+        width: 50px;
+        height: 50px;
         display: block;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
     }
 }
 
-.varme {
-    &__bundtemperatur {
-        background-image: url("../../images/bundtemperatur.svg");
-    }
-
-    &__madtemperatur {
-        background-image: url("../../images/madtemperatur.svg");
-    }
-
-    &__opvarmning {
-        background-image: url("../../images/opvarmning.svg");
-    }
-}
-
-.advarsel {
-    &__gryderetur {
-        background-image: url("../../images/gryderetur.svg");
-    }
-
+.container {
     &__cross {
-        background-image: url("../../images/cross.svg");
+        width: 50px;
+        height: 50px;
+    }
+
+    &__crossimg {
+        width: 30px;
+        height: 30px;
     }
 }
 
