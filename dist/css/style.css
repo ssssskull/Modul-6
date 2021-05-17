@@ -454,4 +454,48 @@ h3 {
 .rotate {
   transform: rotate(45deg);
 }
+
+.menu__imgcenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+}
+
+.menu__ppaddingnone {
+  padding-top: 0;
+}
+
+.menu__columngap {
+  column-gap: 15px;
+}
+
+.menu__ikon {
+  width: 150px;
+  height: 30px;
+  display: block;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.varme__bundtemperatur {
+  background-image: url("../../images/bundtemperatur.svg");
+}
+
+.varme__madtemperatur {
+  background-image: url("../../images/madtemperatur.svg");
+}
+
+.varme__opvarmning {
+  background-image: url("../../images/opvarmning.svg");
+}
+
+.advarsel__gryderetur {
+  background-image: url("../../images/gryderetur.svg");
+}
+
+.advarsel__cross {
+  background-image: url("../../images/cross.svg");
+}
 /*# sourceMappingURL=style.css.map */
