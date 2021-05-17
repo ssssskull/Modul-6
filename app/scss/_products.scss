@@ -1,4 +1,7 @@
 .product {
+  /*TODO flyt det her til brugsanvisningen
+    scroll-snap-align: start;
+  */
   h2 {
     text-align: center;
   }
@@ -6,15 +9,19 @@
 
   &__container {
     row-gap: 6rem;
+
+    @include breakpoint-up(ipad) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 
   &__elem {
     position: relative;
-    width: 100%;
 
     &:nth-child(2) {
       .product__image {
-        background-image: url("../../images/produkt-kipgryder.svg");
+        background-image: url("../../images/produkt-kipstegere.svg");
       }
     }
     &:nth-child(3) {
@@ -22,9 +29,20 @@
         background-image: url("../../images/produkt-kogeborde.svg");
       }
     }
+
+    @include breakpoint-up(ipad) {
+      width: max-content;
+
+      &:where(:not(:first-child)) {
+        .product__background {
+          background-image: none;
+        }
+      }
+    }
   }
 
   &__background {
+    /*TODO BUG background skal fylde halvdelen af containeren*/
     position: absolute;
     left: 0;
     top: 75px;
@@ -33,23 +51,30 @@
     background-image: url("../../images/polka-pattern3x7.svg");
     background-repeat: repeat-x;
     background-size: contain;
-    width: 45%;
     height: 150px;
 
     @include breakpoint-up(ipad) {
       height: 200px;
+      min-width: 350px;
     }
 
     @include breakpoint-up(computer) {
       height: 250px;
+      min-width: 900px;
     }
   }
   &__image {
     background-image: url("../../images/produkt-kipgryder.svg");
     background-repeat: no-repeat;
-    height: 200px;
-    width: 200px;
+    background-position: center center;
+    height: 150px;
+    width: 150px;
     // TODO fix padding på billed element
-    padding: 1rem;
+    margin: 2rem 0 4rem 0;
+
+    @include breakpoint-up(ipad) {
+      width: 200px;
+      height: 200px;
+    }
   }
 }

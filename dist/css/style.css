@@ -16,6 +16,12 @@
 /*======================================
 *         Generelle regler         *
 ======================================*/
+html,
+body {
+  -ms-scroll-snap-type: y proximity;
+      scroll-snap-type: y proximity;
+}
+
 html {
   scroll-behavior: smooth;
   font-size: 62.5%;
@@ -128,8 +134,8 @@ h3 {
           box-shadow: none;
   border: none;
   border-radius: 50px;
-  font-size: 18px;
-  font-size: 1.8rem;
+  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 700;
   letter-spacing: 2px;
   line-height: 18px;
@@ -390,6 +396,9 @@ h3 {
 }
 
 .product {
+  /*TODO flyt det her til brugsanvisningen
+    scroll-snap-align: start;
+  */
   row-gap: 2rem;
 }
 
@@ -401,20 +410,43 @@ h3 {
   row-gap: 6rem;
 }
 
+@media (min-width: 40em) {
+  .product__container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .product__elem {
   position: relative;
-  width: 100%;
 }
 
 .product__elem:nth-child(2) .product__image {
-  background-image: url("../../images/produkt-kipgryder.svg");
+  background-image: url("../../images/produkt-kipstegere.svg");
 }
 
 .product__elem:nth-child(3) .product__image {
   background-image: url("../../images/produkt-kogeborde.svg");
 }
 
+@media (min-width: 40em) {
+  .product__elem {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .product__elem:where(:not(:first-child)) .product__background {
+    background-image: none;
+  }
+}
+
 .product__background {
+  /*TODO BUG background skal fylde halvdelen af containeren*/
   position: absolute;
   left: 0;
   top: 75px;
@@ -423,28 +455,37 @@ h3 {
   background-image: url("../../images/polka-pattern3x7.svg");
   background-repeat: repeat-x;
   background-size: contain;
-  width: 45%;
   height: 150px;
 }
 
 @media (min-width: 40em) {
   .product__background {
     height: 200px;
+    min-width: 350px;
   }
 }
 
 @media (min-width: 64em) {
   .product__background {
     height: 250px;
+    min-width: 900px;
   }
 }
 
 .product__image {
   background-image: url("../../images/produkt-kipgryder.svg");
   background-repeat: no-repeat;
-  height: 200px;
-  width: 200px;
-  padding: 1rem;
+  background-position: center center;
+  height: 150px;
+  width: 150px;
+  margin: 2rem 0 4rem 0;
+}
+
+@media (min-width: 40em) {
+  .product__image {
+    width: 200px;
+    height: 200px;
+  }
 }
 
 .accordion__elem {
