@@ -487,4 +487,8 @@ h3 {
 .panel-open:hover .accordion__subtoggle {
   background-image: url("../../images/undermenu_plus-hover.svg");
 }
+
+text {
+  pointer-events: none;
+}
 /*# sourceMappingURL=style.css.map */

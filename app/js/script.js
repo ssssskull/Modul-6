@@ -81,9 +81,8 @@ for (let i = 0; i < accordionSubquestions.length; i++) {
       accordionSubpanel.style.maxHeight = null;
     } else {
       accordionSubpanel.style.maxHeight = `${accordionSubpanel.scrollHeight}px`;
-      accordionPanel.style.maxHeight = `${
-        accordionSubpanel.scrollHeight + accordionPanel.scrollHeight
-      }px`;
+      accordionPanel.style.maxHeight = `${accordionSubpanel.scrollHeight + accordionPanel.scrollHeight
+        }px`;
     }
   });
 }
@@ -104,7 +103,7 @@ for (let i = 0; i < dropDown.length; i++) {
 }
 
 /*======================================
-*            Victor              *
+*               Victor                 *
 ======================================*/
 
 const svgPowerButton = document.querySelectorAll(".svg--knap");
@@ -112,20 +111,67 @@ const HovedMenuHover = document.querySelector(".hovedmenu__hover-text");
 
 console.log(svgPowerButton);
 
-
 for (let i = 0; i < svgPowerButton.length; i++) {
-  svgPowerButton[i].addEventListener("click", function(){
-  switch(i){
-    case 0:
-      HovedMenuHover.innerHTML = "Ikke så nemhed";
-      break;
-    case 1:
-      HovedMenuHover.innerHTML = "Nemhed";
-      break;
-    case 2:
-      HovedMenuHover.innerHTML = "Master";
-      break;
-   }
+  svgPowerButton[i].addEventListener("click", function () {
+    switch (i) {
+      case 0:
+        HovedMenuHover.innerHTML = "Aktuel madtemperatur";
+        break;
+      case 1:
+        HovedMenuHover.innerHTML = "Aktuelt varmetrin";
+        break;
+      case 2:
+        HovedMenuHover.innerHTML = "Manuel vandpåfyldning";
+        break;
+      case 3:
+        HovedMenuHover.innerHTML = "Røremønster";
+        break;
+      case 4:
+        HovedMenuHover.innerHTML = "Omdrejningstal";
+        break;
+      case 5:
+        HovedMenuHover.innerHTML = "Taste for start og stop af funktion, (varme) Tasten skifter farve grå / sort";
+        break;
+      case 6:
+        HovedMenuHover.innerHTML = "Taste for start og stop af funktion, (varme) Tasten skifter farve grå / sort";
+        break;
+      case 7:
+        HovedMenuHover.innerHTML = "Taste for start og stop af funktion, (varme) Tasten skifter farve grå / sort";
+        break;
+      case 8:
+        HovedMenuHover.innerHTML = "Taste for start og stop af funktion, (varme) Tasten skifter farve grå / sort";
+        break;
+      case 9:
+        HovedMenuHover.innerHTML = "Aktuel Temperatur på bunden";
+        break;
+      case 10:
+        HovedMenuHover.innerHTML = "Forvalgt mængde";
+        break;
+      case 11:
+        HovedMenuHover.innerHTML = "Akkumuleret mængde";
+        break;
+      case 12:
+        HovedMenuHover.innerHTML = "Tid";
+        break;
+      case 13:
+        HovedMenuHover.innerHTML = "Klokkeslet";
+        break;
+      case 14:
+        HovedMenuHover.innerHTML = "Akkumuleret tid";
+        break;
+      case 15:
+        HovedMenuHover.innerHTML = "Taster for kip af gryde";
+        break;
+      case 16:
+        HovedMenuHover.innerHTML = "Menu";
+        break;
+      case 17:
+        HovedMenuHover.innerHTML = "Klokken";
+        break;
+      case 18:
+        HovedMenuHover.innerHTML = "Taster for kip af gryde";
+        break;
+    }
   })
 }
 
