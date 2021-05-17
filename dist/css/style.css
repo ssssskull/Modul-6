@@ -408,6 +408,7 @@ h3 {
 
 .product__container {
   row-gap: 6rem;
+  overflow: hidden;
 }
 
 @media (min-width: 40em) {
@@ -424,6 +425,7 @@ h3 {
 
 .product__elem {
   position: relative;
+  width: 100%;
 }
 
 .product__elem:nth-child(2) .product__image {
@@ -435,40 +437,25 @@ h3 {
 }
 
 @media (min-width: 40em) {
-  .product__elem {
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-  }
   .product__elem:where(:not(:first-child)) .product__background {
     background-image: none;
   }
 }
 
 .product__background {
-  /*TODO BUG background skal fylde halvdelen af containeren*/
   position: absolute;
   left: 0;
   top: 75px;
   z-index: -1;
-  min-width: 230px;
   background-image: url("../../images/polka-pattern3x7.svg");
-  background-repeat: repeat-x;
   background-size: contain;
   height: 150px;
+  width: 50%;
 }
 
 @media (min-width: 40em) {
   .product__background {
-    height: 200px;
-    min-width: 350px;
-  }
-}
-
-@media (min-width: 64em) {
-  .product__background {
-    height: 250px;
-    min-width: 900px;
+    width: 150%;
   }
 }
 
