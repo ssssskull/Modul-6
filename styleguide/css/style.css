@@ -363,6 +363,37 @@ h3 {
   top: 0;
 }
 
+.product {
+  row-gap: 2rem;
+}
+
+.product__container {
+  row-gap: 3rem;
+}
+
+.product__elem {
+  position: relative;
+}
+
+.product__background {
+  min-width: 230px;
+  background-image: url("../../images/polka-pattern3x7.svg");
+  background-repeat: repeat-x;
+  background-size: contain;
+  width: 60%;
+  height: 100px;
+}
+
+.product__image {
+  top: 0%;
+  /*left: 50%;
+    transform: translate(-50%, -50%);*/
+  position: absolute;
+  background-image: url("../../images/produkt-kipgryder.svg");
+  height: 100px;
+  width: 100px;
+}
+
 .styleguide__logo {
   row-gap: 5rem;
 }
@@ -385,7 +416,14 @@ h3 {
   }
 }
 
-.boxed {
+.styleguide .logo__image {
+  max-width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.styleguide .boxed {
   background: rgba(219, 230, 236, 0.1);
   border: 1px solid #DEE2E6;
   border-radius: 10px;
@@ -393,9 +431,10 @@ h3 {
   font-size: 0.92857rem;
   font-weight: normal;
   padding: 1em 1em;
-}
-
-.logo__image {
+  display: block;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 50%;
 }
 /*# sourceMappingURL=style.css.map */
