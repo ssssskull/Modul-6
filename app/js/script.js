@@ -106,10 +106,8 @@ for (let i = 0; i < dropDown.length; i++) {
 *               Victor                 *
 ======================================*/
 
-const svgPowerButton = document.querySelectorAll(".svg--knap");
+const svgPowerButton = document.querySelectorAll(".svghovedmenu__knap");
 const HovedMenuHover = document.querySelector(".hovedmenu__hover-text");
-
-console.log(svgPowerButton);
 
 for (let i = 0; i < svgPowerButton.length; i++) {
   svgPowerButton[i].addEventListener("click", function () {
@@ -175,5 +173,101 @@ for (let i = 0; i < svgPowerButton.length; i++) {
   })
 }
 
+const svgPowerButton1 = document.querySelectorAll(".svgvandmenu__knap");
+const VandMenuHover = document.querySelector(".vandmenu__hover-text");
+
+for (let i = 0; i < svgPowerButton1.length; i++) {
+  svgPowerButton1[i].addEventListener("click", function () {
+    console.log(i);
+    switch (i) {
+      case 0:
+        VandMenuHover.innerHTML = "Akkumuleret mængde";
+        break;
+      case 1:
+        VandMenuHover.innerHTML = "Forvalgt mængde";
+        break;
+      case 2:
+        VandMenuHover.innerHTML = "Nulstilling af akkumuleret mængde";
+        break;
+      case 3:
+        VandMenuHover.innerHTML = "Retur til hovedmenu";
+        break;
+    }
+  })
+}
+
+const svgPowerButton2 = document.querySelectorAll(".svgprogram__knap");
+const ProgramHover = document.querySelector(".program__hover-text");
+
+for (let i = 0; i < svgPowerButton2.length; i++) {
+  svgPowerButton2[i].addEventListener("click", function () {
+    console.log(i);
+    switch (i) {
+      case 0:
+        ProgramHover.innerHTML = "Opvarmning";
+        break;
+      case 1:
+        ProgramHover.innerHTML = "Omrøring";
+        break;
+      case 2:
+        ProgramHover.innerHTML = "Vandpåfyld";
+        break;
+      case 3:
+        ProgramHover.innerHTML = "Tid";
+        break;
+      case 4:
+        ProgramHover.innerHTML = "Buzzer";
+        break;
+      case 5:
+        ProgramHover.innerHTML = "Køling";
+        break;
+      case 6:
+        ProgramHover.innerHTML = "Felt for aktivitet";
+        break;
+      case 7:
+        ProgramHover.innerHTML = "Felt for aktivitet";
+        break;
+      case 8:
+        ProgramHover.innerHTML = "Felt for aktivitet";
+        break;
+      case 9:
+        ProgramHover.innerHTML = "Felt for aktivitet";
+        break;
+      case 10:
+        ProgramHover.innerHTML = "Felt for aktivitet";
+        break;
+      case 11:
+        ProgramHover.innerHTML = "Felt for aktivitet";
+        break;
+      case 12:
+        ProgramHover.innerHTML = "Felt for aktivitet";
+        break;
+      case 13:
+        ProgramHover.innerHTML = "Felt for aktivitet";
+        break;
+      case 14:
+        ProgramHover.innerHTML = "Felt for aktivitet";
+        break;
+      case 15:
+        ProgramHover.innerHTML = "Felt for aktivitet";
+        break;
+      case 16:
+        ProgramHover.innerHTML = "Felt for aktivitet";
+        break;
+      case 17:
+        ProgramHover.innerHTML = "Felt for aktivitet";
+        break;
+      case 18:
+        ProgramHover.innerHTML = "Felt for aktivitet";
+        break;
+      case 19:
+        ProgramHover.innerHTML = "Felt for aktivitet";
+        break;
+      case 20:
+        ProgramHover.innerHTML = "Felt for aktivitet";
+        break;
+    }
+  })
+}
 
 

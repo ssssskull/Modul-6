@@ -491,4 +491,19 @@ h3 {
 text {
   pointer-events: none;
 }
+
+.hover-menu {
+  font-family: "Quicksand", sans-serif;
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2rem;
+}
 /*# sourceMappingURL=style.css.map */
