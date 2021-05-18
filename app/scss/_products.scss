@@ -2,15 +2,15 @@
   /*TODO flyt det her til brugsanvisningen
     scroll-snap-align: start;
   */
+
   h2 {
     text-align: center;
   }
   row-gap: 2rem;
 
   &__container {
+    column-gap: 5rem;
     row-gap: 6rem;
-    overflow: hidden;
-    // BUG ipad column gap virker ikke pga polka dot %
 
     @include breakpoint-up(ipad) {
       flex-direction: row;
@@ -21,17 +21,6 @@
   &__elem {
     position: relative;
     width: 100%;
-
-    &:nth-child(2) {
-      .product__image {
-        background-image: url("../../images/produkt-kipstegere.svg");
-      }
-    }
-    &:nth-child(3) {
-      .product__image {
-        background-image: url("../../images/produkt-kogeborde.svg");
-      }
-    }
 
     @include breakpoint-up(ipad) {
       &:where(:not(:first-child)) {
@@ -45,7 +34,7 @@
   &__background {
     position: absolute;
     left: 0;
-    top: 75px;
+    top: 105px;
     z-index: -1;
     background-image: url("../../images/polka-pattern3x7.svg");
     background-size: contain;
@@ -57,19 +46,20 @@
     }
 
     @include breakpoint-up(computer) {
+      height: 300px;
     }
   }
   &__image {
-    background-image: url("../../images/produkt-kipgryder.svg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 150px;
-    width: 150px;
     margin: 2rem 0 4rem 0;
+    max-width: 200px;
 
     @include breakpoint-up(ipad) {
-      width: 200px;
-      height: 200px;
+      max-width: 250px;
+    }
+
+    @include breakpoint-up(ipad) {
+      max-width: 300px;
+      // TODO fix padding på container og kig på polka!
     }
   }
 }
