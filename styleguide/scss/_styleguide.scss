@@ -1,0 +1,46 @@
+.styleguide {
+    &__logo{
+        row-gap: 5rem;
+        @include breakpoint-up(ipad){
+            flex-direction: row;
+
+            p {
+                flex-basis: 300px;
+                flex:2;
+                max-width: 42%;
+            }
+
+            .styleguide__subcon {
+                flex:1;
+                max-width: 42%;
+            }
+            
+            .logo__image {
+
+                max-width: 60%;
+                 
+
+        }
+    }
+}
+
+.boxed {
+    background: rgba(219,230,236,0.1);
+    border: 1px solid #DEE2E6;
+    border-radius: 10px;
+    font-size: 13px;
+    font-size: 0.92857rem;
+    font-weight: normal;
+    padding: 1em 1em;
+}
+
+
+
+.logo__image {
+    max-width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
