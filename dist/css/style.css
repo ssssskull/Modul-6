@@ -448,13 +448,7 @@ h3 {
 
 @media (min-width: 47.9375em) {
   .product__background {
-    width: 150%;
-  }
-}
-
-@media (min-width: 64em) {
-  .product__background {
-    height: 300px;
+    display: none;
   }
 }
 
