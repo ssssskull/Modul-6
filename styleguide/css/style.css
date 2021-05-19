@@ -394,6 +394,38 @@ h3 {
   width: 100px;
 }
 
+.styleguide .overskrift {
+  display: flex;
+  align-items: center;
+}
+
+.styleguide .overskrift_elm {
+  margin: 0;
+}
+
+.styleguide .logo__image {
+  max-width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.styleguide .boxed {
+  background: rgba(219, 230, 236, 0.1);
+  border: 1px solid #DEE2E6;
+  border-radius: 10px;
+  font-size: 13px;
+  font-size: 0.92857rem;
+  font-weight: normal;
+  padding: 1em 1em;
+  display: block;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 200px;
+  max-height: 200px;
+}
+
 .styleguide__logo {
   row-gap: 5rem;
 }
@@ -420,39 +452,17 @@ h3 {
   .styleguide__logo {
     flex-direction: row;
   }
-  .styleguide__logo p {
+  .styleguide__logo .styleguide__subcon {
     display: flex;
-    flex: 1;
+    flex-wrap: nowrap;
+    align-items: center;
   }
   .styleguide__logo .logo__image {
-    display: flex;
-    flex: 1;
+    margin-left: auto;
+    margin-right: auto;
   }
   .styleguide__logo .boxed {
-    display: flex;
-    flex: 1;
+    margin-left: 10px;
   }
-}
-
-.styleguide .logo__image {
-  max-width: 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.styleguide .boxed {
-  background: rgba(219, 230, 236, 0.1);
-  border: 1px solid #DEE2E6;
-  border-radius: 10px;
-  font-size: 13px;
-  font-size: 0.92857rem;
-  font-weight: normal;
-  padding: 1em 1em;
-  display: block;
-  margin-top: 2rem;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 50%;
 }
 /*# sourceMappingURL=style.css.map */
