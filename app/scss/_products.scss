@@ -57,9 +57,10 @@
       max-width: 250px;
     }
 
-    @include breakpoint-up(ipad) {
+    @include breakpoint-up(largeComputer) {
       max-width: 300px;
       // TODO fix padding på container og kig på polka!
+      // TODO tilføj polka på selve containeren og ikke element på ipad og op
     }
   }
 }

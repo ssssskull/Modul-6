@@ -469,7 +469,7 @@ h3 {
   }
 }
 
-@media (min-width: 47.9375em) {
+@media (min-width: 87.5em) {
   .product__image {
     max-width: 300px;
   }
