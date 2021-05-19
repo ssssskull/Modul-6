@@ -431,6 +431,7 @@ h3 {
   .styleguide__logo .boxed {
     display: flex;
     flex: 1;
+  }
 }
 
 .styleguide .logo__image {
