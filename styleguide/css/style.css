@@ -416,6 +416,23 @@ h3 {
   }
 }
 
+@media (min-width: 64em) {
+  .styleguide__logo {
+    flex-direction: row;
+  }
+  .styleguide__logo p {
+    display: flex;
+    flex: 1;
+  }
+  .styleguide__logo .logo__image {
+    display: flex;
+    flex: 1;
+  }
+  .styleguide__logo .boxed {
+    display: flex;
+    flex: 1;
+}
+
 .styleguide .logo__image {
   max-width: 50%;
   display: block;

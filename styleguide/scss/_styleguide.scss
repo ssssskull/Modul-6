@@ -1,5 +1,5 @@
 .styleguide {
-    &__logo{
+    &__logo {
         row-gap: 5rem;
         @include breakpoint-up(ipad){
             flex-direction: row;
@@ -18,10 +18,31 @@
             .logo__image {
                 max-width: 60%;
                  
+            }
+    }
+    @include breakpoint-up(computer){
+        flex-direction: row;
 
+        p {
+            display: flex;
+            flex:1;
         }
+
+        .logo__image {
+            display: flex;
+            flex:1;
+            
+        }
+
+         .boxed {
+            display: flex;
+            flex:1;
+         }
+
     }
 }
+
+
 
 .logo__image {
     max-width: 50%;
