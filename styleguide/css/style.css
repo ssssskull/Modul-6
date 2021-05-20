@@ -479,4 +479,22 @@ h3 {
     min-height: 100%;
   }
 }
+
+@media (min-width: 40em) {
+  .styleguide .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: start;
+    grid-template-areas: "header1 h1code" "header2 h2code" "paragraph paragraphcode";
+  }
+  .styleguide .flex-dr-r {
+    display: flex;
+    flex-direction: row;
+  }
+  .styleguide .boxed {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */

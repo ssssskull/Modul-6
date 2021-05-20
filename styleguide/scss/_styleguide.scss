@@ -97,9 +97,30 @@
 
 
 
+        }
     }
-}
 
+   @include breakpoint-up(ipad) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-items: start;
+        grid-template-areas: 
+        "header1 h1code"
+        "header2 h2code"
+        "paragraph paragraphcode";
+    }
 
+    .flex-dr-r {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .boxed {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+    } 
 
 }
