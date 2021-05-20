@@ -445,6 +445,10 @@ h3 {
   justify-content: center;
 }
 
+.styleguide .color__text {
+  white-space: nowrap;
+}
+
 .styleguide .colorbox2 {
   background: #292928;
 }
@@ -466,6 +470,10 @@ h3 {
   border: solid #313331 1px;
 }
 
+.styleguide .typografi_afstand {
+  padding-bottom: 3.2rem;
+}
+
 .styleguide__image {
   background-image: url("../../images/produkt-kipgryder.svg");
   background-repeat: no-repeat;
@@ -474,77 +482,77 @@ h3 {
   margin-top: 1.25rem;
 }
 
-.styleguide__logo {
+.styleguide__con {
   row-gap: 5rem;
 }
 
 @media (min-width: 40em) {
-  .styleguide__logo {
+  .styleguide__con {
     flex-direction: row;
   }
-  .styleguide__logo p {
+  .styleguide__con p {
     flex-basis: 300px;
     flex: 2;
     max-width: 42%;
   }
-  .styleguide__logo .styleguide__subcon {
+  .styleguide__con .styleguide__subcon {
     flex: 1;
     max-width: 42%;
   }
-  .styleguide__logo .logo__image {
+  .styleguide__con .logo__image {
     max-width: 60%;
   }
-  .styleguide__logo .overskrift_elm {
+  .styleguide__con .overskrift_elm {
     padding-right: 3.2rem;
   }
-  .styleguide__logo .boxed {
+  .styleguide__con .boxed {
     margin-right: 0;
   }
 }
 
 @media (min-width: 40em) and (min-width: 64em) {
-  .styleguide__logo {
+  .styleguide__con {
     flex-direction: row;
   }
-  .styleguide__logo .styleguide__subcon {
+  .styleguide__con .styleguide__subcon {
     display: flex;
     flex-wrap: nowrap;
     align-items: start;
   }
-  .styleguide__logo .logo__image {
+  .styleguide__con .logo__image {
     margin-left: auto;
     margin-right: auto;
   }
-  .styleguide__logo .boxed__logo {
+  .styleguide__con .boxed__logo {
     margin-top: 0;
     margin-left: 3.2rem;
     min-height: 100%;
   }
-  .styleguide__logo .h1code .h2code .paragraphcode {
+  .styleguide__con .h1code .h2code .paragraphcode {
     min-width: 100%;
   }
 }
 
 @media (min-width: 40em) {
-  .styleguide__logo .grid {
+  .styleguide__con .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     align-items: start;
     grid-template-areas: "header1 h1code" "header2 h2code" "paragraph paragraphcode";
   }
-  .styleguide__logo .grid__color {
+  .styleguide__con .grid__color {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     align-items: start;
     grid-template-areas: "colorbox1 colortext1" "colorbox2 colortext2" "colorbox3 colortext3" "colorbox4 colortext4" "colorbox5 colortext5" "colorbox6 colortext6";
   }
-  .styleguide__logo .flex-dr-r {
+  .styleguide__con .flex-dr-r {
     display: flex;
     flex-direction: row;
   }
-  .styleguide__logo .boxed {
+  .styleguide__con .boxed {
     margin-bottom: 5rem;
   }
 }

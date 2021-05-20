@@ -57,6 +57,10 @@
         justify-content: center;
     }
 
+    .color__text{
+    white-space: nowrap; 
+}
+
     .colorbox2{
         background:#292928;
 
@@ -77,6 +81,10 @@
         background:#F7F7F7;
         border:solid #313331 1px;
     }
+
+    .typografi_afstand{
+        padding-bottom: 3.2rem;
+    }
   
     
    &__image{
@@ -87,7 +95,7 @@
        margin-top: 1.25rem;
    }
 
-    &__logo {
+    &__con {
         row-gap: 5rem;
         @include breakpoint-up(ipad){
             flex-direction: row;
