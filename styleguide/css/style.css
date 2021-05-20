@@ -467,15 +467,16 @@ h3 {
   .styleguide__logo .styleguide__subcon {
     display: flex;
     flex-wrap: nowrap;
-    align-items: center;
+    align-items: start;
   }
   .styleguide__logo .logo__image {
     margin-left: auto;
     margin-right: auto;
   }
   .styleguide__logo .boxed {
-    margin-left: 4rem;
-    max-height: 150px;
+    margin-top: 0;
+    margin-left: 3.2rem;
+    min-height: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
