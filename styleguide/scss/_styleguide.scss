@@ -17,6 +17,7 @@
 
     .product__background{
         width: 100%;
+        
 
     }
     
@@ -34,7 +35,7 @@
         border: 1px solid #DEE2E6;
         border-radius: 10px;
         font-size: 13px;
-        font-size: 0.92857rem;
+        padding: 2rem;
         font-weight: normal;    
         display: block;
         min-height: 150px;
@@ -54,14 +55,36 @@
     .grid__color{
         display: grid;
         justify-content: center;
-        
+    }
+
+    .colorbox2{
+        background:#292928;
+
+    }
+
+    .colorbox3{
+        background:#313331;
+    }
+
+    .colorbox4{
+        background:#737373;
+    }
+
+    .colorbox5{
+        background:#ECECEC;
+    }
+    .colorbox6{
+        background:#F7F7F7;
+        border:solid #313331 1px;
     }
   
     
    &__image{
        background-image: url("../../images/produkt-kipgryder.svg");
-       height: 100px;
-       width: 100px; 
+       background-repeat: no-repeat;
+       max-width:100%;
+       height:auto;
+       margin-top: 1.25rem;
    }
 
     &__logo {

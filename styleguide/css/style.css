@@ -424,7 +424,7 @@ h3 {
   border: 1px solid #DEE2E6;
   border-radius: 10px;
   font-size: 13px;
-  font-size: 0.92857rem;
+  padding: 2rem;
   font-weight: normal;
   display: block;
   min-height: 150px;
@@ -445,10 +445,33 @@ h3 {
   justify-content: center;
 }
 
+.styleguide .colorbox2 {
+  background: #292928;
+}
+
+.styleguide .colorbox3 {
+  background: #313331;
+}
+
+.styleguide .colorbox4 {
+  background: #737373;
+}
+
+.styleguide .colorbox5 {
+  background: #ECECEC;
+}
+
+.styleguide .colorbox6 {
+  background: #F7F7F7;
+  border: solid #313331 1px;
+}
+
 .styleguide__image {
   background-image: url("../../images/produkt-kipgryder.svg");
-  height: 100px;
-  width: 100px;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: auto;
+  margin-top: 1.25rem;
 }
 
 .styleguide__logo {
