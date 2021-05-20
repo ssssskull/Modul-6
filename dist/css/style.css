@@ -600,5 +600,67 @@ h3 {
   background-image: url("../../images/footer-bg-repeat.svg");
   padding-top: 5.5rem;
   padding-bottom: 5.5rem;
+  color: #f7f7f7;
+}
+
+.footer__some h2 {
+  text-align: center;
+  max-width: 160px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: auto;
+}
+
+.footer__icons {
+  -webkit-column-gap: 4rem;
+          column-gap: 4rem;
+  margin: 5.5rem 0;
+}
+
+.footer__icons a {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+  width: 40px;
+  height: 40px;
+}
+
+.footer__icons a:nth-child(1) {
+  background-image: url(../../images/instagram-brands.svg);
+}
+
+.footer__icons a:nth-child(2) {
+  background-image: url(../../images/facebook-brands.svg);
+}
+
+.footer__icons a:nth-child(3) {
+  background-image: url(../../images/linkedin-brands.svg);
+}
+
+.footer h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.footer a,
+.footer p {
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+}
+
+.footer a:not(:last-child),
+.footer p:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 40em) {
+  .footer .flex-dr-cl {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 /*# sourceMappingURL=style.css.map */
