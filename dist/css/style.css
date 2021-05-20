@@ -54,7 +54,7 @@ p {
   line-height: 1.5;
 }
 
-@media (min-width: 47.9375em) {
+@media (min-width: 40em) {
   p {
     font-size: 20px;
     font-size: 2rem;
@@ -77,7 +77,7 @@ h1 {
   line-height: 30px;
 }
 
-@media (min-width: 47.9375em) {
+@media (min-width: 40em) {
   h1 {
     font-size: 45px;
     font-size: 4.5rem;
@@ -137,6 +137,7 @@ h3 {
   font-size: 16px;
   font-size: 1.6rem;
   font-weight: 700;
+  text-align: center;
   letter-spacing: 2px;
   line-height: 18px;
   text-transform: uppercase;
@@ -163,7 +164,7 @@ h3 {
   padding-left: 2.4rem;
 }
 
-@media (min-width: 47.9375em) {
+@media (min-width: 40em) {
   .container--pall {
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -184,7 +185,7 @@ h3 {
   padding-bottom: 2rem;
 }
 
-@media (min-width: 47.9375em) {
+@media (min-width: 40em) {
   .container--py {
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -196,7 +197,7 @@ h3 {
   padding-left: 2.4rem;
 }
 
-@media (min-width: 47.9375em) {
+@media (min-width: 40em) {
   .container--px {
     padding-left: 3.2rem;
     padding-right: 3.2rem;
@@ -253,7 +254,7 @@ h3 {
 /*======================================
 *            Synlighed            *
 ======================================*/
-@media (max-width: 47.875em) {
+@media (max-width: 63.9375em) {
   .hide-for-mobile {
     display: none;
   }
@@ -285,7 +286,7 @@ h3 {
   background-image: url("../../images/NORQI-Logo.svg");
 }
 
-@media (min-width: 47.9375em) {
+@media (min-width: 40em) {
   .header__logo {
     width: 60px;
     height: 60px;
@@ -395,25 +396,33 @@ h3 {
   top: 0;
 }
 
-.product {
+.products {
   /*TODO flyt det her til brugsanvisningen
     scroll-snap-align: start;
   */
   row-gap: 2rem;
 }
 
-.product h2 {
+.products h2 {
   text-align: center;
 }
 
-.product__container {
-  -webkit-column-gap: 5rem;
-          column-gap: 5rem;
+.products__polkabg {
+  position: absolute;
+  width: 50%;
+  height: 200px;
+  background: red;
+}
+
+.products__container {
+  position: relative;
+  -webkit-column-gap: 8rem;
+          column-gap: 8rem;
   row-gap: 6rem;
 }
 
-@media (min-width: 47.9375em) {
-  .product__container {
+@media (min-width: 40em) {
+  .products__container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -421,21 +430,35 @@ h3 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
   }
 }
 
-.product__elem {
+@media (min-width: 64em) {
+  .products__container {
+    padding-left: 6rem;
+    padding-right: 6rem;
+    -webkit-column-gap: 15rem;
+            column-gap: 15rem;
+  }
+}
+
+.products__elem {
   position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   width: 100%;
 }
 
-@media (min-width: 47.9375em) {
-  .product__elem:where(:not(:first-child)) .product__background {
+@media (min-width: 40em) {
+  .products__elem:where(:not(:first-child)) .products__background {
     background-image: none;
   }
 }
 
-.product__background {
+.products__background {
   position: absolute;
   left: 0;
   top: 105px;
@@ -446,27 +469,26 @@ h3 {
   width: 50%;
 }
 
-@media (min-width: 47.9375em) {
-  .product__background {
+@media (min-width: 40em) {
+  .products__background {
     display: none;
   }
 }
 
-.product__image {
+.products__image {
   margin: 2rem 0 4rem 0;
+  max-width: 170px;
+}
+
+@media (min-width: 64em) {
+  .products__image {
+    max-width: 360px;
+  }
+}
+
+.product__elemContent img {
   max-width: 200px;
-}
-
-@media (min-width: 47.9375em) {
-  .product__image {
-    max-width: 250px;
-  }
-}
-
-@media (min-width: 87.5em) {
-  .product__image {
-    max-width: 300px;
-  }
+  height: auto;
 }
 
 .accordion__elem {

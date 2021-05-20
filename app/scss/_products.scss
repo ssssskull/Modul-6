@@ -1,30 +1,47 @@
-.product {
+.products {
   /*TODO flyt det her til brugsanvisningen
     scroll-snap-align: start;
   */
 
+  row-gap: 2rem;
   h2 {
     text-align: center;
   }
-  row-gap: 2rem;
+
+  &__polkabg {
+    position: absolute;
+    width: 50%;
+    height: 200px;
+    background: red;
+  }
 
   &__container {
-    column-gap: 5rem;
+    position: relative;
+    column-gap: 8rem;
     row-gap: 6rem;
 
     @include breakpoint-up(ipad) {
       flex-direction: row;
       justify-content: space-between;
+      padding-left: 3.2rem;
+      padding-right: 3.2rem;
+    }
+
+    @include breakpoint-up(computer) {
+      padding-left: 6rem;
+      padding-right: 6rem;
+      column-gap: 15rem;
     }
   }
 
   &__elem {
     position: relative;
+    flex: 1;
     width: 100%;
 
     @include breakpoint-up(ipad) {
       &:where(:not(:first-child)) {
-        .product__background {
+        .products__background {
           background-image: none;
         }
       }
@@ -47,17 +64,23 @@
   }
   &__image {
     margin: 2rem 0 4rem 0;
-    max-width: 200px;
+    max-width: 170px;
 
-    @include breakpoint-up(ipad) {
-      max-width: 250px;
+    @include breakpoint-up(computer) {
+      max-width: 360px;
     }
 
-    @include breakpoint-up(largeComputer) {
-      max-width: 300px;
-      // TODO fix padding på container og kig på polka!
-      // TODO tilføj polka på selve containeren og ikke element på ipad og op --> virker ikke
-      // TODO måske lav en overlay div til containeren også brug position absolute og width 50% på den
+    // TODO fix padding på container og kig på polka!
+    // TODO tilføj polka på selve containeren og ikke element på ipad og op --> virker ikke
+    // TODO måske lav en overlay div til containeren også brug position absolute og width 50% på den
+  }
+}
+
+.product {
+  &__elemContent {
+    img {
+      max-width: 200px;
+      height: auto;
     }
   }
 }
