@@ -394,93 +394,107 @@ h3 {
   width: 100px;
 }
 
-.accordion__elem {
-  border-bottom: 1px solid rgba(0, 0, 5, 0.1);
-}
-
-.accordion__icon {
-  width: 30px;
-  height: 30px;
-  background-image: url("../../images/plus.svg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  transition: transform 0.3s ease-in-out;
-  transform: rotate(0);
-  transform-origin: center center;
-}
-
-.accordion__question {
-  padding: 1rem;
+.styleguide .overskrift {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  cursor: pointer;
 }
 
-.accordion__question:hover {
-  color: #5eb91d;
+.styleguide .overskrift_elm {
+  margin: 0;
+  padding-right: 2.4rem;
 }
 
-.accordion__question:hover .accordion__icon {
-  background-image: url("../../images/plus-hover.svg");
+.styleguide .product__elem {
+  width: 100%;
 }
 
-.accordion__title {
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: 32px;
-  font-size: 3.2rem;
-  color: inherit;
+.styleguide .product__background {
+  width: 100%;
 }
 
-.accordion__panel {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease-in-out;
+.styleguide .logo__image {
+  max-width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.accordion__panel :not(.accordion__subpanel) {
-  padding: 2rem;
+.styleguide .boxed {
+  background: rgba(219, 230, 236, 0.1);
+  border: 1px solid #DEE2E6;
+  border-radius: 10px;
+  font-size: 13px;
+  font-size: 0.92857rem;
+  font-weight: normal;
+  padding: 1em 1em;
+  display: block;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+  min-height: 150px;
 }
 
-.accordion__subtoggle {
-  cursor: pointer;
-  background-image: url("../../images/undermenu_plus.svg");
-  background-size: 12px 12px;
-  background-repeat: no-repeat;
-  background-position: left center;
+.styleguide__logo {
+  row-gap: 5rem;
 }
 
-.accordion__subtoggle--hover:hover {
-  color: #5eb91d;
-  background-image: url("../../images/undermenu_plus-hover.svg");
+@media (min-width: 40em) {
+  .styleguide__logo {
+    flex-direction: row;
+  }
+  .styleguide__logo p {
+    flex-basis: 300px;
+    flex: 2;
+    max-width: 42%;
+  }
+  .styleguide__logo .styleguide__subcon {
+    flex: 1;
+    max-width: 42%;
+  }
+  .styleguide__logo .logo__image {
+    max-width: 60%;
+  }
+  .styleguide__logo .overskrift_elm {
+    padding-right: 3.2rem;
+  }
 }
 
-.accordion__subtoggle--open {
-  background-image: url("../../images/undermenu_minus.svg");
-  color: #5eb91d;
+@media (min-width: 64em) {
+  .styleguide__logo {
+    flex-direction: row;
+  }
+  .styleguide__logo .styleguide__subcon {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: start;
+  }
+  .styleguide__logo .logo__image {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .styleguide__logo .boxed {
+    margin-top: 0;
+    margin-left: 3.2rem;
+    min-height: 100%;
+  }
 }
 
-.accordion__subpanel {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease-in-out;
-}
-
-.rotate {
-  transform: rotate(45deg);
-}
-
-.panel-open {
-  color: #5eb91d;
-  background: #ededed;
-}
-
-.panel-open .accordion__icon {
-  background-image: url("../../images/plus-hover.svg");
-}
-
-.panel-open:hover .accordion__subtoggle {
-  background-image: url("../../images/undermenu_plus-hover.svg");
+@media (min-width: 40em) {
+  .styleguide .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: start;
+    grid-template-areas: "header1 h1code" "header2 h2code" "paragraph paragraphcode";
+  }
+  .styleguide .flex-dr-r {
+    display: flex;
+    flex-direction: row;
+  }
+  .styleguide .boxed {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
