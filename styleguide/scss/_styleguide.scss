@@ -2,10 +2,22 @@
 
     .overskrift{
         display: flex;
-        align-items: center 
+        align-items: center;
+        
     }
     .overskrift_elm {
         margin: 0;
+        padding-right: 2.4rem;
+    }
+
+    .product__elem {
+        width: 100%;
+
+    }
+
+    .product__background{
+        width: 100%;
+
     }
     
     .logo__image {
@@ -28,8 +40,8 @@
         margin-top: 2rem;
         margin-left: auto;
         margin-right: auto;
-        max-width: 200px;
-        max-height: 200px;
+        max-width: 90%;
+        min-height: 150px;
 
     }
     
@@ -55,6 +67,11 @@
                 max-width: 60%;
                  
             }
+
+            .overskrift_elm {
+
+                padding-right: 3.2rem;
+            }
     }
     @include breakpoint-up(computer){
         flex-direction: row;
@@ -71,9 +88,9 @@
              
         }
         .boxed {
-            margin-left: 10px;
-            
-            
+            margin-left: 4rem;
+            max-height: 150px;
+          
         }
 
 
