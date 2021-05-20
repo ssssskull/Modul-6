@@ -426,13 +426,29 @@ h3 {
   font-size: 13px;
   font-size: 0.92857rem;
   font-weight: normal;
-  padding: 1em 1em;
   display: block;
-  margin-top: 2rem;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 90%;
   min-height: 150px;
+  margin: 2rem auto 0 auto;
+}
+
+.styleguide .colorbox {
+  border-radius: 25px;
+  background: #73AD21;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 3.2rem;
+}
+
+.styleguide .grid__color {
+  display: grid;
+  justify-content: center;
+}
+
+.styleguide__image {
+  background-image: url("../../images/produkt-kipgryder.svg");
+  height: 100px;
+  width: 100px;
 }
 
 .styleguide__logo {
@@ -458,9 +474,12 @@ h3 {
   .styleguide__logo .overskrift_elm {
     padding-right: 3.2rem;
   }
+  .styleguide__logo .boxed {
+    margin-right: 0;
+  }
 }
 
-@media (min-width: 64em) {
+@media (min-width: 40em) and (min-width: 64em) {
   .styleguide__logo {
     flex-direction: row;
   }
@@ -473,27 +492,36 @@ h3 {
     margin-left: auto;
     margin-right: auto;
   }
-  .styleguide__logo .boxed {
+  .styleguide__logo .boxed__logo {
     margin-top: 0;
     margin-left: 3.2rem;
     min-height: 100%;
   }
+  .styleguide__logo .h1code .h2code .paragraphcode {
+    min-width: 100%;
+  }
 }
 
 @media (min-width: 40em) {
-  .styleguide .grid {
+  .styleguide__logo .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     align-items: start;
     grid-template-areas: "header1 h1code" "header2 h2code" "paragraph paragraphcode";
   }
-  .styleguide .flex-dr-r {
+  .styleguide__logo .grid__color {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: start;
+    grid-template-areas: "colorbox1 colortext1" "colorbox2 colortext2" "colorbox3 colortext3" "colorbox4 colortext4" "colorbox5 colortext5" "colorbox6 colortext6";
+  }
+  .styleguide__logo .flex-dr-r {
     display: flex;
     flex-direction: row;
   }
-  .styleguide .boxed {
-    margin-top: 5rem;
+  .styleguide__logo .boxed {
     margin-bottom: 5rem;
   }
 }
