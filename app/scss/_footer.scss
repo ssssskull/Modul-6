@@ -5,6 +5,16 @@
   padding-bottom: 5.5rem;
   color: $clr-background;
 
+  &__wrapper {
+    @include breakpoint-up(ipad) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: start;
+
+      // TODO BUG flyt link containeren så de 3 elementer er på samme niveau for at lave space between
+      // TODO brug flex-wrap wrap også min-width max content på elementerne
+    }
+  }
   &__some {
     h2 {
       text-align: center;
@@ -13,11 +23,34 @@
       font-weight: bold;
       margin: auto;
     }
+
+    @include breakpoint-up(ipad) {
+      flex-direction: column-reverse;
+      align-items: end;
+
+      h2 {
+        text-align: end;
+        margin: unset;
+      }
+    }
   }
 
+  &__kontakt,
+  &__links {
+    a,
+    p {
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
   &__icons {
     column-gap: 4rem;
     margin: 5.5rem 0;
+
+    @include breakpoint-up(ipad) {
+      margin: 5.5rem 0 0 0;
+    }
     a {
       background-repeat: no-repeat;
       background-size: 100% 100%;
@@ -48,15 +81,5 @@
     font-size: $font-p-ipad-fallback;
     font-size: $font-p-ipad;
     line-height: 1.8rem;
-
-    &:not(:last-child) {
-      margin-bottom: 1rem;
-    }
-  }
-
-  @include breakpoint-up(ipad) {
-    .flex-dr-cl {
-      flex-direction: row;
-    }
   }
 }

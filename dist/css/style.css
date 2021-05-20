@@ -603,6 +603,21 @@ h3 {
   color: #f7f7f7;
 }
 
+@media (min-width: 40em) {
+  .footer__wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+}
+
 .footer__some h2 {
   text-align: center;
   max-width: 160px;
@@ -611,10 +626,38 @@ h3 {
   margin: auto;
 }
 
+@media (min-width: 40em) {
+  .footer__some {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+  }
+  .footer__some h2 {
+    text-align: end;
+    margin: unset;
+  }
+}
+
+.footer__kontakt a:not(:last-child),
+.footer__kontakt p:not(:last-child), .footer__links a:not(:last-child),
+.footer__links p:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
 .footer__icons {
   -webkit-column-gap: 4rem;
           column-gap: 4rem;
   margin: 5.5rem 0;
+}
+
+@media (min-width: 40em) {
+  .footer__icons {
+    margin: 5.5rem 0 0 0;
+  }
 }
 
 .footer__icons a {
@@ -648,19 +691,5 @@ h3 {
   font-size: 16px;
   font-size: 1.6rem;
   line-height: 1.8rem;
-}
-
-.footer a:not(:last-child),
-.footer p:not(:last-child) {
-  margin-bottom: 1rem;
-}
-
-@media (min-width: 40em) {
-  .footer .flex-dr-cl {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
 }
 /*# sourceMappingURL=style.css.map */
