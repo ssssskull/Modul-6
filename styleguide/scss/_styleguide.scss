@@ -96,13 +96,18 @@
    }
 
   &__productimage{
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+    margin: 2rem auto 0 auto;
+    display: grid;
+    justify-content: center;
 
-    max-width: 80%;
-    height: auto;
   }
 
   .test__productimage{
-      max-height: 100px;
+    width: 100%;
+    height: 200px;
   }
 
     &__con {
@@ -136,6 +141,13 @@
                 margin-right: 0;
                 
             }
+
+            .styleguide__productimage{
+                margin:2rem auto 0 0;
+            }
+
+        
+            
     @include breakpoint-up(computer){
         flex-direction: row;
 
@@ -154,6 +166,7 @@
         .h1code .h2code .paragraphcode {
             min-width: 100%;
         }
+        
     }
  }
 
@@ -193,7 +206,11 @@
     .boxed {
         margin-bottom: 5rem;
     }
+
+   
     } 
+
+   
 
    
 }
