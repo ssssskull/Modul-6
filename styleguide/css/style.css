@@ -424,76 +424,147 @@ h3 {
   border: 1px solid #DEE2E6;
   border-radius: 10px;
   font-size: 13px;
-  font-size: 0.92857rem;
+  padding: 2rem;
   font-weight: normal;
-  padding: 1em 1em;
   display: block;
-  margin-top: 2rem;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 90%;
   min-height: 150px;
+  margin: 2rem auto 0 auto;
 }
 
-.styleguide__logo {
+.styleguide .colorbox {
+  border-radius: 25px;
+  background: #73AD21;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 3.2rem;
+}
+
+.styleguide .grid__color {
+  display: grid;
+  justify-content: center;
+}
+
+.styleguide .color__text {
+  white-space: nowrap;
+}
+
+.styleguide .colorbox2 {
+  background: #292928;
+}
+
+.styleguide .colorbox3 {
+  background: #313331;
+}
+
+.styleguide .colorbox4 {
+  background: #737373;
+}
+
+.styleguide .colorbox5 {
+  background: #ECECEC;
+}
+
+.styleguide .colorbox6 {
+  background: #F7F7F7;
+  border: solid #313331 1px;
+}
+
+.styleguide .typografi_afstand {
+  padding-bottom: 3.2rem;
+}
+
+.styleguide__image {
+  background-image: url("../../images/produkt-kipgryder.svg");
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: auto;
+  margin-top: 1.25rem;
+}
+
+.styleguide__productimage {
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
+  margin: 2rem auto 0 auto;
+  display: grid;
+  justify-content: center;
+}
+
+.styleguide .test__productimage {
+  width: 100%;
+  height: 200px;
+}
+
+.styleguide__con {
   row-gap: 5rem;
 }
 
 @media (min-width: 40em) {
-  .styleguide__logo {
+  .styleguide__con {
     flex-direction: row;
   }
-  .styleguide__logo p {
+  .styleguide__con p {
     flex-basis: 300px;
     flex: 2;
-    max-width: 42%;
+    max-width: 50%;
   }
-  .styleguide__logo .styleguide__subcon {
+  .styleguide__con .styleguide__subcon {
     flex: 1;
-    max-width: 42%;
+    max-width: 50%;
   }
-  .styleguide__logo .logo__image {
+  .styleguide__con .logo__image {
     max-width: 60%;
   }
-  .styleguide__logo .overskrift_elm {
+  .styleguide__con .overskrift_elm {
     padding-right: 3.2rem;
+  }
+  .styleguide__con .boxed {
+    margin-right: 0;
+  }
+  .styleguide__con .styleguide__productimage {
+    margin: 2rem auto 0 0;
   }
 }
 
-@media (min-width: 64em) {
-  .styleguide__logo {
+@media (min-width: 40em) and (min-width: 64em) {
+  .styleguide__con {
     flex-direction: row;
   }
-  .styleguide__logo .styleguide__subcon {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: start;
-  }
-  .styleguide__logo .logo__image {
+  .styleguide__con .logo__image {
     margin-left: auto;
     margin-right: auto;
   }
-  .styleguide__logo .boxed {
+  .styleguide__con .boxed__logo {
     margin-top: 0;
     margin-left: 3.2rem;
     min-height: 100%;
   }
+  .styleguide__con .h1code .h2code .paragraphcode {
+    min-width: 100%;
+  }
 }
 
 @media (min-width: 40em) {
-  .styleguide .grid {
+  .styleguide__con .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     align-items: start;
     grid-template-areas: "header1 h1code" "header2 h2code" "paragraph paragraphcode";
   }
-  .styleguide .flex-dr-r {
+  .styleguide__con .grid__color {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: start;
+    grid-template-areas: "colorbox1 colortext1" "colorbox2 colortext2" "colorbox3 colortext3" "colorbox4 colortext4" "colorbox5 colortext5" "colorbox6 colortext6";
+  }
+  .styleguide__con .flex-dr-r {
     display: flex;
     flex-direction: row;
   }
-  .styleguide .boxed {
-    margin-top: 5rem;
+  .styleguide__con .boxed {
     margin-bottom: 5rem;
   }
 }
