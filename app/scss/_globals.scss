@@ -1,6 +1,10 @@
 /*======================================
 *         Generelle regler         *
 ======================================*/
+html,
+body {
+  scroll-snap-type: y proximity;
+}
 html {
   scroll-behavior: smooth;
   font-size: 62.5%;
@@ -11,6 +15,9 @@ body {
   background-color: $clr-background;
 }
 
+text {
+  pointer-events: none;
+}
 /*======================================
 *            Typografi            *
 ======================================*/
@@ -98,9 +105,10 @@ h3 {
   box-shadow: none;
   border: none;
   border-radius: 50px;
-  font-size: 18px;
-  font-size: 1.8rem;
+  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 700;
+  text-align: center;
   letter-spacing: 2px;
   line-height: 18px;
   // TODO dynamic line-height

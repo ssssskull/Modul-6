@@ -16,6 +16,12 @@
 /*======================================
 *         Generelle regler         *
 ======================================*/
+html,
+body {
+  -ms-scroll-snap-type: y proximity;
+      scroll-snap-type: y proximity;
+}
+
 html {
   scroll-behavior: smooth;
   font-size: 62.5%;
@@ -24,6 +30,10 @@ html {
 
 body {
   background-color: #f7f7f7;
+}
+
+text {
+  pointer-events: none;
 }
 
 /*======================================
@@ -39,15 +49,15 @@ a {
 /* Paragraf
     ============================ */
 p {
-  font-size: 16px;
-  font-size: 1.6rem;
+  font-size: 20px;
+  font-size: 2rem;
   line-height: 1.5;
 }
 
 @media (min-width: 40em) {
   p {
-    font-size: 20px;
-    font-size: 2rem;
+    font-size: 30px;
+    font-size: 3rem;
   }
 }
 
@@ -122,9 +132,10 @@ h3 {
   box-shadow: none;
   border: none;
   border-radius: 50px;
-  font-size: 18px;
-  font-size: 1.8rem;
+  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 700;
+  text-align: center;
   letter-spacing: 2px;
   line-height: 18px;
   text-transform: uppercase;
@@ -310,8 +321,8 @@ h3 {
 .header__menu li a {
   display: inline-block;
   position: relative;
-  font-size: 20px;
-  font-size: 2rem;
+  font-size: 30px;
+  font-size: 3rem;
   color: #f7f7f7;
   padding: 2rem;
   width: 100%;
@@ -340,8 +351,8 @@ h3 {
 
 .header__right {
   color: #f7f7f7;
-  font-size: 20px;
-  font-size: 2rem;
+  font-size: 30px;
+  font-size: 3rem;
   font-weight: 500;
 }
 
@@ -363,35 +374,99 @@ h3 {
   top: 0;
 }
 
-.product {
+.products {
+  /*TODO flyt det her til brugsanvisningen
+    scroll-snap-align: start;
+  */
   row-gap: 2rem;
 }
 
-.product__container {
-  row-gap: 3rem;
+.products h2 {
+  text-align: center;
 }
 
-.product__elem {
-  position: relative;
-}
-
-.product__background {
-  min-width: 230px;
-  background-image: url("../../images/polka-pattern3x7.svg");
-  background-repeat: repeat-x;
-  background-size: contain;
-  width: 60%;
-  height: 100px;
-}
-
-.product__image {
-  top: 0%;
-  /*left: 50%;
-    transform: translate(-50%, -50%);*/
+.products__polkabg {
   position: absolute;
-  background-image: url("../../images/produkt-kipgryder.svg");
-  height: 100px;
-  width: 100px;
+  width: 50%;
+  height: 200px;
+  background: red;
+}
+
+.products__container {
+  position: relative;
+  -webkit-column-gap: 8rem;
+          column-gap: 8rem;
+  row-gap: 6rem;
+}
+
+@media (min-width: 40em) {
+  .products__container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .products__container {
+    padding-left: 6rem;
+    padding-right: 6rem;
+    -webkit-column-gap: 15rem;
+            column-gap: 15rem;
+  }
+}
+
+.products__elem {
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+}
+
+@media (min-width: 40em) {
+  .products__elem:where(:not(:first-child)) .products__background {
+    background-image: none;
+  }
+}
+
+.products__background {
+  position: absolute;
+  left: 0;
+  top: 105px;
+  z-index: -1;
+  background-image: url("../../images/polka-pattern3x7.svg");
+  background-size: contain;
+  height: 150px;
+  width: 50%;
+}
+
+@media (min-width: 40em) {
+  .products__background {
+    display: none;
+  }
+}
+
+.products__image {
+  margin: 2rem 0 4rem 0;
+  max-width: 170px;
+}
+
+@media (min-width: 64em) {
+  .products__image {
+    max-width: 360px;
+  }
+}
+
+.product__elemContent img {
+  max-width: 200px;
+  height: auto;
 }
 
 .accordion__elem {
@@ -482,5 +557,128 @@ h3 {
 
 .panel-open:hover .accordion__subtoggle {
   background-image: url("../../images/undermenu_plus-hover.svg");
+}
+
+.footer {
+  background-color: #5eb91d;
+  background-image: url("../../images/footer-bg-repeat.svg");
+  color: #f7f7f7;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+@media (min-width: 40em) {
+  .footer {
+    padding-top: 11.5rem;
+    padding-bottom: 7.5rem;
+  }
+}
+
+.footer__wrapper {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 4rem;
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
+}
+
+.footer__wrapper div {
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+}
+
+.footer__wrapper div:last-child {
+  min-width: 100%;
+}
+
+@media (min-width: 40em) {
+  .footer__wrapper div:last-child {
+    min-width: -webkit-max-content;
+    min-width: -moz-max-content;
+    min-width: max-content;
+  }
+}
+
+@media (min-width: 40em) {
+  .footer__wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+}
+
+.footer__some h2 {
+  text-align: start;
+  max-width: 160px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+@media (min-width: 40em) {
+  .footer__some {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+  }
+  .footer__some h2 {
+    text-align: end;
+    margin: unset;
+  }
+}
+
+.footer__kontakt a:not(:last-child),
+.footer__kontakt p:not(:last-child), .footer__links a:not(:last-child),
+.footer__links p:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.footer__icons {
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
+  margin: 2rem 0 0 0;
+}
+
+.footer__icons a {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+  width: 40px;
+  height: 40px;
+}
+
+.footer__icons a:nth-child(1) {
+  background-image: url(../../images/instagram-brands.svg);
+}
+
+.footer__icons a:nth-child(2) {
+  background-image: url(../../images/facebook-brands.svg);
+}
+
+.footer__icons a:nth-child(3) {
+  background-image: url(../../images/linkedin-brands.svg);
+}
+
+.footer h3 {
+  text-transform: uppercase;
+  color: #366714;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  font-size: 28px;
+  font-size: 2.8rem;
+}
+
+.footer a,
+.footer p {
+  font-size: 20px;
+  font-size: 2rem;
+  line-height: 1.8rem;
 }
 /*# sourceMappingURL=style.css.map */
