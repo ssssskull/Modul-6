@@ -396,6 +396,57 @@ h3 {
   top: 0;
 }
 
+.hero {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  color: #F7F7F7;
+}
+
+.hero h1 {
+  font-size: 50px;
+}
+
+@media (min-width: 40em) {
+  .hero h1 {
+    font-size: 8rem;
+    margin-bottom: 3rem;
+    max-width: 60rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .hero h1 {
+    font-size: 8rem;
+    max-width: 80rem;
+  }
+}
+
+@media (min-width: 40em) {
+  .hero p {
+    font-size: 3rem;
+    max-width: 60rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .hero p {
+    font-size: 4rem;
+    max-width: 80rem;
+  }
+}
+
+.hero__info {
+  padding-top: 37vh;
+}
+
+.hero__bg {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../../images/Hero-desktop.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 .products {
   /*TODO flyt det her til brugsanvisningen
     scroll-snap-align: start;

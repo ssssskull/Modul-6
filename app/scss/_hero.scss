@@ -1,0 +1,41 @@
+.hero{
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 700;
+    color: #F7F7F7;
+    h1{
+        font-size: 50px;
+        @include breakpoint-up(ipad){
+            font-size: 8rem;
+            margin-bottom: 3rem;
+            max-width: 60rem;
+        }
+        @include breakpoint-up(computer){
+            font-size: 8rem;
+            max-width: 80rem;
+        }
+    }
+
+    p{  
+        @include breakpoint-up(ipad){
+            font-size: 3rem;
+            max-width: 60rem;
+        }
+        @include breakpoint-up(computer){
+            font-size: 4rem;
+            max-width: 80rem;
+        }
+    }
+
+    &__info {
+        padding-top: 37vh;
+    }
+
+    &__bg {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../../images/Hero-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    }
+}
+
