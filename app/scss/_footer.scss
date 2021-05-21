@@ -1,14 +1,35 @@
 .footer {
   background-color: $clr-primary-green;
   background-image: url("../../images/footer-bg-repeat.svg");
-  padding-top: 5.5rem;
-  padding-bottom: 5.5rem;
   color: $clr-background;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+
+  @include breakpoint-up(ipad) {
+    padding-top: 11.5rem;
+    padding-bottom: 7.5rem;
+  }
 
   &__wrapper {
+    flex-wrap: wrap;
+    row-gap: 4rem;
+    column-gap: 2rem;
+
+    // TODO kig på afstande: flex 1, flex 1, flex 2
+    div {
+      min-width: max-content;
+
+      &:last-child {
+        min-width: 100%;
+
+        @include breakpoint-up(ipad) {
+          min-width: max-content;
+        }
+      }
+    }
+
     @include breakpoint-up(ipad) {
       flex-direction: row;
-      justify-content: space-between;
       align-items: start;
 
       // TODO BUG flyt link containeren så de 3 elementer er på samme niveau for at lave space between
@@ -17,15 +38,13 @@
   }
   &__some {
     h2 {
-      text-align: center;
+      text-align: start;
       max-width: 160px;
       text-transform: uppercase;
       font-weight: bold;
-      margin: auto;
     }
 
     @include breakpoint-up(ipad) {
-      flex-direction: column-reverse;
       align-items: end;
 
       h2 {
@@ -45,12 +64,10 @@
     }
   }
   &__icons {
-    column-gap: 4rem;
-    margin: 5.5rem 0;
+    max-width: max-content;
+    column-gap: 2rem;
+    margin: 2rem 0 0 0;
 
-    @include breakpoint-up(ipad) {
-      margin: 5.5rem 0 0 0;
-    }
     a {
       background-repeat: no-repeat;
       background-size: 100% 100%;
@@ -72,8 +89,11 @@
 
   h3 {
     text-transform: uppercase;
+    color: $clr-secondary-green;
     font-weight: bold;
     margin-bottom: 2rem;
+    font-size: 28px;
+    font-size: 2.8rem;
   }
 
   a,
