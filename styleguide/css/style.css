@@ -482,6 +482,15 @@ h3 {
   margin-top: 1.25rem;
 }
 
+.styleguide__productimage {
+  max-width: 80%;
+  height: auto;
+}
+
+.styleguide .test__productimage {
+  max-height: 100px;
+}
+
 .styleguide__con {
   row-gap: 5rem;
 }
@@ -493,11 +502,11 @@ h3 {
   .styleguide__con p {
     flex-basis: 300px;
     flex: 2;
-    max-width: 42%;
+    max-width: 50%;
   }
   .styleguide__con .styleguide__subcon {
     flex: 1;
-    max-width: 42%;
+    max-width: 50%;
   }
   .styleguide__con .logo__image {
     max-width: 60%;
@@ -513,11 +522,6 @@ h3 {
 @media (min-width: 40em) and (min-width: 64em) {
   .styleguide__con {
     flex-direction: row;
-  }
-  .styleguide__con .styleguide__subcon {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: start;
   }
   .styleguide__con .logo__image {
     margin-left: auto;
