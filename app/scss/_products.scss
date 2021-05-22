@@ -77,10 +77,30 @@
 }
 
 .product {
-  &__elemContent {
+  &__elem {
+    //background-image: url("../../images/pattern-polka.svg");
+  }
+
+  &__elemPolka {
+    position: absolute;
+    right: 0;
+    // TODO: ide: 3 elementer ved siden af hinanden og 2 visibility hidden
+    background-image: url("../../images/polka-pattern3x7.svg");
+    background-size: contain;
+    max-width: 50%;
+    height: auto;
+    width: 100%;
+    margin-left: auto;
+
     img {
-      max-width: 170px;
+      flex-basis: 150px;
+      margin-left: -85px;
+      max-width: 150px;
       height: auto;
+
+      @include breakpoint-up(computer) {
+        max-width: 360px;
+      }
     }
   }
 }

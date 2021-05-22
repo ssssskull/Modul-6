@@ -485,9 +485,29 @@ h3 {
   }
 }
 
-.product__elemContent img {
-  max-width: 170px;
+.product__elemPolka {
+  position: absolute;
+  right: 0;
+  background-image: url("../../images/polka-pattern3x7.svg");
+  background-size: contain;
+  max-width: 50%;
   height: auto;
+  width: 100%;
+  margin-left: auto;
+}
+
+.product__elemPolka img {
+  -ms-flex-preferred-size: 150px;
+      flex-basis: 150px;
+  margin-left: -85px;
+  max-width: 150px;
+  height: auto;
+}
+
+@media (min-width: 64em) {
+  .product__elemPolka img {
+    max-width: 360px;
+  }
 }
 
 .accordion__elem {
