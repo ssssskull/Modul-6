@@ -370,8 +370,8 @@ h3 {
 
 .header__right {
   color: #f7f7f7;
-  font-size: 30px;
-  font-size: 3rem;
+  font-size: 20px;
+  font-size: 2rem;
   font-weight: 500;
 }
 
@@ -486,7 +486,7 @@ h3 {
 }
 
 .product__elemContent img {
-  max-width: 200px;
+  max-width: 170px;
   height: auto;
 }
 
