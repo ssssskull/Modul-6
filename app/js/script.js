@@ -27,8 +27,6 @@ const btnHamburger = document.querySelector("#btnHamburger");
 const headerMenu = document.querySelector(".header__menu");
 const languageElem = document.querySelector(".header__language");
 
-body.style.padding = `${header.clientHeight}px 0 0 0`;
-
 btnHamburger.addEventListener("click", function () {
   if (header.classList.contains("open")) {
     /* Luk hamburger menu
@@ -81,9 +79,8 @@ for (let i = 0; i < accordionSubquestions.length; i++) {
       accordionSubpanel.style.maxHeight = null;
     } else {
       accordionSubpanel.style.maxHeight = `${accordionSubpanel.scrollHeight}px`;
-      accordionPanel.style.maxHeight = `${
-        accordionSubpanel.scrollHeight + accordionPanel.scrollHeight
-      }px`;
+      accordionPanel.style.maxHeight = `${accordionSubpanel.scrollHeight + accordionPanel.scrollHeight
+        }px`;
     }
   });
 }

@@ -4,6 +4,7 @@
     color: #F7F7F7;
     h1{
         font-size: 50px;
+        margin-bottom: 2rem;
         @include breakpoint-up(ipad){
             font-size: 8rem;
             margin-bottom: 3rem;
@@ -37,6 +38,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     }
+
 }
 
 
