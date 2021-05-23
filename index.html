@@ -151,33 +151,7 @@
         </div>
       </div>
       <div class="accordion container--px">
-        <div class="accordion__elem">
-          <div class="accordion__question">
-            <p class="accordion__title">Generelt</p>
-            <span class="accordion__icon"></span>
-          </div>
-          <div class="products__elem flex flex-dr-cl flex-ai-c">
-            <h3>Kipstegere</h3>
-            <div class="products__background"></div>
-            <img class="products__image" src="images/produkt-kipstegere.svg" />
-            <a href="#" class="btn-primary products__button">Læs mere</a>
-          </div>
-          <div class="products__elem flex flex-dr-cl flex-ai-c">
-            <h3>Kogeborde</h3>
-            <div class="products__background"></div>
-            <img class="products__image" src="images/produkt-kogeborde.svg" />
-            <a href="#" class="btn-primary products__button">Læs mere</a>
-          </div>
-        </div>
         <!-- TODO der skal være 1 outer div, 1 div der er position absolute og en container for de 3 elementer -->
-        <div class="product__container container--main">
-          <div class="product__elem container container--px flex flex-dr-cl">
-            <h2>Induktions Kipgryde</h2>
-            <div class="product__elemPolka flex">
-              <img src="images/produkt-kipgryder.svg" />
-            </div>
-          </div>
-        </div>
       </div>
       <div class="accordion container--px">
         <div class="accordion__elem">
@@ -192,14 +166,28 @@
             <div class="accordion__subpanel">
               <p>⚠️Lad aldrig gryden stå tændt uden opsyn.</p>
               <p>⚠️ Gryden må maksimalt fyldes til 40 mm under overkant.</p>
-              <p>⚠️ Der må ikke benyttes fedt eller madolie uden opsyn, da der er fare for brand.</p>
-              <p>⚠️ Lad stærkt saltholdige ingredienser blive i gryden i så kort tid som muligt. Salt har korrosiv indvirkning på det rustfrie stål.</p>
-              <p>⚠️ En evt. brand i olie eller fedt må aldrig slukkes med vand. Sluk for varmen, luk låget eller dæk med brandtæppe.</p>
-              <p class="container--py">
-                Tænd for forsyningsspændingen på forsyningsadskilleren.
-                Drej håndtaget så det står lodret, og den hvide pil vender opad.
+              <p>
+                ⚠️ Der må ikke benyttes fedt eller madolie uden opsyn, da der er
+                fare for brand.
               </p>
-              <img src="../images/forsyning.svg" alt="" class="menu__imgcenter container--py">
+              <p>
+                ⚠️ Lad stærkt saltholdige ingredienser blive i gryden i så kort
+                tid som muligt. Salt har korrosiv indvirkning på det rustfrie
+                stål.
+              </p>
+              <p>
+                ⚠️ En evt. brand i olie eller fedt må aldrig slukkes med vand.
+                Sluk for varmen, luk låget eller dæk med brandtæppe.
+              </p>
+              <p class="container--py">
+                Tænd for forsyningsspændingen på forsyningsadskilleren. Drej
+                håndtaget så det står lodret, og den hvide pil vender opad.
+              </p>
+              <img
+                src="../images/forsyning.svg"
+                alt=""
+                class="menu__imgcenter container--py"
+              />
             </div>
             <h3 class="accordion__subtoggle accordion__subtoggle--hover">
               Trykknappanel
@@ -207,33 +195,40 @@
             <div class="accordion__subpanel">
               <div class="container--py trykknappanel__start">
                 <p>Startknap:</p>
-                 <p>
-                  Startknappen starter gryden. Når knappen lyser hvidt, er gryden tændt. 
-                   Der går ca. 30 sekunder før systemet og dermed skærmen er klar til drift.</p>
-               </div>
-               <div class="container--py trykknappanel__stop">
-                 <p>Stopknap:</p>
-                 <p>
-                   Stopknappen slukker for alt i gryden.
-                 </p>
-               </div>
-               <div class="container--py trykknappanel__slowmix">
-                 <p>Slowmixknap:</p>
-                 <p>
-                   Slowmixeren er ekstraudstyr. Med den kan du omrøre med begrænset hastighed, når låget er åbent. Omrøreren kører så længe der holdes på knappen med begrænset hastighed maks. 20 o/min. 
-                   SlowMix-hastigheden indstilles i brugermenuen (5-20 o/min).
-                 </p>
-               </div>
-               <div class="container--py trykknappanel__buzzer">
+                <p>
+                  Startknappen starter gryden. Når knappen lyser hvidt, er
+                  gryden tændt. Der går ca. 30 sekunder før systemet og dermed
+                  skærmen er klar til drift.
+                </p>
+              </div>
+              <div class="container--py trykknappanel__stop">
+                <p>Stopknap:</p>
+                <p>Stopknappen slukker for alt i gryden.</p>
+              </div>
+              <div class="container--py trykknappanel__slowmix">
+                <p>Slowmixknap:</p>
+                <p>
+                  Slowmixeren er ekstraudstyr. Med den kan du omrøre med
+                  begrænset hastighed, når låget er åbent. Omrøreren kører så
+                  længe der holdes på knappen med begrænset hastighed maks. 20
+                  o/min. SlowMix-hastigheden indstilles i brugermenuen (5-20
+                  o/min).
+                </p>
+              </div>
+              <div class="container--py trykknappanel__buzzer">
                 <p>Buzzer/lydgiver:</p>
                 <p>
-                  Giver lyd i forbindelse med tidsfunktioner og programmer. 
-                  Kan være placeret bag frontpladen.
+                  Giver lyd i forbindelse med tidsfunktioner og programmer. Kan
+                  være placeret bag frontpladen.
                 </p>
-               </div>
-               <!-- TODO: Fix img-str -->
-               <img src="../images/knappanel.svg" alt="" class="menu__imgcenter container--py">
-             </div>
+              </div>
+              <!-- TODO: Fix img-str -->
+              <img
+                src="../images/knappanel.svg"
+                alt=""
+                class="menu__imgcenter container--py"
+              />
+            </div>
           </div>
         </div>
         <div class="accordion__elem">
@@ -247,180 +242,265 @@
             </h3>
             <div class="accordion__subpanel">
               <p class="container--py">Hovedmenu med omrører:</p>
-              <img src="../images/hovedmenuomrorer.svg" alt="" class="menu__imgcenter container--py">
+              <img
+                src="../images/hovedmenuomrorer.svg"
+                alt=""
+                class="menu__imgcenter container--py"
+              />
               <p class="container--py">
-                Den grønne ring om madtemperaturen angiver, at temperaturen styres efter denne.
+                Den grønne ring om madtemperaturen angiver, at temperaturen
+                styres efter denne.
               </p>
               <p class="container--py">Hovedmenu uden omrører:</p>
-              <img src="../images/hovedmenuudenomrorer.svg" alt="" class="menu__imgcenter container--py">
+              <img
+                src="../images/hovedmenuudenomrorer.svg"
+                alt=""
+                class="menu__imgcenter container--py"
+              />
               <p class="container--py">
-                Hovedmenuen uden omrører har samme funktioner som ovenfor foruden omrører.
-                Når der ikke er omrører i gryden, er madtemperaturen også fjernet ifm. automatiske programmer.
+                Hovedmenuen uden omrører har samme funktioner som ovenfor
+                foruden omrører. Når der ikke er omrører i gryden, er
+                madtemperaturen også fjernet ifm. automatiske programmer.
               </p>
             </div>
             <h3 class="accordion__subtoggle accordion__subtoggle--hover">
               Undermenu – Varme
             </h3>
             <div class="accordion__subpanel">
-              <img src="../images/varmemenu.svg" alt="" class="menu__imgcenter container--py">
+              <img
+                src="../images/varmemenu.svg"
+                alt=""
+                class="menu__imgcenter container--py"
+              />
               <p class="container--py">
-                For at komme i undermenuen, tastes et vilkårligt sted på varmemenuen 
-                – eksempelvis på feltet for aktuel temperatur på bunden.
+                For at komme i undermenuen, tastes et vilkårligt sted på
+                varmemenuen – eksempelvis på feltet for aktuel temperatur på
+                bunden.
               </p>
               <p class="container--py">
-                Her indstilles ønsket temperatur på bunden af gryden, 
-                ønsket madtemperatur eller ønsket varmetrin:
+                Her indstilles ønsket temperatur på bunden af gryden, ønsket
+                madtemperatur eller ønsket varmetrin:
               </p>
               <div class="flex flex-jc-sb menu__columngap">
-               <img src="../images/bundtemperatur.svg" alt="" class="menu__ikon">
-               <div>
-                <p>Bundtemperatur:</p>
-                <p class="container--py">
-                  Der varmes med fuld effekt, indtil et stykke tid før den ønskede temperatur på grydebunden opnås. 
-                  Gryden justerer selv effekten det sidste stykke – sådan undgår vi oversving i temperaturen.
-               </p>
-               <p class="container--py">
-                 Vær opmærksom på, at når der varmes med fuld effekt, bliver bunden meget varm. 
-                 Der er risiko for, at maden brænder på, så her er det smart at anvende omrører.
-                </p>
-               </div>
+                <img
+                  src="../images/bundtemperatur.svg"
+                  alt=""
+                  class="menu__ikon"
+                />
+                <div>
+                  <p>Bundtemperatur:</p>
+                  <p class="container--py">
+                    Der varmes med fuld effekt, indtil et stykke tid før den
+                    ønskede temperatur på grydebunden opnås. Gryden justerer
+                    selv effekten det sidste stykke – sådan undgår vi oversving
+                    i temperaturen.
+                  </p>
+                  <p class="container--py">
+                    Vær opmærksom på, at når der varmes med fuld effekt, bliver
+                    bunden meget varm. Der er risiko for, at maden brænder på,
+                    så her er det smart at anvende omrører.
+                  </p>
+                </div>
               </div>
               <div class="flex flex-jc-sb menu__columngap">
-                <img src="../images/madtemperatur.svg" alt="" class="menu__ikon">
+                <img
+                  src="../images/madtemperatur.svg"
+                  alt=""
+                  class="menu__ikon"
+                />
                 <div>
-                 <p>Madtemperatur:</p>
-                 <p class="container--py">
-                  En sensor på ydersiden af grydekroppen måler temperaturen i maden. 
-                  Da det er en indirekte måling vil visningen altid være 3-6° bagefter. 
-                  Det er en forudsætning, at omrøreren skal køre, for at funktionen virker.
-                 </p>
+                  <p>Madtemperatur:</p>
+                  <p class="container--py">
+                    En sensor på ydersiden af grydekroppen måler temperaturen i
+                    maden. Da det er en indirekte måling vil visningen altid
+                    være 3-6° bagefter. Det er en forudsætning, at omrøreren
+                    skal køre, for at funktionen virker.
+                  </p>
+                  <p class="container--py">
+                    Når madtemperatur er valgt, er det denne temperatur, der
+                    styrer opvarmningen. Opvarmningen fortsætter indtil den
+                    valgte madtemperatur opnås, og derefter vil systemet overgå
+                    til vedligehold. Det vil sige, at temperaturen bibeholdes
+                    ved kun at tilføre lidt effekt ad gangen.
+                  </p>
+                </div>
+              </div>
+              <div class="flex flex-jc-sb menu__columngap">
+                <img src="../images/opvarmning.svg" alt="" class="menu__ikon" />
+                <div>
+                  <p>Skånsom opvarmning:</p>
+                  <p class="container--py">
+                    Opvarmning med varmetrin. Den ønskede temperatur på bunden
+                    øges gradvist afhængigt af valgt varmetrin (0-10) – jo
+                    højere tal, jo hurtigere opvarmning. Det vil sige, at bunden
+                    kan opvarmes skånsomt alt efter ønske.
+                  </p>
+                </div>
+              </div>
+              <p class="container--py">
+                Ikonet for den valgte opvarmningsmetode bliver sort, når
+                funktionen er valgt.
+              </p>
+              <p class="container--py">
+                Grader eller varmetrin kan angives med piletasterne eller ved
+                tryk på det numeriske tastatur.
+              </p>
+              <p class="container--py">
+                Gryden kan kun varme, når den står vandret. Hvis gryden ikke
+                står vandret, når varmen tændes, popper en advarsel op.
+              </p>
+              <!-- TODO Fix ikoner -->
+              <div class="flex flex-ai-c menu__columngap">
+                <img src="../images/gryderetur.svg" alt="" class="menu__ikon" />
+                <p class="container--py">Advarsel: Kip gryde retur.</p>
+                <p></p>
+              </div>
+
+              <div class="flex flex-ai-c menu__columngap">
+                <div class="container__cross">
+                  <img
+                    src="../images/cross.svg"
+                    alt=""
+                    class="menu__ikon container__crossimg"
+                  />
+                </div>
                 <p class="container--py">
-                  Når madtemperatur er valgt, er det denne temperatur, der styrer opvarmningen. 
-                  Opvarmningen fortsætter indtil den valgte madtemperatur opnås, og derefter vil systemet overgå til vedligehold. 
-                  Det vil sige, at temperaturen bibeholdes ved kun at tilføre lidt effekt ad gangen.
+                  Retur til hovedmenuen, hvor varmen tændes med
+                  start/stop-tasten.
                 </p>
-                </div>
-               </div>
-               <div class="flex flex-jc-sb menu__columngap">
-                <img src="../images/opvarmning.svg" alt="" class="menu__ikon">
-                <div>
-                 <p>Skånsom opvarmning:</p>
-                 <p class="container--py">
-                  Opvarmning med varmetrin. 
-                  Den ønskede temperatur på bunden øges gradvist afhængigt af valgt varmetrin (0-10) 
-                  – jo højere tal, jo hurtigere opvarmning. 
-                  Det vil sige, at bunden kan opvarmes skånsomt alt efter ønske.
-                 </p>
-                </div>
-               </div>
-               <p class="container--py">Ikonet for den valgte opvarmningsmetode bliver sort, når funktionen er valgt.</p>
-               <p class="container--py">Grader eller varmetrin kan angives med piletasterne eller ved tryk på det numeriske tastatur.</p>
-               <p class="container--py">Gryden kan kun varme, når den står vandret. Hvis gryden ikke står vandret, når varmen tændes, popper en advarsel op.</p>
-               <!-- TODO Fix ikoner -->
-               <div class="flex flex-ai-c menu__columngap">
-                <img src="../images/gryderetur.svg" alt="" class="menu__ikon">
-                 <p class="container--py">Advarsel: Kip gryde retur.<p>
-               </div> 
-               <div class="flex flex-ai-c menu__columngap">
-                 <div class="container__cross">
-                  <img src="../images/cross.svg" alt="" class="menu__ikon container__crossimg">
-                 </div>
-                 <p class="container--py">
-                   Retur til hovedmenuen, hvor varmen tændes med start/stop-tasten.
-                 <p>
-               </div> 
+
+                <p></p>
+              </div>
             </div>
             <h3 class="accordion__subtoggle accordion__subtoggle--hover">
               Undermenu – Vand
             </h3>
             <div class="accordion__subpanel">
-              <img src="../images/vandmenu.svg" alt="" class="menu__imgcenter container--py">
+              <img
+                src="../images/vandmenu.svg"
+                alt=""
+                class="menu__imgcenter container--py"
+              />
               <p class="container--py">
-                Ved automatisk fyldning af gryden kan piletasterne bruges til at vælge 5 liter af gangen,
-                eller tastaturet bruges til at vælge antal liter.
+                Ved automatisk fyldning af gryden kan piletasterne bruges til at
+                vælge 5 liter af gangen, eller tastaturet bruges til at vælge
+                antal liter.
               </p>
               <p class="container--py">
-                Den akkumulerede vandmængde er den samlede mængde vand, 
-                der er blevet påfyldt både manuelt og automatisk.
+                Den akkumulerede vandmængde er den samlede mængde vand, der er
+                blevet påfyldt både manuelt og automatisk.
               </p>
               <p class="container--py">
-                Af sikkerhedshensyn kan der kun være en bestemt mængde vand i gryden. 
-                Hvis der er brug for at fylde mere i, 
-                skal den akkumulerede vandmængde nulstilles ved hjælp af tasten.
+                Af sikkerhedshensyn kan der kun være en bestemt mængde vand i
+                gryden. Hvis der er brug for at fylde mere i, skal den
+                akkumulerede vandmængde nulstilles ved hjælp af tasten.
               </p>
               <p class="container--py">
-                Gryden skal være vandret, og låget være åbent for at man kan fylde vand i, 
-                ellers popper advarsler op. 
+                Gryden skal være vandret, og låget være åbent for at man kan
+                fylde vand i, ellers popper advarsler op.
               </p>
               <!-- TODO Fix ikoner -->
               <div class="flex flex-ai-c menu__columngap">
-                <img src="../images/aabnlaaget.svg" alt="" class="menu__ikon">
-                 <p class="container--py">Advarsel: Åbn låget.<p>
-               </div> 
+                <img src="../images/aabnlaaget.svg" alt="" class="menu__ikon" />
+                <p class="container--py">Advarsel: Åbn låget.</p>
+                <p></p>
+              </div>
+
               <div class="flex flex-ai-c menu__columngap">
-                <img src="../images/luklaaget.svg" alt="" class="menu__ikon">
-                 <p class="container--py">Advarsel: Luk låget.<p>
-               </div> 
-               <div class="flex flex-ai-c menu__columngap">
-                 <div class="container__cross">
-                  <img src="../images/cross.svg" alt="" class="menu__ikon container__crossimg">
+                <img src="../images/luklaaget.svg" alt="" class="menu__ikon" />
+                <p class="container--py">Advarsel: Luk låget.</p>
+                <p></p>
+              </div>
+
+              <div class="flex flex-ai-c menu__columngap">
+                <div class="container__cross">
+                  <img
+                    src="../images/cross.svg"
+                    alt=""
+                    class="menu__ikon container__crossimg"
+                  />
                 </div>
-                 <p class="container--py">Retur til hovedmenuen, hvor omrøreren tændes med start/stop-tasten.<p>
-               </div>
-               <p class="container--py">
-                Af sikkerhedshensyn kan der ikke fyldes vand i gryden, 
-                når den er over 120 grader varm. 
-                Der vil derfor komme en advarsel, der skal kvitteres for:
-               </p> 
-               <div class="flex flex-ai-c menu__columngap">
-                <img src="../images/temp120.svg" alt="" class="menu__ikon">
-                 <p class="container--py">Advarsel: Bundtemperatur over 120 grader.<p>
-               </div> 
-               <p class="container--py">
-                 Der er desuden skoldnings- og forbrændingsfare ved påfyldning af vand, 
-                 når der er varm olie i gryden (over 100 grader).</p>
+                <p class="container--py">
+                  Retur til hovedmenuen, hvor omrøreren tændes med
+                  start/stop-tasten.
+                </p>
+                <p></p>
+              </div>
+
+              <p class="container--py">
+                Af sikkerhedshensyn kan der ikke fyldes vand i gryden, når den
+                er over 120 grader varm. Der vil derfor komme en advarsel, der
+                skal kvitteres for:
+              </p>
+              <div class="flex flex-ai-c menu__columngap">
+                <img src="../images/temp120.svg" alt="" class="menu__ikon" />
+                <p class="container--py">
+                  Advarsel: Bundtemperatur over 120 grader.
+                </p>
+                <p></p>
+              </div>
+
+              <p class="container--py">
+                Der er desuden skoldnings- og forbrændingsfare ved påfyldning af
+                vand, når der er varm olie i gryden (over 100 grader).
+              </p>
             </div>
             <h3 class="accordion__subtoggle accordion__subtoggle--hover">
               Undermenu – Tid
             </h3>
             <div class="accordion__subpanel">
-              <img src="../images/tidmenu.svg" alt="" class="menu__imgcenter container--py">
+              <img
+                src="../images/tidmenu.svg"
+                alt=""
+                class="menu__imgcenter container--py"
+              />
               <p class="container--py">
                 Der kan angives tid efter klokkeslæt eller tidsforløb.
               </p>
               <p class="container--py">
-                Ikonet for den valgte tidsangivelse bliver sort, når funktionen er valgt.
+                Ikonet for den valgte tidsangivelse bliver sort, når funktionen
+                er valgt.
               </p>
               <div class="container--py tid__tidsfunktioner">
                 <p>
-                  Fra forsiden kan der anvendes to simple tidsfunktioner uden at lave et program:
+                  Fra forsiden kan der anvendes to simple tidsfunktioner uden at
+                  lave et program:
                 </p>
                 <p class="container--py">
-                  1. Hvis der indstilles en tid og trykkes start fra forsiden, 
-                  fungerer buzzeren som et æggeur, der giver lyd, når tiden er gået.
+                  1. Hvis der indstilles en tid og trykkes start fra forsiden,
+                  fungerer buzzeren som et æggeur, der giver lyd, når tiden er
+                  gået.
                 </p>
                 <p class="container--py">
-                  2. Hvis der indstilles et klokkeslæt, vil gryden begynde at varme, når tiden er nået.
+                  2. Hvis der indstilles et klokkeslæt, vil gryden begynde at
+                  varme, når tiden er nået.
                 </p>
               </div>
               <p class="container--py">
-                Tidsfunktioner anvendes særligt i forbindelse med automatiske programmer.
+                Tidsfunktioner anvendes særligt i forbindelse med automatiske
+                programmer.
               </p>
             </div>
             <h3 class="accordion__subtoggle accordion__subtoggle--hover">
               Undermenu – Programmer
             </h3>
             <div class="accordion__subpanel">
-              <img src="../images/programmenu.svg" alt="" class="menu__imgcenter container--py">
+              <img
+                src="../images/programmenu.svg"
+                alt=""
+                class="menu__imgcenter container--py"
+              />
               <p class="container--py">
-                I programoversigten vises det valgte program med en grøn ring. 
+                I programoversigten vises det valgte program med en grøn ring.
               </p>
               <p class="container--py">
-                Programmet startes med start/stop-knappen og et eventuelt igangværende program stoppes med samme knap.
+                Programmet startes med start/stop-knappen og et eventuelt
+                igangværende program stoppes med samme knap.
               </p>
               <div class="container--py">
                 <p>
-                  Programmer er en sekvens (rækkefølge) af grydens almindelige funktioner:
+                  Programmer er en sekvens (rækkefølge) af grydens almindelige
+                  funktioner:
                 </p>
                 <ul>
                   <li>1. Opvarmning</li>
@@ -431,19 +511,26 @@
                   <li>6. Buzzer</li>
                 </ul>
                 <p class="container--py">
-                  Der kan oprettes 10 forskellige programmer med hver 15 funktioner.
+                  Der kan oprettes 10 forskellige programmer med hver 15
+                  funktioner.
                 </p>
                 <p class="container--py">
-                  Der kan frit vælges rækkefølge af funktionerne. 
-                  Tryk på blyanten ved et af programmerne for at komme ind i standardmenuen, 
-                  hvor de forskellige funktioner kan vælges.
+                  Der kan frit vælges rækkefølge af funktionerne. Tryk på
+                  blyanten ved et af programmerne for at komme ind i
+                  standardmenuen, hvor de forskellige funktioner kan vælges.
                 </p>
-                <img src="../images/eksempelpaaprogram.svg" alt="" class="menu__imgcenter container--py">
+                <img
+                  src="../images/eksempelpaaprogram.svg"
+                  alt=""
+                  class="menu__imgcenter container--py"
+                />
                 <p class="container--py">
-                  I gryder uden omrører findes funktionen køling og opvarmning efter madtemperaturen ikke.
+                  I gryder uden omrører findes funktionen køling og opvarmning
+                  efter madtemperaturen ikke.
                 </p>
                 <p class="container--py">
-                  En funktion ændres ved at trykke på aktivitetsfeltet og slettes ved hjælp af skraldespanden.
+                  En funktion ændres ved at trykke på aktivitetsfeltet og
+                  slettes ved hjælp af skraldespanden.
                 </p>
               </div>
             </div>
@@ -453,38 +540,52 @@
             <div class="accordion__subpanel">
               <div class="flex flex-ai-c menu__columngap">
                 <!-- TODO Fix ikoner -->
-                <img src="../images/kip.svg" alt="" class="menu__ikon">
+                <img src="../images/kip.svg" alt="" class="menu__ikon" />
                 <div>
-                 <p class="container--py">
-                   Kipper gryden for indhold. 
-                   Der kan kun kippes, når låget er åbent.
-                 <p>
-                 <p class="container--py">
-                  Der er forbrændingsfare ved kipning – pas på varmt udstrømmende indhold og sørg for, 
-                  at der ikke er personer bagved gryden, når denne kippes.
-                 </p> 
+                  <p class="container--py">
+                    Kipper gryden for indhold. Der kan kun kippes, når låget er
+                    åbent.
+                  </p>
+
+                  <p></p>
+                  <p class="container--py">
+                    Der er forbrændingsfare ved kipning – pas på varmt
+                    udstrømmende indhold og sørg for, at der ikke er personer
+                    bagved gryden, når denne kippes.
+                  </p>
                 </div>
-               </div> 
+              </div>
               <div class="flex flex-ai-c menu__columngap">
                 <!-- TODO Fix ikoner -->
-                <img src="../images/vandretposition.svg" alt="" class="menu__ikon">
+                <img
+                  src="../images/vandretposition.svg"
+                  alt=""
+                  class="menu__ikon"
+                />
                 <div>
-                 <p class="container--py">Returnerer gryden til vandret position.<p>
-                 <p class="container--py">
-                   Af sikkerhedshensyn er der kun bevægelse af gryden, 
-                   så længe en tast er aktiveret.
-                 </p> 
-                 <p class="container--py">
-                  Kip systemet indeholder en ’tilt back’ funktion. 
-                  Det vil sige, at gryden tipper et lille stykke tilbage, 
-                  når kip-knappen slippes. Det gør det mere bekvemt at tømme gryden. 
-                 </p>
-                <div class="container--py">
-                  <p>I servicemenuen kan der indstilles en pausetid og en returkip-tid.</p>
-                  <p>Se den udvidede brugervejledning.</p>
+                  <p class="container--py">
+                    Returnerer gryden til vandret position.
+                  </p>
+                  <p></p>
+                  <p class="container--py">
+                    Af sikkerhedshensyn er der kun bevægelse af gryden, så længe
+                    en tast er aktiveret.
+                  </p>
+                  <p class="container--py">
+                    Kip systemet indeholder en ’tilt back’ funktion. Det vil
+                    sige, at gryden tipper et lille stykke tilbage, når
+                    kip-knappen slippes. Det gør det mere bekvemt at tømme
+                    gryden.
+                  </p>
+                  <div class="container--py">
+                    <p>
+                      I servicemenuen kan der indstilles en pausetid og en
+                      returkip-tid.
+                    </p>
+                    <p>Se den udvidede brugervejledning.</p>
+                  </div>
                 </div>
-               </div>
-              </div> 
+              </div>
             </div>
           </div>
         </div>
@@ -495,19 +596,23 @@
           </div>
           <div class="accordion__panel">
             <!-- TODO: Fix img-str -->
-            <img src="../images/alarmmenu.svg" alt="" class="menu__imgcenter container--py">
+            <img
+              src="../images/alarmmenu.svg"
+              alt=""
+              class="menu__imgcenter container--py"
+            />
             <div class="container--py">
+              <p>Alle alarmer samles i ovennævnte alarmliste.</p>
               <p>
-                Alle alarmer samles i ovennævnte alarmliste.
-              </p>
-              <p>
-                Alarmen listes med dato og klokkeslæt. Der kvitteres for alarmen med ?? tasten.
+                Alarmen listes med dato og klokkeslæt. Der kvitteres for alarmen
+                med ?? tasten.
                 <!-- TODO: Hvilken tast? -->
               </p>
-           </div>
-           <p class="container--py">
-            Nogle alarmer vil komme igen efter 5 minutter, hvis årsagen til alarmen ikke er fjernet.
-           </p>
+              <p>
+                Nogle alarmer vil komme igen efter 5 minutter, hvis årsagen til
+                alarmen ikke er fjernet.
+              </p>
+            </div>
           </div>
         </div>
       </div>
