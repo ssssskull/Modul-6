@@ -404,14 +404,14 @@ h3 {
 
 .hero h1 {
   font-size: 50px;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 @media (min-width: 40em) {
   .hero h1 {
     font-size: 8rem;
-    margin-bottom: 3rem;
     max-width: 60rem;
+    margin-bottom: 4.2rem;
   }
 }
 
@@ -419,6 +419,7 @@ h3 {
   .hero h1 {
     font-size: 8rem;
     max-width: 80rem;
+    margin-bottom: 5.7rem;
   }
 }
 
@@ -437,15 +438,52 @@ h3 {
 }
 
 .hero__info {
-  padding-top: 37vh;
+  /*
+        padding-top: 42vh;
+
+        @include breakpoint-up(ipad){
+            padding-top: 42vh;
+        }
+        @include breakpoint-up(computer){
+            padding-top: 37vh;
+        }*/
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero__scroll-indicator {
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .hero__bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100vw;
   height: 100vh;
   background-image: url(../../images/Hero-desktop.jpg);
   background-repeat: no-repeat;
   background-position: center center;
+  background-size: cover;
 }
 
 .products {

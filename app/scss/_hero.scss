@@ -4,15 +4,16 @@
     color: #F7F7F7;
     h1{
         font-size: 50px;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
         @include breakpoint-up(ipad){
             font-size: 8rem;
-            margin-bottom: 3rem;
             max-width: 60rem;
+            margin-bottom: 4.2rem;
         }
         @include breakpoint-up(computer){
             font-size: 8rem;
             max-width: 80rem;
+            margin-bottom: 5.7rem;
         }
     }
 
@@ -28,15 +29,37 @@
     }
 
     &__info {
-        padding-top: 37vh;
+        /*
+        padding-top: 42vh;
+
+        @include breakpoint-up(ipad){
+            padding-top: 42vh;
+        }
+        @include breakpoint-up(computer){
+            padding-top: 37vh;
+        }*/
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    &__scroll-indicator {
+        height: 10vh;
+        display: flex;
+        justify-content: center;
     }
 
     &__bg {
+    display: flex;
+    flex-direction: column;
     width: 100vw;
     height: 100vh;
     background-image: url(../../images/Hero-desktop.jpg);
     background-repeat: no-repeat;
     background-position: center center;
+    background-size: cover;
     }
 
 }
