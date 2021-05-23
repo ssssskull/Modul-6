@@ -487,7 +487,7 @@ h3 {
 }
 
 .products__image {
-  margin: 2rem 0 4rem 0;
+  margin: 2.5rem 0 4rem 0;
   max-width: 170px;
 }
 
@@ -497,7 +497,9 @@ h3 {
   }
 }
 
-.product__elem h3 {
+.product__elem h2 {
+  font-weight: 600;
+  margin-bottom: 2.5rem;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -514,7 +516,7 @@ h3 {
         -ms-flex-align: center;
             align-items: center;
   }
-  .product__elem h3 {
+  .product__elem h2 {
     text-align: unset;
   }
 }
@@ -608,7 +610,7 @@ h3 {
 }
 
 .accordion__panel :not(.accordion__subpanel) {
-  padding: 2rem;
+  padding: 2rem 4rem;
 }
 
 .accordion__subtoggle {
@@ -616,7 +618,7 @@ h3 {
   background-image: url("../../images/undermenu_plus.svg");
   background-size: 12px 12px;
   background-repeat: no-repeat;
-  background-position: left center;
+  background-position: 1% center;
 }
 
 .accordion__subtoggle--hover:hover {
@@ -643,7 +645,6 @@ h3 {
 
 .panel-open {
   color: #5eb91d;
-  background: #ededed;
 }
 
 .panel-open .accordion__icon {

@@ -63,7 +63,7 @@
     }
   }
   &__image {
-    margin: 2rem 0 4rem 0;
+    margin: 2.5rem 0 4rem 0;
     max-width: 170px;
 
     @include breakpoint-up(computer) {
@@ -77,8 +77,11 @@
 }
 
 .product {
+  // TODO tilføj position absolute til polka dot :)
   &__elem {
-    h3 {
+    h2 {
+      font-weight: 600;
+      margin-bottom: 2.5rem;
       flex: 1;
       text-align: center;
     }
@@ -86,15 +89,14 @@
       flex-direction: row;
       align-items: center;
 
-      h3 {
+      h2 {
         text-align: unset;
       }
     }
-    //background-image: url("../../images/pattern-polka.svg");
   }
-
+  // TODO fix polka :(
   &__elemPolka {
-    // TODO: ide: 3 elementer ved siden af hinanden og 2 visibility hidden
+    // TODO: ide: column gap med dobbel så meget afstand som i produkter kunne evt løse skalering
     background-image: url("../../images/polka-pattern3x7.svg");
     background-size: contain;
     max-width: 50%;
