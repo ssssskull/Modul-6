@@ -1,4 +1,7 @@
 .accordion {
+  max-width: 980px;
+  margin: 0 auto;
+
   &__elem {
     border-bottom: 1px solid $clr-divider;
   }

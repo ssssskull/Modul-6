@@ -27,8 +27,6 @@ const btnHamburger = document.querySelector("#btnHamburger");
 const headerMenu = document.querySelector(".header__menu");
 const languageElem = document.querySelector(".header__language");
 
-body.style.padding = `${header.clientHeight}px 0 0 0`;
-
 btnHamburger.addEventListener("click", function () {
   if (header.classList.contains("open")) {
     /* Luk hamburger menu
