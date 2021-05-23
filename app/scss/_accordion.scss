@@ -1,4 +1,7 @@
 .accordion {
+  max-width: 980px;
+  margin: 0 auto;
+
   &__elem {
     border-bottom: 1px solid $clr-divider;
   }
@@ -44,7 +47,7 @@
     transition: max-height 0.3s ease-in-out;
 
     :not(.accordion__subpanel) {
-      padding: 2rem;
+      padding: 2rem 4rem;
     }
   }
 
@@ -53,7 +56,7 @@
     background-image: url("../../images/undermenu_plus.svg");
     background-size: 12px 12px;
     background-repeat: no-repeat;
-    background-position: left center;
+    background-position: 1% center;
   }
 
   &__subtoggle--hover {
@@ -80,7 +83,6 @@
 }
 .panel-open {
   color: $clr-primary-green;
-  background: $clr-background-hover;
 
   .accordion__icon {
     background-image: url("../../images/plus-hover.svg");

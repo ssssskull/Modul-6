@@ -1,18 +1,3 @@
-@charset "UTF-8";
-/*======================================
-*            Typografi             *
-======================================*/
-/* Paragraf
-    ============================ */
-/* Overskrift
-    ============================ */
-/* Underoverskrift
-    ============================ */
-/* Underunderoverskrift
-    ============================ */
-/*======================================
-*             Farver              *
-======================================*/
 /*======================================
 *         Generelle regler         *
 ======================================*/
@@ -146,12 +131,6 @@ h3 {
 .container {
   max-width: 1400px;
   margin: 0 auto;
-  /* Padding på x- og y-aksen
-    ============================ */
-  /* Padding på y-aksen
-    ============================ */
-  /* Padding på x-aksen
-    ============================ */
 }
 
 .container--pall {
@@ -208,9 +187,30 @@ h3 {
   }
 }
 
+.container--main {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+@media (min-width: 40em) {
+  .container--main {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .container--main {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+}
+
 /*======================================
 *            Flexbox            *
-======================================*/
+=======
+/*======================================
+
 .flex {
   display: flex;
 }
@@ -444,7 +444,7 @@ h3 {
 }
 
 .products__image {
-  margin: 2rem 0 4rem 0;
+  margin: 2.5rem 0 4rem 0;
   max-width: 170px;
 }
 
@@ -454,9 +454,59 @@ h3 {
   }
 }
 
-.product__elemContent img {
-  max-width: 170px;
+.product__elem h2 {
+  font-weight: 600;
+  margin-bottom: 2.5rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+}
+
+@media (min-width: 40em) {
+  .product__elem {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .product__elem h2 {
+    text-align: unset;
+  }
+}
+
+.product__elemPolka {
+  background-image: url("../../images/polka-pattern3x7.svg");
+  background-size: contain;
+  max-width: 50%;
   height: auto;
+  width: 100%;
+  margin-left: auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.product__elemPolka img {
+  -ms-flex-preferred-size: 150px;
+      flex-basis: 150px;
+  margin-left: -85px;
+  max-width: 150px;
+  height: auto;
+}
+
+@media (min-width: 64em) {
+  .product__elemPolka img {
+    max-width: 360px;
+  }
+}
+
+.accordion {
+  max-width: 980px;
+  margin: 0 auto;
 }
 
 .accordion__elem {
@@ -505,7 +555,7 @@ h3 {
 }
 
 .accordion__panel :not(.accordion__subpanel) {
-  padding: 2rem;
+  padding: 2rem 4rem;
 }
 
 .accordion__subtoggle {
@@ -513,7 +563,7 @@ h3 {
   background-image: url("../../images/undermenu_plus.svg");
   background-size: 12px 12px;
   background-repeat: no-repeat;
-  background-position: left center;
+  background-position: 1% center;
 }
 
 .accordion__subtoggle--hover:hover {
@@ -538,7 +588,6 @@ h3 {
 
 .panel-open {
   color: #5eb91d;
-  background: #ededed;
 }
 
 .panel-open .accordion__icon {

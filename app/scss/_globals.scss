@@ -123,10 +123,6 @@ h3 {
   max-width: 1400px;
   margin: 0 auto;
 
-  // TODO fix margin/padding i headeren ipad og op
-
-  /* Padding på x- og y-aksen
-    ============================ */
   &--pall {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -146,8 +142,6 @@ h3 {
     }
   }
 
-  /* Padding på y-aksen
-    ============================ */
   &--py {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -158,8 +152,6 @@ h3 {
     }
   }
 
-  /* Padding på x-aksen
-    ============================ */
   &--px {
     padding-right: 2.4rem;
     padding-left: 2.4rem;
@@ -172,6 +164,20 @@ h3 {
     @include breakpoint-up(computer) {
       padding-left: 6rem;
       padding-right: 6rem;
+    }
+  }
+
+  &--main {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+    @include breakpoint-up(ipad) {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
+    @include breakpoint-up(computer) {
+      padding-top: 10rem;
+      padding-bottom: 10rem;
     }
   }
 }
