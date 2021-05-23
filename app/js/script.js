@@ -6,7 +6,7 @@
 /* Hide on scroll
     ============================*/
 const header = document.querySelector("header");
-/*let prevScrollPos = window.pageYOffset;
+let prevScrollPos = window.pageYOffset;
 
 window.addEventListener("scroll", function () {
   let currentScrollPos = window.pageYOffset;
