@@ -1,14 +1,16 @@
 .hero{
+    display: flex;
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 700;
     color: #F7F7F7;
     h1{
         font-size: 50px;
         margin-bottom: 3rem;
+        margin-top: 10rem;
         @include breakpoint-up(ipad){
             font-size: 8rem;
             max-width: 60rem;
-            margin-bottom: 4.2rem;
+            margin-bottom: 4.7rem;
         }
         @include breakpoint-up(computer){
             font-size: 8rem;
@@ -49,11 +51,13 @@
         height: 10vh;
         display: flex;
         justify-content: center;
+        animation-name: scrollindicator;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite; 
     }
 
     &__bg {
-    display: flex;
-    flex-direction: column;
     width: 100vw;
     height: 100vh;
     background-image: url(../../images/Hero-desktop.jpg);
@@ -63,5 +67,13 @@
     }
 
 }
+
+
+@keyframes scrollindicator {
+    50% {
+        transform: translateY(2.5rem);
+    }
+}
+
 
 
