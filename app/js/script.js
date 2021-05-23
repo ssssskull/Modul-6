@@ -27,8 +27,6 @@ const btnHamburger = document.querySelector("#btnHamburger");
 const headerMenu = document.querySelector(".header__menu");
 const languageElem = document.querySelector(".header__language");
 
-body.style.padding = `${header.clientHeight}px 0 0 0`;
-
 btnHamburger.addEventListener("click", function () {
   if (header.classList.contains("open")) {
     /* Luk hamburger menu
@@ -51,7 +49,7 @@ const accordionQuestions = document.querySelectorAll(".accordion__question");
 
 for (let i = 0; i < accordionQuestions.length; i++) {
   accordionQuestions[i].addEventListener("click", function () {
-    this.classList.toggle("accordion__question--open");
+    this.classList.toggle("panel-open");
     const accordionPanel = this.nextElementSibling;
     const plusIcon = this.lastElementChild;
     if (accordionPanel.style.maxHeight) {
@@ -75,12 +73,12 @@ for (let i = 0; i < accordionSubquestions.length; i++) {
     const accordionPanel = this.parentElement;
     const accordionSubpanel = this.nextElementSibling;
     accordionSubquestions[i].classList.toggle("accordion__subtoggle--open");
+    accordionSubquestions[i].classList.toggle("accordion__subtoggle--hover");
 
     if (accordionSubpanel.style.maxHeight) {
       accordionSubpanel.style.maxHeight = null;
     } else {
       accordionSubpanel.style.maxHeight = `${accordionSubpanel.scrollHeight}px`;
-      console.log(accordionSubpanel);
       accordionPanel.style.maxHeight = `${
         accordionSubpanel.scrollHeight + accordionPanel.scrollHeight
       }px`;
@@ -102,3 +100,33 @@ for (let i = 0; i < dropDown.length; i++) {
     }
   });
 }
+
+/*======================================
+*            Frederikke            *
+======================================*/
+
+
+/* Active-class på nav
+    ============================*/
+    const navlinks = document.querySelectorAll(".header__links");
+    const sections = Array.from(document.querySelectorAll("section"));
+
+    sections.splice(0, 1); //<-- Fjerner det første element i det array, der er gemt i konstanten sections
+    console.log(navlinks, sections)
+    function changeLinkState() {
+      let index = sections.length; //<-- Gemmer længden arrayet fra konstanten sections i en variabel
+    
+      while (--index && window.scrollY + 100 < sections[index].offsetTop) {} 
+      /*
+      ^While loop: 
+      --index – decrementer index med hver iteration
+      && – samtidig med at
+      window.scrollY + 100 < sections[index].offsetTop – vinduets Y-position + 100 sammenlignes med den aktuelle positions Y-position. Loopet stopper, når vinduets Y-position + 90 IKKE længere er lavere end den aktuelle sektions Y-position.
+      */
+    
+      navlinks.forEach((link) => link.classList.remove("active")); //<-- Active-class fjernes fra hvert element i den node-list, der er gemt i konstanten navlinks
+      navlinks[index].classList.add("active"); //<-- Tilføjer active-class til den aktuelle section fra node-listen i navlinks
+    }
+    
+    changeLinkState();
+    window.addEventListener("scroll", changeLinkState);

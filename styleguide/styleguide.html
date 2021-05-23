@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styleguide - NORQi</title>
+    <meta
+      name="styleguide"
+      content="NORQi - Styleguide"
+    />
+    <link rel="stylesheet" href="../dist/css/reset.css" />
+    <link rel="stylesheet" href="../dist/css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&family=Roboto+Condensed:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/icons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/images/icons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/images/icons/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="shortcut icon" href="/images/icons/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#ff0000" />
+    <meta
+      name="msapplication-config"
+      content="/images/icons/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <script src="/app/js/script.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="overlay"></div>
+      <nav class="container flex flex-jc-sb flex-ai-c container--px">
+        <div class="header__left flex flex-ai-c">
+          <a class="header__logo" href="#" title="NORQi"></a>
+        </div>
+        <a
+          id="btnHamburger"
+          href="#/"
+          class="header__toggle flex hide-for-desktop flex flex-ai-c"
+          title="Navigation"
+        >
+          <span></span>
+        </a>
+        <ul class="header__right flex hide-for-mobile">
+          <li>
+            <a class="header__links active" href="#" tabindex="0" title="Logo"
+              >Logo</a
+            >
+          </li>
+          <li>
+            <a class="header__links" href="#" tabindex="0" title="Typografi"
+              >Typografi</a
+            >
+          </li>
+          <li>
+            <a class="header__links" href="#" tabindex="0" title="Farver"
+              >Farver</a
+            >
+          </li>
+          <li>
+            <a class="header__links" href="#" tabindex="0" title="Ikoner"
+              >Ikoner</a
+            >
+          </li>
+          <li>
+            <a class="header__links" href="#" tabindex="0" title="Knapper"
+              >Knapper</a
+            >
+          </li>
+          <li>
+            <a class="header__links" href="#" tabindex="0" title="Illustrationer"
+              >Illustrationer</a
+            >
+          </li> <li>
+            <a class="header__links" href="#" tabindex="0" title="Billeder"
+              >Billeder</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero">
+
+    </section>
+    <main class="styleguide container container--pall">
+        <section class="styleguide__logo">
+            <div class="overskrift flex ">
+                <h2 class="overskrift_elm">Logo</h2>
+                <div class="product__elem">
+                    <div class="product__background"></div>
+                </div>
+           </div>
+           <div class="styleguide__con flex flex-dr-cl flex-jc-sb container--py">
+           <p> NORQi har med deres nye hjemmeside også fået et nyt logo </p>
+           <div class="styleguide__subcon">
+            <img class="logo__image "src="/images/NORQI-Logo.svg" alt="NORQi logo køkken udstyr">
+               <div class="boxed boxed_logo">
+                            <code> https://drive.google.com/drive/u/2/folders/1P5EB-x3Vur9d64lHrVYWZwpGW0isoLmM
+                            </code>
+                      </div>
+                   </div>
+                </div>
+       </section>
+        <section class="styleguide__typografi">
+         <div class="overskrift flex ">
+             <h2 class="overskrift_elm">Typografi</h2>
+            <div class="product__elem">
+              <div class="product__background"></div>
+         </div>
+        </div>
+        <div class="styleguide__con container--py">
+            <p>Der anvendes to forskellige fonte, for at øge proximity.</p>
+            <div class="grid">
+                <div class="typografi__subcon typografi__heading1 header1 container--py">
+                    <h1 class="typografi_afstand">Heading 1</h1>
+                    <p>Roboto Condensed</p>
+                    <p>40px/45px/60px</p>
+                 </div>
+                <div class="boxed h1code">
+                    <code> h1 {
+                        font-family: "Roboto Condensed", sans-serif;
+                        font-size: 40px;
+                        font-size: 4rem;
+                        line-height: 30px;
+                      }
+
+                      @media (min-width: 40em) {
+                        h1 {
+                          font-size: 45px;
+                          font-size: 4.5rem;
+                        }
+                      }
+
+                      @media (min-width: 64em) {
+                        h1 {
+                          font-size: 45px;
+                          font-size: 4.5rem;
+                        }
+                      }
+                    </code>
+                </div>
+             <div class="typografi__subcon typografi__heading2 header2 container--py">
+                <h2 class="typografi_afstand">Heading 2</h2>
+                <p>Roboto Condensed</p>
+                <p>30px/30px/32px</p>
+             </div>
+             <div class="boxed h2code">
+                <code> h2 {
+                    font-family: "Roboto Condensed", sans-serif;
+                    font-size: 30px;
+                    font-size: 3rem;
+                    line-height: 30px;
+                  }
+
+                  @media (min-width: 64em) {
+                    h2 {
+                      font-size: 32px;
+                      font-size: 3.2rem;
+                    }
+                  }
+                </code>
+            </div>
+            <div class="typografi__subcon typografi__heading2 paragraph container--py">
+                <p>Paragraf</p>
+                <p>Quicksand</p>
+                <p>14px/16px/20px</p>
+            </div>
+            <div class="boxed paragraphcode">
+                <code>p {
+                    font-family: "Roboto Condensed", sans-serif;
+                    font-size: 16px;
+                    font-size: 1.6rem;
+                    line-height: 1.5;
+                  }
+
+                  @media (min-width: 40em) {
+                    p {
+                      font-size: 20px;
+                      font-size: 2rem;
+                    }
+                  }
+                </code>
+            </div>
+         </div>
+        </div>
+      </div>
+    </section>
+    <section class="styleguide__farver">
+        <div class="overskrift flex ">
+         <h2 class="overskrift_elm">Farver</h2>
+         <div class="product__elem">
+            <div class="product__background"></div>
+         </div>
+        </div>
+        <div class="styleguide__con container--py">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, nesciunt?
+            </p>
+            <div class="grid__color container--py">
+                <div class="colorbox colorbox1">  </div>
+                <div class="color__text colortext1 container--pall">
+                    <p>Primær farve</p>
+                    <p>HEX (#5CB71D) </p>
+                    <p>RGB (92, 183, 29)</p>
+                </div>
+                <div class="colorbox colorbox2"> </div>
+             <div class="color__text colortext2 container--pall">
+                <p>Tekst farve</p>
+                <p>HEX (#292928)</p>
+                <p>RGB (41,41,40)</p>
+              </div>
+             <div class="colorbox colorbox3"> </div>
+             <div class="color__text colortext3 container--pall">
+                <p>H2 farve</p>
+                <p>HEX (#313331)</p>
+                <p>RGB (49,51,49)</p>
+            </div>
+            <div class="colorbox colorbox4"> </div>
+             <div class="color__text colortext4 container--pall">
+                <p>Tekst farve</p>
+                <p>HEX (#737373)</p>
+                <p>RGB (115,115,115)</p>
+            </div>
+            <div class="colorbox colorbox5"> </div>
+             <div class="color__text colortext5 container--pall">
+                <p>Tekst farve</p>
+                <p>HEX (#ECECEC)</p>
+                <p>RGB (236,236,236)</p>
+            </div>
+            <div class="colorbox colorbox6"> </div>
+             <div class="color__text colortext6 container--pall">
+                <p>Tekst farve</p>
+                <p>HEX (#F7F7F7)</p>
+                <p>RGB (247,247,247)</p>
+             </div>
+            </div>
+         </div>
+
+    </section>
+
+
+    <section class="styleguide__knapper">
+        <div class="overskrift flex ">
+            <h2 class="overskrift_elm">Knapper</h2>
+           <div class="product__elem">
+             <div class="product__background"></div>
+        </div>
+       </div>
+       <div class="styleguide__con container--py">
+           <p>Knapperne på hjemmeside, har den primæere grønne farve. Derved står de klart frem på siden. Og brugeren ved hurtigt hvad de skal trykke, for at læse mere</p>
+           <div class="grid">
+               <div class="typografi__subcon typografi__heading1 header1 container--py">
+                <a href="#" class="product__button btn-primary">Læs mere</a>
+                </div>
+               <div class="boxed knap1">
+                   <code> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim reiciendis beatae fugiat nulla? Aspernatur, et!
+                   </code>
+               </div>
+            <div class="typografi__subcon typografi__heading2 header2 container--py">
+                <a href="#" class="product__button btn-primary">Læs mere</a>
+            </div>
+            <div class="boxed knap2">
+               <code> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim reiciendis beatae fugiat nulla? Aspernatur, et!
+               </code>
+           </div>
+           <div class="typografi__subcon typografi__heading2 paragraph container--py">
+            <a href="#" class="product__button btn-primary">Læs mere</a>
+           </div>
+           <div class="boxed knap3">
+               <code>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim reiciendis beatae fugiat nulla? Aspernatur, et!
+               </code>
+           </div>
+        </div>
+       </div>
+     </div>
+    </section>
+    <section class="styleguide__grafiskeelementer">
+         <div class="overskrift flex ">
+             <h2 class="overskrift_elm">Grafiske Elementer</h2>
+             <div class="product__elem">
+                 <div class="product__background"></div>
+             </div>
+        </div>
+        <div class="styleguide__con flex flex-dr-cl flex-jc-sb container--py">
+        <p> De ny fortolkede polkadotter, er med til at skabe dynamik i et ellers simpelt design.  </p>
+        <div class="styleguide__subcon">
+            <div class="product__elem">
+                <div class="product__background"></div>
+            <div class="boxed boxed_grafik">
+                         <code> Lorem ipsum dolor sit.
+                         </code>
+                   </div>
+                </div>
+             </div>
+    </section>
+    <section class="styleguide__illustrationer">
+        <div class="overskrift flex ">
+            <h2 class="overskrift_elm">Illustrationer</h2>
+           <div class="product__elem">
+             <div class="product__background"></div>
+        </div>
+       </div>
+       <div class="styleguide__con container--py">
+           <p>Der anvendes to forskellige fonte, for at øge proximity.</p>
+           <div class="grid">
+               <div class="styleguide__image typografi__subcon typografi__heading1 header1 container--py">
+               </div>
+               <div class="boxed">
+                   <code> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim reiciendis beatae fugiat nulla? Aspernatur, et!
+                   </code>
+               </div>
+            <div class="styleguide__image typografi__subcon typografi__heading2 header2 container--py">
+            </div>
+            <div class="boxed">
+               <code> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim reiciendis beatae fugiat nulla? Aspernatur, et!
+               </code>
+           </div>
+           <div class=" styleguide__image  typografi__subcon typografi__heading2 paragraph container--py">
+           </div>
+           <div class="boxed">
+               <code>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim reiciendis beatae fugiat nulla? Aspernatur, et!
+               </code>
+           </div>
+        </div>
+       </div>
+     </div>
+    </section>
+    <section class="styleguide__billeder">
+        <div class="overskrift flex ">
+            <h2 class="overskrift_elm">Billeder</h2>
+           <div class="product__elem">
+             <div class="product__background"></div>
+        </div>
+       </div>
+       <div class="styleguide__con container--py">
+           <p>Billede stilen er varm, energisk og med fokus på det gode håndværk</p>
+           <div class="grid">
+            <div class=" test__productimage typografi__subcon typografi__heading2 paragraph ">
+                <img class="styleguide__productimage "src="/images/anretningbillede.png"  alt="NORQi logo køkken udstyr">
+               </div>
+               <div class="boxed">
+                   <code>https://norqi.wp.side-walk.dk/wp-content/uploads/2020/09/fabrizio-magoni-boaDpmC-_Xo-unsplash.png
+                   </code>
+               </div>
+               <div class=" test__productimage typografi__subcon typografi__heading2 paragraph ">
+                <img class="styleguide__productimage "src="/images/skærebrætbillede.png"  alt="NORQi logo køkken udstyr">
+               </div>
+            <div class="boxed">
+               <code> https://norqi.wp.side-walk.dk/wp-content/uploads/2020/09/jonathan-borba-uB7q7aipU2o-unsplash.png
+               </code>
+           </div>
+           <div class=" test__productimage typografi__subcon typografi__heading2 paragraph ">
+            <img class="styleguide__productimage "src="/images/kipgrydebillede.jpg"  alt="NORQi logo køkken udstyr">
+           </div>
+           <div class="boxed">
+               <code>https://norqi.wp.side-walk.dk/wp-content/uploads/2021/05/300l-1.jpg
+               </code>
+           </div>
+        </div>
+       </div>
+     </div>
+    </section>
+    </main>
+
+    <footer > </footer>
+</body>
+</html>

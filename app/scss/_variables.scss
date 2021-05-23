@@ -4,12 +4,12 @@
 
 /* Paragraf
     ============================ */
-$font-p-iphone-fallback: 14px;
-$font-p-iphone: 1.4rem;
-$font-p-ipad-fallback: 16px;
-$font-p-ipad: 1.6rem;
-$font-p-computer-fallback: 20px;
-$font-p-computer: 2rem;
+$font-p-iphone-fallback: 16px;
+$font-p-iphone: 1.6rem;
+$font-p-ipad-fallback: 20px;
+$font-p-ipad: 2rem;
+$font-p-computer-fallback: 30px;
+$font-p-computer: 3rem;
 
 /* Overskrift
     ============================ */
@@ -41,6 +41,7 @@ $clr-primary-green: hsl(95, 73%, 42%);
 $clr-secondary-green: hsl(95, 68%, 24%);
 $clr-contrast-green: hsl(120, 2%, 20%);
 $clr-contrast-hover: hsl(0, 0%, 17%);
-$clr-background: hsl(0, 0%, 100%);
-$clr-text: hsl(0%, 0%, 0%);
+$clr-background: hsl(0, 0%, 97%);
+$clr-background-hover: hsl(0, 0%, 93%);
+$clr-text: hsl(60, 3%, 6%);
 $clr-divider: hsla(240, 100%, 1%, 0.1);

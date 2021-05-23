@@ -1,12 +1,23 @@
 /*======================================
 *         Generelle regler         *
 ======================================*/
+html,
+body {
+  scroll-snap-type: y proximity;
+}
 html {
   scroll-behavior: smooth;
   font-size: 62.5%;
   font-family: "Quicksand", sans-serif;
 }
 
+body {
+  background-color: $clr-background;
+}
+
+text {
+  pointer-events: none;
+}
 /*======================================
 *            Typografi            *
 ======================================*/
@@ -21,16 +32,11 @@ a {
 /* Paragraf
     ============================ */
 p {
-  font-size: $font-p-iphone-fallback;
-  font-size: $font-p-iphone;
+  font-size: $font-p-ipad-fallback;
+  font-size: $font-p-ipad;
   line-height: 1.5;
 
   @include breakpoint-up(ipad) {
-    font-size: $font-p-ipad-fallback;
-    font-size: $font-p-ipad;
-  }
-
-  @include breakpoint-up(computer) {
     font-size: $font-p-computer-fallback;
     font-size: $font-p-computer;
   }
@@ -99,9 +105,10 @@ h3 {
   box-shadow: none;
   border: none;
   border-radius: 50px;
-  font-size: 18px;
-  font-size: 1.8rem;
+  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 700;
+  text-align: center;
   letter-spacing: 2px;
   line-height: 18px;
   // TODO dynamic line-height
@@ -116,10 +123,6 @@ h3 {
   max-width: 1400px;
   margin: 0 auto;
 
-  // TODO fix margin/padding i headeren ipad og op
-
-  /* Padding på x- og y-aksen
-    ============================ */
   &--pall {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -139,8 +142,6 @@ h3 {
     }
   }
 
-  /* Padding på y-aksen
-    ============================ */
   &--py {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -151,8 +152,6 @@ h3 {
     }
   }
 
-  /* Padding på x-aksen
-    ============================ */
   &--px {
     padding-right: 2.4rem;
     padding-left: 2.4rem;
@@ -165,6 +164,20 @@ h3 {
     @include breakpoint-up(computer) {
       padding-left: 6rem;
       padding-right: 6rem;
+    }
+  }
+
+  &--main {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+    @include breakpoint-up(ipad) {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
+    @include breakpoint-up(computer) {
+      padding-top: 10rem;
+      padding-bottom: 10rem;
     }
   }
 }
