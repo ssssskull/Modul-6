@@ -130,3 +130,18 @@ for (let i = 0; i < dropDown.length; i++) {
     
     changeLinkState();
     window.addEventListener("scroll", changeLinkState);
+
+
+    /*======================================
+*            simone          *
+======================================*/
+
+/* dropdown
+    ============================*/
+
+
+ document.getElementById("undermenu__dropdown").addEventListener("click", openMenu);
+
+function openMenu() {
+    document.getElementById("dropdown__ctn").classList.toggle("show");
+}
