@@ -47,7 +47,9 @@
     transition: max-height 0.3s ease-in-out;
 
     :not(.accordion__subpanel) {
-      padding: 2rem 4rem;
+      .accordion__subtoggle {
+        padding: 0;
+      }
     }
   }
 
@@ -56,7 +58,9 @@
     background-image: url("../../images/undermenu_plus.svg");
     background-size: 12px 12px;
     background-repeat: no-repeat;
-    background-position: 1% center;
+    background-position: 2% center;
+
+    padding: 2rem 4rem;
   }
 
   &__subtoggle--hover {

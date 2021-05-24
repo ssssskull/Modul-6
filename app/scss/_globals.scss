@@ -32,11 +32,16 @@ a {
 /* Paragraf
     ============================ */
 p {
-  font-size: $font-p-ipad-fallback;
-  font-size: $font-p-ipad;
+  font-size: $font-p-iphone-fallback;
+  font-size: $font-p-iphone;
   line-height: 1.5;
 
   @include breakpoint-up(ipad) {
+    font-size: $font-p-ipad-fallback;
+    font-size: $font-p-ipad;
+  }
+
+  @include breakpoint-up(computer) {
     font-size: $font-p-computer-fallback;
     font-size: $font-p-computer;
   }

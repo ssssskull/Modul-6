@@ -48,12 +48,19 @@ a {
 /* Paragraf
     ============================ */
 p {
-  font-size: 20px;
-  font-size: 2rem;
+  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 1.5;
 }
 
 @media (min-width: 40em) {
+  p {
+    font-size: 20px;
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 64em) {
   p {
     font-size: 22px;
     font-size: 2.2rem;
@@ -617,8 +624,8 @@ h3 {
   transition: max-height 0.3s ease-in-out;
 }
 
-.accordion__panel :not(.accordion__subpanel) {
-  padding: 2rem 4rem;
+.accordion__panel :not(.accordion__subpanel) .accordion__subtoggle {
+  padding: 0;
 }
 
 .accordion__subtoggle {
@@ -626,7 +633,8 @@ h3 {
   background-image: url("../../images/undermenu_plus.svg");
   background-size: 12px 12px;
   background-repeat: no-repeat;
-  background-position: 1% center;
+  background-position: 2% center;
+  padding: 2rem 4rem;
 }
 
 .accordion__subtoggle--hover:hover {
