@@ -101,6 +101,20 @@ for (let i = 0; i < dropDown.length; i++) {
   });
 }
 
+    /*======================================
+*            simone          *
+======================================*/
+
+/* dropdown
+    ============================*/
+
+
+    document.getElementById("undermenu__dropdown").addEventListener("click", openMenu);
+
+    function openMenu() {
+        document.getElementById("dropdown__ctn").classList.toggle("show");
+    }
+
 /*======================================
 *            Frederikke            *
 ======================================*/
@@ -112,7 +126,6 @@ for (let i = 0; i < dropDown.length; i++) {
     const sections = Array.from(document.querySelectorAll("section"));
 
     sections.splice(0, 1); //<-- Fjerner det første element i det array, der er gemt i konstanten sections
-    console.log(navlinks, sections)
     function changeLinkState() {
       let index = sections.length; //<-- Gemmer længden arrayet fra konstanten sections i en variabel
     
@@ -132,16 +145,4 @@ for (let i = 0; i < dropDown.length; i++) {
     window.addEventListener("scroll", changeLinkState);
 
 
-    /*======================================
-*            simone          *
-======================================*/
 
-/* dropdown
-    ============================*/
-
-
- document.getElementById("undermenu__dropdown").addEventListener("click", openMenu);
-
-function openMenu() {
-    document.getElementById("dropdown__ctn").classList.toggle("show");
-}
