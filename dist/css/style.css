@@ -55,8 +55,8 @@ p {
 
 @media (min-width: 40em) {
   p {
-    font-size: 30px;
-    font-size: 3rem;
+    font-size: 22px;
+    font-size: 2.2rem;
   }
 }
 
@@ -350,14 +350,18 @@ h3 {
 .header__menu li a {
   display: inline-block;
   position: relative;
-  font-size: 30px;
-  font-size: 3rem;
+  font-size: 22px;
+  font-size: 2.2rem;
   color: #f7f7f7;
   padding: 2rem;
   width: 100%;
 }
 
-.header__dropDown a span {
+.header__dropDown:first-child {
+  padding-top: 2rem;
+}
+
+.header__dropDown span {
   position: absolute;
   content: " ";
   width: 12px;
@@ -461,6 +465,10 @@ h3 {
       -ms-flex: 1;
           flex: 1;
   width: 100%;
+}
+
+.products__elem h3 {
+  font-family: "Quicksand", sans-serif;
 }
 
 @media (min-width: 40em) {

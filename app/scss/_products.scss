@@ -38,6 +38,9 @@
     position: relative;
     flex: 1;
     width: 100%;
+    h3 {
+      font-family: "Quicksand", sans-serif;
+    }
 
     @include breakpoint-up(ipad) {
       &:where(:not(:first-child)) {
