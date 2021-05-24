@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*======================================
 *            Typografi             *
 ======================================*/
@@ -637,6 +638,7 @@ h3 {
   background-repeat: no-repeat;
   background-position: left center;
   padding: 2rem 3rem;
+  /*TODO sidste elementer på underpaneler og divs i underpaneler skal have 2rem bottom afstand*/
 }
 
 .accordion__subtoggle:first-child {
