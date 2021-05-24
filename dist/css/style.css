@@ -589,7 +589,7 @@ h3 {
 }
 
 .accordion__question {
-  padding: 1rem;
+  padding: 1rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -622,10 +622,12 @@ h3 {
   overflow: hidden;
   -webkit-transition: max-height 0.3s ease-in-out;
   transition: max-height 0.3s ease-in-out;
-}
-
-.accordion__panel :not(.accordion__subpanel) .accordion__subtoggle {
-  padding: 0;
+  /*:not(.accordion__subpanel) {
+      margin: 0 2rem 2rem 2rem;
+      &:last-child {
+        margin: 0 2rem 0 2rem;
+      }
+    }*/
 }
 
 .accordion__subtoggle {
@@ -633,8 +635,14 @@ h3 {
   background-image: url("../../images/undermenu_plus.svg");
   background-size: 12px 12px;
   background-repeat: no-repeat;
-  background-position: 2% center;
-  padding: 2rem 4rem;
+  background-position: left center;
+  padding: 2rem 3rem;
+}
+
+.accordion__subtoggle:first-child {
+  margin-top: 1rem;
+  padding: 0 2rem 0 3rem;
+  margin-bottom: 2rem;
 }
 
 .accordion__subtoggle--hover:hover {
@@ -652,6 +660,14 @@ h3 {
   overflow: hidden;
   -webkit-transition: max-height 0.3s ease-in-out;
   transition: max-height 0.3s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 2rem;
 }
 
 .rotate {
