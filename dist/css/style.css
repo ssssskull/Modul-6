@@ -442,16 +442,7 @@ h3 {
 }
 
 .hero__info {
-  /*
-        padding-top: 42vh;
-
-        @include breakpoint-up(ipad){
-            padding-top: 42vh;
-        }
-        @include breakpoint-up(computer){
-            padding-top: 37vh;
-        }*/
-  height: 90vh;
+  height: 85vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -464,14 +455,26 @@ h3 {
           justify-content: center;
 }
 
+@media (min-width: 40em) {
+  .hero__info {
+    height: 90vh;
+  }
+}
+
 .hero__scroll-indicator {
-  height: 10vh;
+  height: 15vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (min-width: 40em) {
+  .hero__scroll-indicator {
+    height: 10vh;
+  }
 }
 
 .hero__scroll-animation {
