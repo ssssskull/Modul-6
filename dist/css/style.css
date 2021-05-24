@@ -230,6 +230,10 @@ h3 {
   }
 }
 
+.row-gap {
+  row-gap: 2rem;
+}
+
 /*======================================
 *            Flexbox            *
 ======================================*/
@@ -670,7 +674,6 @@ h3 {
       -ms-flex-direction: column;
           flex-direction: column;
   row-gap: 2rem;
-  padding-bottom: 2rem;
 }
 
 .rotate {
@@ -694,6 +697,9 @@ h3 {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  max-width: 530px;
+  height: auto;
+  width: 100%;
 }
 
 .menu__ppaddingnone {
