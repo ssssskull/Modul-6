@@ -300,6 +300,24 @@ h4 {
 .grid {
   display: -ms-grid;
   display: grid;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
+}
+
+.grid-center {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /*======================================
@@ -622,7 +640,7 @@ h4 {
 }
 
 .accordion__question {
-  padding: 1rem 0;
+  padding: 2rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -744,7 +762,6 @@ h4 {
 
 .menu__ikon {
   width: 50px;
-  height: 50px;
   display: block;
 }
 

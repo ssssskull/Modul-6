@@ -285,7 +285,7 @@
                 Her indstilles ønsket temperatur på bunden af gryden, ønsket
                 madtemperatur eller ønsket varmetrin:
               </p>
-              <div class="flex flex-jc-sb menu__columngap">
+              <div class="flex flex-jc-sb flex-ai-st menu__columngap">
                 <img
                   src="../images/bundtemperatur.svg"
                   alt=""
@@ -306,13 +306,13 @@
                   </p>
                 </div>
               </div>
-              <div class="flex flex-jc-sb menu__columngap row-gap">
+              <div class="flex flex-jc-sb flex-ai-st menu__columngap row-gap">
                 <img
                   src="../images/madtemperatur.svg"
                   alt=""
                   class="menu__ikon"
                 />
-                <div class="flex flex-dr-cl row-gap">
+                <div class="flex flex-dr-cl flex-ai-st row-gap">
                   <p>Madtemperatur:</p>
                   <p>
                     En sensor på ydersiden af grydekroppen måler temperaturen i
@@ -329,7 +329,7 @@
                   </p>
                 </div>
               </div>
-              <div class="flex flex-jc-sb menu__columngap row-gap">
+              <div class="flex flex-jc-sb flex-ai-st menu__columngap row-gap">
                 <img src="../images/opvarmning.svg" alt="" class="menu__ikon" />
                 <div>
                   <p>Skånsom opvarmning:</p>
@@ -354,17 +354,16 @@
                 står vandret, når varmen tændes, popper en advarsel op.
               </p>
               <!-- TODO Fix ikoner -->
-              <div class="grid flex-ai-st menu__columngap">
+              <div class="grid flex-ai-st menu__columngap row-gap">
                 <img src="../images/gryderetur.svg" alt="" class="menu__ikon" />
                 <p>Advarsel: Kip gryde retur.</p>
-              </div>
-
-              <div class="flex flex-ai-c menu__columngap">
-                <img
-                  src="../images/cross.svg"
-                  alt=""
-                  class="menu__ikon container__crossimg"
-                />
+                <div class="grid-center">
+                  <img
+                    src="../images/cross.svg"
+                    alt=""
+                    class="menu__ikon container__crossimg"
+                  />
+                </div>
                 <p>
                   Retur til hovedmenuen, hvor varmen tændes med
                   start/stop-tasten.
@@ -399,22 +398,18 @@
                 fylde vand i, ellers popper advarsler op.
               </p>
               <!-- TODO Fix ikoner -->
-              <div class="flex flex-ai-st menu__columngap">
+              <div class="flex flex-ai-st menu__columngap grid row-gap">
                 <img src="../images/aabnlaaget.svg" alt="" class="menu__ikon" />
                 <p>Advarsel: Åbn låget.</p>
-              </div>
-
-              <div class="flex flex-ai-st menu__columngap">
                 <img src="../images/luklaaget.svg" alt="" class="menu__ikon" />
                 <p>Advarsel: Luk låget.</p>
-              </div>
-
-              <div class="flex flex-ai-st menu__columngap">
-                <img
-                  src="../images/cross.svg"
-                  alt=""
-                  class="menu__ikon container__crossimg"
-                />
+                <div class="grid-center">
+                  <img
+                    src="../images/cross.svg"
+                    alt=""
+                    class="menu__ikon container__crossimg"
+                  />
+                </div>
                 <p>
                   Retur til hovedmenuen, hvor omrøreren tændes med
                   start/stop-tasten.
@@ -451,15 +446,17 @@
                   Fra forsiden kan der anvendes to simple tidsfunktioner uden at
                   lave et program:
                 </p>
-                <p>
-                  1. Hvis der indstilles en tid og trykkes start fra forsiden,
-                  fungerer buzzeren som et æggeur, der giver lyd, når tiden er
-                  gået.
-                </p>
-                <p>
-                  2. Hvis der indstilles et klokkeslæt, vil gryden begynde at
-                  varme, når tiden er nået.
-                </p>
+                <ul>
+                  <li>
+                    Hvis der indstilles en tid og trykkes start fra forsiden,
+                    fungerer buzzeren som et æggeur, der giver lyd, når tiden er
+                    gået.
+                  </li>
+                  <li>
+                    2. Hvis der indstilles et klokkeslæt, vil gryden begynde at
+                    varme, når tiden er nået.
+                  </li>
+                </ul>
               </div>
               <p>
                 Tidsfunktioner anvendes særligt i forbindelse med automatiske

@@ -230,6 +230,15 @@ h4 {
 }
 .grid {
   display: grid;
+  justify-content: start;
+  grid-template-columns: auto auto;
+  column-gap: 2rem;
+
+  &-center {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
 }
 /*======================================
 *            Synlighed            *
