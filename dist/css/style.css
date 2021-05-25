@@ -79,15 +79,6 @@ ol {
   }
 }
 
-@media (min-width: 64em) {
-  p,
-  footer a,
-  ol {
-    font-size: 22px;
-    font-size: 2.2rem;
-  }
-}
-
 /* Overskrift
     ============================ */
 h1,
@@ -423,8 +414,8 @@ h4 {
 .header__menu li a {
   display: inline-block;
   position: relative;
-  font-size: 22px;
-  font-size: 2.2rem;
+  font-size: 20px;
+  font-size: 2rem;
   color: #f7f7f7;
   padding: 2rem;
   width: 100%;
@@ -652,6 +643,13 @@ h4 {
           transform: rotate(0);
   -webkit-transform-origin: center center;
           transform-origin: center center;
+}
+
+@media (min-width: 40em) {
+  .accordion__icon {
+    width: 29px;
+    height: 29px;
+  }
 }
 
 .accordion__question {

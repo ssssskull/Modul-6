@@ -54,11 +54,6 @@ ol {
     font-size: $font-p-ipad-fallback;
     font-size: $font-p-ipad;
   }
-
-  @include breakpoint-up(computer) {
-    font-size: $font-p-computer-fallback;
-    font-size: $font-p-computer;
-  }
 }
 
 /* Overskrift
