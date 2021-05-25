@@ -4,10 +4,10 @@
 
 /* Paragraf
     ============================ */
-$font-p-ipad-fallback: 16px;
-$font-p-ipad: 1.6rem;
-$font-p-computer-fallback: 20px;
-$font-p-computer: 2rem;
+$font-p-iphone-fallback: 16px;
+$font-p-iphone: 1.6rem;
+$font-p-ipad-fallback: 20px;
+$font-p-ipad: 2rem;
 
 /* Overskrift
     ============================ */
@@ -27,10 +27,17 @@ $font-h2-computer: 3.2rem;
 
 /* Underunderoverskrift
     ============================ */
-$font-h3-iphone-fallback: 24px;
-$font-h3-iphone: 2.4rem;
+$font-h3-iphone-fallback: 22px;
+$font-h3-iphone: 2.2rem;
 $font-h3-computer-fallback: 26px;
 $font-h3-computer: 2.6rem;
+
+/* Undeunderorunderoverskrift
+    ============================ */
+$font-h4-iphone-fallback: 18px;
+$font-h4-iphone: 1.8rem;
+$font-h4-computer-fallback: 22px;
+$font-h4-computer: 2.2rem;
 
 /*======================================
 *             Farver              *
@@ -41,5 +48,5 @@ $clr-contrast-green: hsl(120, 2%, 20%);
 $clr-contrast-hover: hsl(0, 0%, 17%);
 $clr-background: hsl(0, 0%, 97%);
 $clr-background-hover: hsl(0, 0%, 93%);
-$clr-text: hsl(0%, 0%, 0%);
+$clr-text: hsl(60, 3%, 6%);
 $clr-divider: hsla(240, 100%, 1%, 0.1);

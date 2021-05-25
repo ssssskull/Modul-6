@@ -1,676 +1,728 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brugsanvisning - NORQi</title>
+    <meta
+      name="description"
+      content="NORQi - Find brugsanvisning til dit produkt"
+    />
+    <link rel="stylesheet" href="dist/css/reset.css" />
+    <link rel="stylesheet" href="dist/css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&family=Roboto+Condensed:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Brugsanvisning - NORQi</title>
-  <meta name="description" content="NORQi - Find brugsanvisning til dit produkt" />
-  <link rel="stylesheet" href="dist/css/reset.css" />
-  <link rel="stylesheet" href="dist/css/style.css" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&family=Roboto+Condensed:wght@400;700&display=swap"
-    rel="stylesheet" />
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png" />
-  <link rel="manifest" href="/images/icons/site.webmanifest" />
-  <link rel="mask-icon" href="/images/icons/safari-pinned-tab.svg" color="#5bbad5" />
-  <link rel="shortcut icon" href="/images/icons/favicon.ico" />
-  <meta name="msapplication-TileColor" content="#ff0000" />
-  <meta name="msapplication-config" content="/images/icons/browserconfig.xml" />
-  <meta name="theme-color" content="#ffffff" />
-  <script src="app/js/script.js" defer></script>
-</head>
-
-<body>
-  <header class="header">
-    <div class="overlay"></div>
-    <nav class="container flex flex-jc-sb flex-ai-c container--px">
-      <div class="header__left flex flex-ai-c">
-        <a class="header__logo" href="#" title="NORQi"></a>
-      </div>
-      <a id="btnHamburger" href="#/" class="header__toggle flex hide-for-desktop flex flex-ai-c" title="Navigation">
-        <span></span>
-      </a>
-      <ul class="header__right flex hide-for-mobile">
-        <li>
-          <a class="header__links" href="#" tabindex="0" title="Produkter">Produkter</a>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/icons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/images/icons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/images/icons/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="shortcut icon" href="/images/icons/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#ff0000" />
+    <meta
+      name="msapplication-config"
+      content="/images/icons/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <script src="app/js/script.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="overlay"></div>
+      <nav class="container flex flex-jc-sb flex-ai-c container--px">
+        <div class="header__left flex flex-ai-c">
+          <a class="header__logo" href="#" title="NORQi"></a>
+        </div>
+        <a
+          id="btnHamburger"
+          href="#/"
+          class="header__toggle flex hide-for-desktop flex flex-ai-c"
+          title="Navigation"
+        >
+          <span></span>
+        </a>
+        <ul class="header__right flex hide-for-mobile">
+          <li>
+            <a class="header__links" href="#" tabindex="0" title="Produkter"
+              >Produkter</a
+            >
+          </li>
+          <li>
+            <a
+              class="header__links active"
+              href="#"
+              tabindex="0"
+              title="God viden"
+              >God viden</a
+            >
+          </li>
+          <li>
+            <a class="header__links" href="#" tabindex="0" title="Om NORQi"
+              >Om NORQi</a
+            >
+          </li>
+          <li>
+            <a class="header__links" href="#" tabindex="0" title="Kontakt"
+              >Kontakt</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <ul class="header__menu hide-for-desktop">
+        <li class="header__dropDown">
+          <a href="#" tabindex="0" title="Produkter">Produkter<span></span></a>
+        </li>
+        <li class="header__underMenu">
+          <a href="#" tabindex="0">Kipgryder</a>
+          <a href="#" tabindex="0">Kipstegere</a>
+          <a href="#" tabindex="0">Kogeborde</a>
+        </li>
+        <li class="header__dropDown">
+          <a href="#" tabindex="0" title="God Viden">God viden<span></span></a>
+        </li>
+        <li class="header__underMenu">
+          <a href="#" tabindex="0">Spørgsmål og svar</a>
+          <a href="#" tabindex="0">Brugsanvisning</a>
         </li>
         <li>
-          <a class="header__links" href="#" tabindex="0" title="God viden">God viden</a>
+          <a href="#" tabindex="0" title="Om NORQi">Om NORQi</a>
         </li>
         <li>
-          <a class="header__links" href="#" tabindex="0" title="Om NORQi">Om NORQi</a>
-        </li>
-        <li>
-          <a class="header__links" href="#" tabindex="0" title="Kontakt">Kontakt</a>
+          <a href="#" tabindex="0" title="Kontakt">Kontakt</a>
         </li>
       </ul>
-    </nav>
-    <ul class="header__menu hide-for-desktop">
-      <li class="header__dropDown">
-        <a href="#" tabindex="0" title="Produkter">Produkter<span></span></a>
-      </li>
-      <li class="header__underMenu">
-        <a href="#" tabindex="0">Kipgryder</a>
-        <a href="#" tabindex="0">Kipstegere</a>
-        <a href="#" tabindex="0">Kogeborde</a>
-      </li>
-      <li class="header__dropDown">
-        <a href="#" tabindex="0" title="God Viden">God viden<span></span></a>
-      </li>
-      <li class="header__underMenu">
-        <a href="#" tabindex="0">Spørgsmål og svar</a>
-        <a href="#" tabindex="0">Brugsanvisning</a>
-      </li>
-      <li>
-        <a href="#" tabindex="0" title="Om NORQi">Om NORQi</a>
-      </li>
-      <li>
-        <a href="#" tabindex="0" title="Kontakt">Kontakt</a>
-      </li>
-    </ul>
-  </header>
-  <section class="hero">
-    <div class="hero__bg">
-      <div class="hero__info container container--px">
-        <h1 class="">Brugsanvisning</h1>
-        <p>Mangler I hjælp til jeres induktionsprodukt, har vi her samlet en overskuelig brugeranvisning, så I hurtigt
-          og
-          nemt kan komme i gang.</p>
-      </div>
-
-      <div class="hero__scroll-indicator">
-        <a href="#main">
-          <div class="hero__scroll-animation"></div>
-        </a>
-      </div>
-  </section>
-  <main class="container--py" id="main">
-    <div class="products">
-      <h2>Vores Induktionsprodukter</h2>
-      <div class="
+    </header>
+    <section class="hero">
+      <div class="hero__bg">
+        <div class="hero__info container container--px">
+          <h1 class="">Brugsanvisning</h1>
+          <p>Mangler I hjælp til jeres induktionsprodukt, har vi her samlet en overskuelig brugeranvisning, så I hurtigt
+            og
+            nemt kan komme i gang.</p>
+        </div>
+  
+        <div class="hero__scroll-indicator">
+          <a href="#main">
+            <div class="hero__scroll-animation"></div>
+          </a>
+        </div>
+    </section>
+    <main class="container--main">
+      <div class="products">
+        <h2>Vores Induktionsprodukter</h2>
+        <div
+          class="
             products__container
-              container
-              flex flex-dr-cl flex-jc-sb flex-ai-c
-            ">
-        <div class="products__elem flex flex-dr-cl flex-ai-c">
-          <h3>Kipgrydere</h3>
-          <div class="products__background"></div>
-          <img class="products__image" src="images/produkt-kipgryder.svg" />
-          <a href="#" class="btn-primary products__button">Læs mere</a>
+            container container--main
+            flex flex-dr-cl flex-jc-sb flex-ai-c
+          "
+        >
+          <div class="products__elem flex flex-dr-cl flex-ai-c">
+            <h3>Kipgrydere</h3>
+            <div class="products__background"></div>
+            <img class="products__image" src="images/produkt-kipgryder.svg" />
+            <a href="#" class="btn-primary products__button">Læs mere</a>
+          </div>
+          <div class="products__elem flex flex-dr-cl flex-ai-c">
+            <h3>Kipstegere</h3>
+            <div class="products__background"></div>
+            <img class="products__image" src="images/produkt-kipstegere.svg" />
+            <a href="#" class="btn-primary products__button">Læs mere</a>
+          </div>
+          <div class="products__elem flex flex-dr-cl flex-ai-c">
+            <h3>Kogeborde</h3>
+            <div class="products__background"></div>
+            <img class="products__image" src="images/produkt-kogeborde.svg" />
+            <a href="#" class="btn-primary products__button">Læs mere</a>
+          </div>
         </div>
-        <div class="products__elem flex flex-dr-cl flex-ai-c">
-          <h3>Kipstegere</h3>
-          <div class="products__background"></div>
-          <img class="products__image" src="images/produkt-kipstegere.svg" />
-          <a href="#" class="btn-primary products__button">Læs mere</a>
+        <!-- TODO der skal være 1 outer div, 1 div der er position absolute og en container for de 3 elementer -->
+        <div class="divider flex flex-jc-c">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="179"
+            height="2"
+            viewBox="0 0 179 2"
+          >
+            <g
+              id="Group_306"
+              data-name="Group 306"
+              transform="translate(-7585 -4359)"
+            >
+              <rect
+                id="Rectangle_691"
+                data-name="Rectangle 691"
+                width="11"
+                height="2"
+                transform="translate(7585 4359)"
+                fill="#5cb720"
+              />
+              <rect
+                id="Rectangle_692"
+                data-name="Rectangle 692"
+                width="11"
+                height="2"
+                transform="translate(7606 4359)"
+                fill="#5cb720"
+              />
+              <rect
+                id="Rectangle_693"
+                data-name="Rectangle 693"
+                width="11"
+                height="2"
+                transform="translate(7627 4359)"
+                fill="#5cb720"
+              />
+              <rect
+                id="Rectangle_694"
+                data-name="Rectangle 694"
+                width="11"
+                height="2"
+                transform="translate(7648 4359)"
+                fill="#5cb720"
+              />
+              <rect
+                id="Rectangle_695"
+                data-name="Rectangle 695"
+                width="11"
+                height="2"
+                transform="translate(7669 4359)"
+                fill="#5cb720"
+              />
+              <rect
+                id="Rectangle_696"
+                data-name="Rectangle 696"
+                width="11"
+                height="2"
+                transform="translate(7690 4359)"
+                fill="#5cb720"
+              />
+              <rect
+                id="Rectangle_697"
+                data-name="Rectangle 697"
+                width="11"
+                height="2"
+                transform="translate(7711 4359)"
+                fill="#5cb720"
+              />
+              <rect
+                id="Rectangle_698"
+                data-name="Rectangle 698"
+                width="11"
+                height="2"
+                transform="translate(7732 4359)"
+                fill="#5cb720"
+              />
+              <rect
+                id="Rectangle_699"
+                data-name="Rectangle 699"
+                width="11"
+                height="2"
+                transform="translate(7753 4359)"
+                fill="#5cb720"
+              />
+            </g>
+          </svg>
         </div>
-        <div class="products__elem flex flex-dr-cl flex-ai-c">
-          <h3>Kogeborde</h3>
-          <div class="products__background"></div>
-          <img class="products__image" src="images/produkt-kogeborde.svg" />
-          <a href="#" class="btn-primary products__button">Læs mere</a>
-        </div>
-      </div>
-      <div class="product__container">
-        <div class="product__elemBg">
-          <div class="product__elemContent">
-            <h2>kgkfdpjgpfdjfgdopg</h2>
-            <img src="images/produkt-kipgryder.svg">
+        <div class="product__container container--main">
+          <div class="product__elem container container--px flex flex-dr-cl">
+            <h2>Induktions Kipgryde</h2>
+            <div class="product__elemPolka flex">
+              <img src="images/produkt-kipgryder.svg" />
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    </div>
-    <div class="sandbox container--pall">
-      <svg id="Layer_3" data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1157.33 865.88">
-        <defs>
-          <style>
-            .cls-1 {
-              fill: #e7ece6;
-            }
-
-            .cls-14,
-            .cls-2 {
-              fill: #5da631;
-            }
-
-            .cls-12,
-            .cls-2,
-            .cls-8 {
-              stroke: #5da631;
-            }
-
-            .cls-10,
-            .cls-11,
-            .cls-12,
-            .cls-13,
-            .cls-14,
-            .cls-15,
-            .cls-17,
-            .cls-18,
-            .cls-2,
-            .cls-24,
-            .cls-4,
-            .cls-5,
-            .cls-6,
-            .cls-7,
-            .cls-8,
-            .cls-9 {
-              stroke-linecap: round;
-            }
-
-            .cls-10,
-            .cls-11,
-            .cls-18,
-            .cls-2,
-            .cls-24,
-            .cls-5,
-            .cls-6,
-            .cls-7,
-            .cls-8 {
-              stroke-linejoin: round;
-            }
-
-            .cls-10,
-            .cls-11,
-            .cls-12,
-            .cls-15,
-            .cls-2,
-            .cls-4,
-            .cls-5,
-            .cls-6,
-            .cls-7,
-            .cls-8,
-            .cls-9 {
-              stroke-width: 3px;
-            }
-
-            .cls-10,
-            .cls-16,
-            .cls-18,
-            .cls-3,
-            .cls-6 {
-              fill: #60b22f;
-            }
-
-            .cls-10,
-            .cls-11,
-            .cls-18,
-            .cls-24,
-            .cls-3,
-            .cls-4 {
-              stroke: #60b22f;
-            }
-
-            .cls-12,
-            .cls-13,
-            .cls-15,
-            .cls-3,
-            .cls-4,
-            .cls-9 {
-              stroke-miterlimit: 10;
-            }
-
-            .cls-11,
-            .cls-12,
-            .cls-13,
-            .cls-15,
-            .cls-24,
-            .cls-4,
-            .cls-5,
-            .cls-7,
-            .cls-8,
-            .cls-9 {
-              fill: none;
-            }
-
-            .cls-5,
-            .cls-9 {
-              stroke: #737373;
-            }
-
-            .cls-15,
-            .cls-6,
-            .cls-7 {
-              stroke: #292928;
-            }
-
-            .cls-13 {
-              stroke: #ececec;
-              stroke-width: 5px;
-            }
-
-            .cls-14,
-            .cls-17 {
-              stroke: #717070;
-            }
-
-            .cls-17 {
-              fill: #fff;
-            }
-
-            .cls-19,
-            .cls-20,
-            .cls-21,
-            .cls-22,
-            .cls-23 {
-              isolation: isolate;
-            }
-
-            .cls-20,
-            .cls-21 {
-              font-size: 53.76px;
-            }
-
-            .cls-20,
-            .cls-21,
-            .cls-22,
-            .cls-23 {
-              fill: #292928;
-              font-family: RobotoCondensed-Regular, Roboto Condensed;
-            }
-
-            .cls-21 {
-              letter-spacing: 0.16em;
-            }
-
-            .cls-22 {
-              font-size: 33.96px;
-              letter-spacing: 0.16em;
-            }
-
-            .cls-23 {
-              font-size: 73.57px;
-              letter-spacing: 0.16em;
-            }
-
-            .cls-24 {
-              stroke-width: 17px;
-            }
-          </style>
-        </defs>
-        <g id="Group_59" data-name="Group 59">
-          <rect id="Rectangle_374" data-name="Rectangle 374" class="cls-1" x="570.18" y="53.77" width="254.66"
-            height="96.21" rx="16.98" />
-          <rect id="Rectangle_375" data-name="Rectangle 375" class="cls-1" x="843.23" y="53.77" width="254.66"
-            height="96.21" rx="16.98" />
-          <rect id="Rectangle_376" data-name="Rectangle 376" class="cls-1" x="288.63" y="380.59" width="254.66"
-            height="96.21" rx="16.98" />
-          <path id="Path_193" data-name="Path 193" class="cls-2" d="M556.38,925.79l5.45-6,5.16,6Z"
-            transform="translate(-219.65 -317.41)" />
-          <path id="Path_194" data-name="Path 194" class="cls-3"
-            d="M450.27,869.2v43.86l30.42,30.42a42.7,42.7,0,0,0,12-19.1c5-16.89-2.61-31.08-4.24-34A50,50,0,0,0,450.27,869.2Z"
-            transform="translate(-219.65 -317.41)" />
-          <rect id="Rectangle_378" data-name="Rectangle 378" class="cls-1" x="288.63" y="213.65" width="396.15"
-            height="96.21" rx="16.98" />
-          <rect id="Rectangle_379" data-name="Rectangle 379" class="cls-1" x="701.75" y="213.65" width="396.15"
-            height="96.21" rx="16.98" />
-          <rect id="Rectangle_380" data-name="Rectangle 380" class="cls-1" x="42.46" y="48.11" width="101.87"
-            height="101.87" rx="16.98" />
-          <rect id="Rectangle_381" data-name="Rectangle 381" class="cls-1" x="42.46" y="377.76" width="101.87"
-            height="101.87" rx="16.98" />
-          <rect id="Rectangle_382" data-name="Rectangle 382" class="cls-1" x="42.46" y="210.82" width="101.87"
-            height="101.87" rx="16.98" />
-          <line id="Line_30" data-name="Line 30" class="cls-4" x1="93.39" y1="78.53" x2="93.39" y2="102.58" />
-          <path id="Path_195" data-name="Path 195" class="cls-5"
-            d="M300.3,403.73a17.66,17.66,0,0,0-4.24,18.39,17.91,17.91,0,0,0,17,11.32c.81,0,9.25-.2,14.15-7.08,4.53-6.34,4.08-15.62-1.41-22.63"
-            transform="translate(-219.65 -317.41)" />
-          <line id="Line_31" data-name="Line 31" class="cls-4" x1="93.39" y1="242.65" x2="93.39" y2="266.7" />
-          <path id="Path_196" data-name="Path 196" class="cls-5"
-            d="M300.3,567.84a17.68,17.68,0,0,0-4.24,18.4,17.91,17.91,0,0,0,17,11.32c.81,0,9.25-.2,14.15-7.08,4.53-6.34,4.08-15.63-1.41-22.64"
-            transform="translate(-219.65 -317.41)" />
-          <line id="Line_32" data-name="Line 32" class="cls-4" x1="91.97" y1="409.6" x2="91.97" y2="433.65" />
-          <path id="Path_197" data-name="Path 197" class="cls-5"
-            d="M298.89,734.79a17.67,17.67,0,0,0-4.25,18.39,17.9,17.9,0,0,0,17,11.32c.8,0,9.24-.2,14.15-7.07,4.52-6.35,4.07-15.63-1.42-22.64"
-            transform="translate(-219.65 -317.41)" />
-          <rect id="Rectangle_383" data-name="Rectangle 383" class="cls-1" x="41.04" y="543.3" width="101.87"
-            height="101.87" rx="16.98" />
-          <line id="Line_33" data-name="Line 33" class="cls-4" x1="90.56" y1="575.13" x2="90.56" y2="599.18" />
-          <path id="Path_198" data-name="Path 198" class="cls-5"
-            d="M297.47,900.32a17.7,17.7,0,0,0-4.24,18.4,17.89,17.89,0,0,0,17,11.31c.81,0,9.25-.19,14.15-7.07,4.53-6.34,4.08-15.63-1.41-22.64"
-            transform="translate(-219.65 -317.41)" />
-          <circle id="Ellipse_38" data-name="Ellipse 38" class="cls-6" cx="229.21" cy="114.61" r="21.22" />
-          <path id="Path_199" data-name="Path 199" class="cls-7"
-            d="M449.56,379.68a9.22,9.22,0,0,1,9.2,9.19v23.35a29.38,29.38,0,0,0-11.32-1.42,28.9,28.9,0,0,0-7.07,1.42V388.87A9.21,9.21,0,0,1,449.56,379.68Z"
-            transform="translate(-219.65 -317.41)" />
-          <rect id="Rectangle_384" data-name="Rectangle 384" class="cls-8" x="288.63" y="52.36" width="263.15"
-            height="94.79" rx="16.98" />
-          <path id="Path_200" data-name="Path 200" class="cls-5" d="M544.36,399.48v24h33.1v-24"
-            transform="translate(-219.65 -317.41)" />
-          <path id="Path_201" data-name="Path 201" class="cls-5" d="M810.34,396v36h33.1V396"
-            transform="translate(-219.65 -317.41)" />
-          <line id="Line_34" data-name="Line 34" class="cls-4" x1="324.72" y1="114.61" x2="357.81" y2="114.61" />
-          <line id="Line_35" data-name="Line 35" class="cls-9" x1="854.55" y1="103.29" x2="854.55" y2="117.65" />
-          <line id="Line_36" data-name="Line 36" class="cls-9" x1="864.46" y1="96.22" x2="864.46" y2="117.65" />
-          <line id="Line_37" data-name="Line 37" class="cls-4" x1="875.77" y1="89.85" x2="875.77" y2="117.65" />
-          <line id="Line_38" data-name="Line 38" class="cls-9" x1="885.68" y1="82.78" x2="885.68" y2="117.65" />
-          <path id="Path_202" data-name="Path 202" class="cls-7"
-            d="M448.86,699.42l-29.72,36.79A30.82,30.82,0,0,0,415.49,771a36.73,36.73,0,0,0,33.37,21.59A39.5,39.5,0,0,0,482.81,773,33.25,33.25,0,0,0,480,736.21Z"
-            transform="translate(-219.65 -317.41)" />
-          <path id="Path_203" data-name="Path 203" class="cls-10"
-            d="M576.1,739l-11.51,14.25a11.93,11.93,0,0,0-1.42,13.46,14.22,14.22,0,0,0,12.93,8.36,15.32,15.32,0,0,0,13.16-7.57A13,13,0,0,0,590.9,761a13.18,13.18,0,0,0-2.74-7.68Z"
-            transform="translate(-219.65 -317.41)" />
-          <path id="Path_204" data-name="Path 204" class="cls-10"
-            d="M449.59,727.72,434,747a16.14,16.14,0,0,0-1.91,18.21,19.25,19.25,0,0,0,17.48,11.32,20.73,20.73,0,0,0,17.8-10.25,17.65,17.65,0,0,0,2.23-8.9A17.83,17.83,0,0,0,465.91,747Z"
-            transform="translate(-219.65 -317.41)" />
-          <rect id="Rectangle_385" data-name="Rectangle 385" class="cls-1" x="567.35" y="379.18" width="254.66"
-            height="96.21" rx="16.98" />
-          <rect id="Rectangle_386" data-name="Rectangle 386" class="cls-1" x="846.06" y="377.76" width="254.66"
-            height="96.21" rx="16.98" />
-          <rect id="Rectangle_387" data-name="Rectangle 387" class="cls-1" x="288.63" y="541.88" width="254.66"
-            height="96.21" rx="16.98" />
-          <rect id="Rectangle_388" data-name="Rectangle 388" class="cls-1" x="567.35" y="540.47" width="254.66"
-            height="96.21" rx="16.98" />
-          <rect id="Rectangle_389" data-name="Rectangle 389" class="cls-1" x="846.06" y="539.05" width="254.66"
-            height="96.21" rx="16.98" />
-          <line id="Line_39" data-name="Line 39" class="cls-9" x1="325.42" y1="403.23" x2="325.42" y2="424.67" />
-          <line id="Line_40" data-name="Line 40" class="cls-9" x1="335.32" y1="400.4" x2="335.32" y2="426.99" />
-          <line id="Line_41" data-name="Line 41" class="cls-9" x1="343.81" y1="407.47" x2="343.81" y2="421.62" />
-          <path id="Path_205" data-name="Path 205" class="cls-5"
-            d="M536.12,731.36l.45,28.9a12.83,12.83,0,0,0,4.25,7.07,13.15,13.15,0,0,0,9.9,2.83"
-            transform="translate(-219.65 -317.41)" />
-          <path id="Path_206" data-name="Path 206" class="cls-11"
-            d="M839.27,727.91l-5,6.2a5.19,5.19,0,0,0-.62,5.86,6.18,6.18,0,0,0,5.63,3.63,6.65,6.65,0,0,0,5.72-3.29,5.63,5.63,0,0,0,.72-2.86,5.76,5.76,0,0,0-1.2-3.34Z"
-            transform="translate(-219.65 -317.41)" />
-          <path id="Path_207" data-name="Path 207" class="cls-11"
-            d="M840.68,752l-5,6.2a5.19,5.19,0,0,0-.61,5.86,6.2,6.2,0,0,0,5.62,3.64,6.69,6.69,0,0,0,5.73-3.3,5.63,5.63,0,0,0-.48-6.2Z"
-            transform="translate(-219.65 -317.41)" />
-          <path id="Path_208" data-name="Path 208" class="cls-11"
-            d="M823.7,740.64l-5,6.2a5.2,5.2,0,0,0-.62,5.86,6.2,6.2,0,0,0,5.62,3.64,6.68,6.68,0,0,0,5.73-3.3,5.6,5.6,0,0,0,.71-2.86,5.71,5.71,0,0,0-1.19-3.34Z"
-            transform="translate(-219.65 -317.41)" />
-          <path id="Path_209" data-name="Path 209" class="cls-5" d="M1086.62,728.43v35.15h33.1V728.43"
-            transform="translate(-219.65 -317.41)" />
-          <path id="Path_210" data-name="Path 210" class="cls-5" d="M1085.21,889.71v35.16h33.09V889.71"
-            transform="translate(-219.65 -317.41)" />
-          <line id="Line_42" data-name="Line 42" class="cls-9" x1="887.09" y1="435.77" x2="893.72" y2="435.77" />
-          <line id="Line_43" data-name="Line 43" class="cls-9" x1="887.09" y1="428.7" x2="893.72" y2="428.7" />
-          <line id="Line_44" data-name="Line 44" class="cls-12" x1="887.09" y1="421.62" x2="893.72" y2="421.62" />
-          <line id="Line_45" data-name="Line 45" class="cls-13" x1="8.35" y1="181.11" x2="1148.35" y2="181.11" />
-          <line id="Line_46" data-name="Line 46" class="cls-13" x1="8.35" y1="512.17" x2="1148.35" y2="512.17" />
-          <line id="Line_47" data-name="Line 47" class="cls-13" x1="8.35" y1="345.22" x2="1148.35" y2="345.22" />
-          <line id="Line_48" data-name="Line 48" class="cls-13" x1="8.35" y1="671.34" x2="1148.35" y2="671.34" />
-          <line id="Line_49" data-name="Line 49" class="cls-13" x1="288.63" y1="671.34" x2="288.63" y2="857.59" />
-          <line id="Line_50" data-name="Line 50" class="cls-13" x1="580.08" y1="673.58" x2="579.65" y2="857.59" />
-          <line id="Line_51" data-name="Line 51" class="cls-13" x1="870.12" y1="671.34" x2="870.12" y2="856.84" />
-          <circle id="Ellipse_39" data-name="Ellipse 39" class="cls-7" cx="229.92" cy="594.94" r="43.15" />
-          <path id="Path_211" data-name="Path 211" class="cls-14" d="M541.52,960.45"
-            transform="translate(-219.65 -317.41)" />
-          <path id="Path_212" data-name="Path 212" class="cls-5" d="M545.06,890.42h32.37l-32.37,38,34,.2Z"
-            transform="translate(-219.65 -317.41)" />
-          <circle id="Ellipse_40" data-name="Ellipse 40" class="cls-5" cx="610.5" cy="592.11" r="16.27" />
-          <line id="Line_52" data-name="Line 52" class="cls-4" x1="610.5" y1="592.11" x2="616.87" y2="585.74" />
-          <path id="Path_213" data-name="Path 213" class="cls-11" d="M1109.57,904.57l-7.08,9.9-9.9-12.73"
-            transform="translate(-219.65 -317.41)" />
-          <line id="Line_53" data-name="Line 53" class="cls-15" x1="110.37" y1="758.35" x2="110.37" y2="738.74" />
-          <path id="Path_215" data-name="Path 215" class="cls-7" d="M344.87,1056H314.45l16.06-21.85Z"
-            transform="translate(-219.65 -317.41)" />
-          <circle id="Ellipse_41" data-name="Ellipse 41" class="cls-16" cx="396.16" cy="745.61" r="7.07" />
-          <circle id="Ellipse_42" data-name="Ellipse 42" class="cls-16" cx="396.16" cy="772.49" r="7.07" />
-          <circle id="Ellipse_43" data-name="Ellipse 43" class="cls-16" cx="396.16" cy="799.38" r="7.07" />
-          <line id="Line_54" data-name="Line 54" class="cls-15" x1="411.72" y1="745.61" x2="462.28" y2="745.61" />
-          <line id="Line_55" data-name="Line 55" class="cls-15" x1="411.72" y1="772.49" x2="451.72" y2="772.49" />
-          <line id="Line_56" data-name="Line 56" class="cls-15" x1="411.72" y1="799.38" x2="445.53" y2="799.38" />
-          <line id="Line_57" data-name="Line 57" class="cls-15" x1="967.17" y1="715.69" x2="967.17" y2="735.5" />
-          <path id="Path_217" data-name="Path 217" class="cls-7" d="M1172.6,1053.2H1203l-16,21.85Z"
-            transform="translate(-219.65 -317.41)" />
-          <path id="Path_218" data-name="Path 218" class="cls-17" d="M449.56,402.31"
-            transform="translate(-219.65 -317.41)" />
-          <path id="Path_219" data-name="Path 219" class="cls-17" d="M449.56,402.31"
-            transform="translate(-219.65 -317.41)" />
-          <circle id="Ellipse_44" data-name="Ellipse 44" class="cls-7" cx="227.79" cy="263.16" r="22.64" />
-          <path id="Path_220" data-name="Path 220" class="cls-7"
-            d="M413.13,548.21a50.26,50.26,0,0,1,34.31-15,43,43,0,0,1,31.83,14.12l-16.62,16.48"
-            transform="translate(-219.65 -317.41)" />
-          <path id="Path_221" data-name="Path 221" class="cls-7"
-            d="M421.44,556a32.9,32.9,0,0,1,26-11.51A26.36,26.36,0,0,1,470.08,556"
-            transform="translate(-219.65 -317.41)" />
-          <path id="Path_222" data-name="Path 222" class="cls-7"
-            d="M480.27,611.88a50.21,50.21,0,0,1-34.31,15,43,43,0,0,1-31.83-14.11l16.62-16.48"
-            transform="translate(-219.65 -317.41)" />
-          <path id="Path_223" data-name="Path 223" class="cls-7"
-            d="M472,604.1a32.87,32.87,0,0,1-26,11.51,26.31,26.31,0,0,1-22.63-11.51"
-            transform="translate(-219.65 -317.41)" />
-          <circle id="Ellipse_45" data-name="Ellipse 45" class="cls-16" cx="227.79" cy="263.16" r="8.49" />
-          <line id="Line_58" data-name="Line 58" class="cls-4" x1="321.88" y1="252.55" x2="358.82" y2="252.55" />
-          <line id="Line_59" data-name="Line 59" class="cls-9" x1="321.88" y1="262.46" x2="348.76" y2="262.46" />
-          <line id="Line_60" data-name="Line 60" class="cls-9" x1="321.88" y1="273.07" x2="340.27" y2="273.07" />
-          <path id="Path_224" data-name="Path 224" class="cls-5"
-            d="M973.75,569.26a16,16,0,0,0-17-5.66,16.52,16.52,0,1,0,17,26.88" transform="translate(-219.65 -317.41)" />
-          <circle id="Ellipse_46" data-name="Ellipse 46" class="cls-11" cx="741.37" cy="261.75" r="7.07" />
-          <line id="Line_61" data-name="Line 61" class="cls-4" x1="615.88" y1="91.27" x2="615.88" y2="108.2" />
-          <path id="Path_225" data-name="Path 225" class="cls-18" d="M556.38,925.79H567l-5.16-6Z"
-            transform="translate(-219.65 -317.41)" />
-          <rect id="Rectangle_390" data-name="Rectangle 390" class="cls-16" x="221.91" y="84.19" width="15.95"
-            height="15.56" />
-          <g id="_0-4" data-name=" 0-4" class="cls-19">
-            <text class="cls-20" transform="translate(384.84 117.44)">0</text>
-            <text class="cls-20" transform="translate(384.84 117.44)">0</text>
-          </g>
-          <g id="_0-5" data-name=" 0-5" class="cls-19">
-            <text class="cls-20" transform="translate(384.84 281.56)">0</text>
-            <text class="cls-20" transform="translate(384.84 281.56)">0</text>
-          </g>
-          <g id="_0-6" data-name=" 0-6" class="cls-19">
-            <text class="cls-20" transform="translate(793.72 281.56)">0</text>
-            <text class="cls-20" transform="translate(793.72 281.56)">0</text>
-          </g>
-          <g id="_0-7" data-name=" 0-7" class="cls-19">
-            <text class="cls-20" transform="translate(657.89 117.44)">0</text>
-            <text class="cls-20" transform="translate(657.89 117.44)">0</text>
-          </g>
-          <g id="_0-8" data-name=" 0-8" class="cls-19">
-            <text class="cls-20" transform="translate(657.89 451.33)">0</text>
-            <text class="cls-20" transform="translate(657.89 451.33)">0</text>
-          </g>
-          <g id="_0.0-2" data-name=" 0.0-2" class="cls-19">
-            <text class="cls-21" transform="translate(932.37 451.33)">
-              0.0
-            </text>
-            <text class="cls-21" transform="translate(932.37 451.33)">
-              0.0
-            </text>
-          </g>
-          <g id="_00:00:00-3" data-name=" 00:00:00-3" class="cls-19">
-            <text class="cls-22" transform="translate(374.93 604.13)">
-              00:00:00
-            </text>
-            <text class="cls-22" transform="translate(374.93 604.13)">
-              00:00:00
-            </text>
-          </g>
-          <g id="_00:00:00-4" data-name=" 00:00:00-4" class="cls-19">
-            <text class="cls-22" transform="translate(928.12 602.72)">
-              00:00:00
-            </text>
-            <text class="cls-22" transform="translate(928.12 602.72)">
-              00:00:00
-            </text>
-          </g>
-          <g id="_00:00-2" data-name=" 00:00-2" class="cls-19">
-            <text class="cls-22" transform="translate(669.21 602.72)">
-              00:00
-            </text>
-            <text class="cls-22" transform="translate(669.21 602.72)">
-              00:00
-            </text>
-          </g>
-          <g id="_00:00-3" data-name=" 00:00-3" class="cls-19">
-            <text class="cls-23" transform="translate(623.94 793.72)">
-              00:00
-            </text>
-            <text class="cls-23" transform="translate(623.94 793.72)">
-              00:00
-            </text>
-          </g>
-          <g id="_0-9" data-name=" 0-9" class="cls-19">
-            <text class="cls-20" transform="translate(912.56 117.44)">0</text>
-            <text class="cls-20" transform="translate(912.56 117.44)">0</text>
-          </g>
-          <rect id="Rectangle_377" data-name="Rectangle 377" class="cls-24" x="8.5" y="8.5" width="1140.33"
-            height="848.88" />
-          <path id="Path_192" data-name="Path 192" class="cls-16" d="M1191.82,1090l87.51-.28-43.45,44.9Z"
-            transform="translate(-219.65 -317.41)" />
-          <path class="cls-7" d="M313.32,1087.5l19,0,46.42,46.42,49-49L372,1029.14"
-            transform="translate(-219.65 -317.41)" />
-          <path class="cls-7" d="M1170.24,1088.19l19,0,46.41,46.41,49-49q-27.89-27.88-55.76-55.76"
-            transform="translate(-219.65 -317.41)" />
-        </g>
-      </svg>
-    </div>
-    <div class="accordion">
-      <div class="accordion__elem">
-        <div class="accordion__question">
-          <p class="accordion__title">Generelt</p>
-          <span class="accordion__icon"></span>
-        </div>
-        <div class="accordion__panel">
-          <p>
-            Startknap. Starter gryden. Der skal komme hvidt lys i start
-            knappen når gryden er tændt. Der går ca. 30 sekunder før systemet
-            og dermed skærmen er klar til drift.
-          </p>
-        </div>
+      <div class="accordion container--px">
+        <!-- TODO der skal være 1 outer div, 1 div der er position absolute og en container for de 3 elementer -->
       </div>
-      <div class="accordion__elem">
-        <div class="accordion__question">
-          <p class="accordion__title">Trykknappanel</p>
-          <span class="accordion__icon"></span>
+      <div class="accordion container--px">
+        <div class="accordion__elem">
+          <div class="accordion__question">
+            <h3>Betjening</h3>
+            <span class="accordion__icon"></span>
+          </div>
+          <div class="accordion__panel">
+            <h4 class="accordion__subtoggle accordion__subtoggle--hover">
+              OBS
+            </h4>
+            <div class="accordion__subpanel">
+              <p>⚠️Lad aldrig gryden stå tændt uden opsyn.</p>
+              <p>⚠️ Gryden må maksimalt fyldes til 40 mm under overkant.</p>
+              <p>
+                ⚠️ Der må ikke benyttes fedt eller madolie uden opsyn, da der er
+                fare for brand.
+              </p>
+              <p>
+                ⚠️ Lad stærkt saltholdige ingredienser blive i gryden i så kort
+                tid som muligt. Salt har korrosiv indvirkning på det rustfrie
+                stål.
+              </p>
+              <p>
+                ⚠️ En evt. brand i olie eller fedt må aldrig slukkes med vand.
+                Sluk for varmen, luk låget eller dæk med brandtæppe.
+              </p>
+              <p>
+                Tænd for forsyningsspændingen på forsyningsadskilleren. Drej
+                håndtaget så det står lodret, og den hvide pil vender opad.
+              </p>
+              <img
+                src="../images/forsyning.svg"
+                alt=""
+                class="menu__imgcenter menu__img-small"
+              />
+            </div>
+            <h4 class="accordion__subtoggle accordion__subtoggle--hover">
+              Trykknappanel
+            </h4>
+            <div class="accordion__subpanel">
+              <div class="trykknappanel__start">
+                <p>Startknap:</p>
+                <p>
+                  Startknappen starter gryden. Når knappen lyser hvidt, er
+                  gryden tændt. Der går ca. 30 sekunder før systemet og dermed
+                  skærmen er klar til drift.
+                </p>
+              </div>
+              <div class="trykknappanel__stop">
+                <p>Stopknap:</p>
+                <p>Stopknappen slukker for alt i gryden.</p>
+              </div>
+              <div class="trykknappanel__slowmix">
+                <p>Slowmixknap:</p>
+                <p>
+                  Slowmixeren er ekstraudstyr. Med den kan du omrøre med
+                  begrænset hastighed, når låget er åbent. Omrøreren kører så
+                  længe der holdes på knappen med begrænset hastighed maks. 20
+                  o/min. SlowMix-hastigheden indstilles i brugermenuen (5-20
+                  o/min).
+                </p>
+              </div>
+              <div class="trykknappanel__buzzer">
+                <p>Buzzer/lydgiver:</p>
+                <p>
+                  Giver lyd i forbindelse med tidsfunktioner og programmer. Kan
+                  være placeret bag frontpladen.
+                </p>
+              </div>
+              <!-- TODO: Fix img-str -->
+              <img
+                src="../images/knappanel.svg"
+                alt=""
+                class="menu__imgcenter"
+              />
+            </div>
+          </div>
         </div>
-        <div class="accordion__panel">
-          <p>
-            Startknap: Startknappen starter gryden. Når knappen lyser hvidt,
-            er gryden tændt. Der går ca. 30 sekunder før systemet og dermed
-            skærmen er klar til drift. Stopknap: Stopknappen slukker for alt i
-            gryden. Slowmixknap: Slowmixeren er ekstraudstyr. Med den kan du
-            omrøre med begrænset hastighed, når låget er åbent. Omrøreren
-            kører så længe, der holdes på knappen med begrænset hastighed
-            maks. 20 o/min. Denne sikre lave hastighed overvåges med speciel
-            sikkerhedsfunktion, der stopper omrøreren i tilfælde af fejl i
-            frekvensomformer eller PLC system. Der kan ikke nulstilles fejl af
-            denne kategori via skærmen. Der meldes SAFF på frekvensomformerens
-            display og i alarmmenuen. Fejlen kan kun nulstilles ved at slukke
-            for gryden på forsyningsadskilleren eller automatsikring for
-            frekvensomformer. SlowMix hastigheden indstilles i brugermenuen
-            (5-20 o/min). Buzzer / lydgiver. Giver lyd i forbindelse med
-            tidsfunktioner og programmer. Kan være placeret bag frontpladen.
-          </p>
+        <div class="accordion__elem">
+          <div class="accordion__question">
+            <h3>Hovedmenu</h3>
+            <span class="accordion__icon"></span>
+          </div>
+          <div class="accordion__panel">
+            <h4 class="accordion__subtoggle accordion__subtoggle--hover">
+              Hovedmenu – Generelt
+            </h4>
+            <div class="accordion__subpanel">
+              <p>Hovedmenu med omrører:</p>
+              <img
+                src="../images/hovedmenuomrorer.svg"
+                alt=""
+                class="menu__imgcenter"
+              />
+              <p>
+                Den grønne ring om madtemperaturen angiver, at temperaturen
+                styres efter denne.
+              </p>
+              <p>Hovedmenu uden omrører:</p>
+              <img
+                src="../images/hovedmenuudenomrorer.svg"
+                alt=""
+                class="menu__imgcenter"
+              />
+              <p>
+                Hovedmenuen uden omrører har samme funktioner som ovenfor
+                foruden omrører. Når der ikke er omrører i gryden, er
+                madtemperaturen også fjernet ifm. automatiske programmer.
+              </p>
+            </div>
+            <h4 class="accordion__subtoggle accordion__subtoggle--hover">
+              Undermenu – Varme
+            </h4>
+            <div class="accordion__subpanel">
+              <img
+                src="../images/varmemenu.svg"
+                alt=""
+                class="menu__imgcenter"
+              />
+              <p>
+                For at komme i undermenuen, tastes et vilkårligt sted på
+                varmemenuen – eksempelvis på feltet for aktuel temperatur på
+                bunden.
+              </p>
+              <p>
+                Her indstilles ønsket temperatur på bunden af gryden, ønsket
+                madtemperatur eller ønsket varmetrin:
+              </p>
+              <div class="flex flex-jc-sb flex-ai-st menu__columngap">
+                <img
+                  src="../images/bundtemperatur.svg"
+                  alt=""
+                  class="menu__ikon"
+                />
+                <div class="flex flex-dr-cl row-gap">
+                  <p>Bundtemperatur:</p>
+                  <p>
+                    Der varmes med fuld effekt, indtil et stykke tid før den
+                    ønskede temperatur på grydebunden opnås. Gryden justerer
+                    selv effekten det sidste stykke – sådan undgår vi oversving
+                    i temperaturen.
+                  </p>
+                  <p>
+                    Vær opmærksom på, at når der varmes med fuld effekt, bliver
+                    bunden meget varm. Der er risiko for, at maden brænder på,
+                    så her er det smart at anvende omrører.
+                  </p>
+                </div>
+              </div>
+              <div class="flex flex-jc-sb flex-ai-st menu__columngap row-gap">
+                <img
+                  src="../images/madtemperatur.svg"
+                  alt=""
+                  class="menu__ikon"
+                />
+                <div class="flex flex-dr-cl flex-ai-st row-gap">
+                  <p>Madtemperatur:</p>
+                  <p>
+                    En sensor på ydersiden af grydekroppen måler temperaturen i
+                    maden. Da det er en indirekte måling vil visningen altid
+                    være 3-6° bagefter. Det er en forudsætning, at omrøreren
+                    skal køre, for at funktionen virker.
+                  </p>
+                  <p>
+                    Når madtemperatur er valgt, er det denne temperatur, der
+                    styrer opvarmningen. Opvarmningen fortsætter indtil den
+                    valgte madtemperatur opnås, og derefter vil systemet overgå
+                    til vedligehold. Det vil sige, at temperaturen bibeholdes
+                    ved kun at tilføre lidt effekt ad gangen.
+                  </p>
+                </div>
+              </div>
+              <div class="flex flex-jc-sb flex-ai-st menu__columngap row-gap">
+                <img src="../images/opvarmning.svg" alt="" class="menu__ikon" />
+                <div>
+                  <p>Skånsom opvarmning:</p>
+                  <p>
+                    Opvarmning med varmetrin. Den ønskede temperatur på bunden
+                    øges gradvist afhængigt af valgt varmetrin (0-10) – jo
+                    højere tal, jo hurtigere opvarmning. Det vil sige, at bunden
+                    kan opvarmes skånsomt alt efter ønske.
+                  </p>
+                </div>
+              </div>
+              <p>
+                Ikonet for den valgte opvarmningsmetode bliver sort, når
+                funktionen er valgt.
+              </p>
+              <p>
+                Grader eller varmetrin kan angives med piletasterne eller ved
+                tryk på det numeriske tastatur.
+              </p>
+              <p>
+                Gryden kan kun varme, når den står vandret. Hvis gryden ikke
+                står vandret, når varmen tændes, popper en advarsel op.
+              </p>
+              <!-- TODO Fix ikoner -->
+              <div class="grid flex-ai-st menu__columngap row-gap">
+                <img src="../images/gryderetur.svg" alt="" class="menu__ikon" />
+                <p>Advarsel: Kip gryde retur.</p>
+                <div class="grid-center">
+                  <img
+                    src="../images/cross.svg"
+                    alt=""
+                    class="menu__ikon container__crossimg"
+                  />
+                </div>
+                <p>
+                  Retur til hovedmenuen, hvor varmen tændes med
+                  start/stop-tasten.
+                </p>
+              </div>
+            </div>
+            <h4 class="accordion__subtoggle accordion__subtoggle--hover">
+              Undermenu – Vand
+            </h4>
+            <div class="accordion__subpanel">
+              <img
+                src="../images/vandmenu.svg"
+                alt=""
+                class="menu__imgcenter"
+              />
+              <p>
+                Ved automatisk fyldning af gryden kan piletasterne bruges til at
+                vælge 5 liter af gangen, eller tastaturet bruges til at vælge
+                antal liter.
+              </p>
+              <p>
+                Den akkumulerede vandmængde er den samlede mængde vand, der er
+                blevet påfyldt både manuelt og automatisk.
+              </p>
+              <p>
+                Af sikkerhedshensyn kan der kun være en bestemt mængde vand i
+                gryden. Hvis der er brug for at fylde mere i, skal den
+                akkumulerede vandmængde nulstilles ved hjælp af tasten.
+              </p>
+              <p>
+                Gryden skal være vandret, og låget være åbent for at man kan
+                fylde vand i, ellers popper advarsler op.
+              </p>
+              <!-- TODO Fix ikoner -->
+              <div class="flex flex-ai-st menu__columngap grid row-gap">
+                <img src="../images/aabnlaaget.svg" alt="" class="menu__ikon" />
+                <p>Advarsel: Åbn låget.</p>
+                <img src="../images/luklaaget.svg" alt="" class="menu__ikon" />
+                <p>Advarsel: Luk låget.</p>
+                <div class="grid-center">
+                  <img
+                    src="../images/cross.svg"
+                    alt=""
+                    class="menu__ikon container__crossimg"
+                  />
+                </div>
+                <p>
+                  Retur til hovedmenuen, hvor omrøreren tændes med
+                  start/stop-tasten.
+                </p>
+              </div>
+
+              <p>
+                Af sikkerhedshensyn kan der ikke fyldes vand i gryden, når den
+                er over 120 grader varm. Der vil derfor komme en advarsel, der
+                skal kvitteres for:
+              </p>
+              <div class="flex flex-ai-st menu__columngap">
+                <img src="../images/temp120.svg" alt="" class="menu__ikon" />
+                <p>Advarsel: Bundtemperatur over 120 grader.</p>
+              </div>
+
+              <p>
+                Der er desuden skoldnings- og forbrændingsfare ved påfyldning af
+                vand, når der er varm olie i gryden (over 100 grader).
+              </p>
+            </div>
+            <h4 class="accordion__subtoggle accordion__subtoggle--hover">
+              Undermenu – Tid
+            </h4>
+            <div class="accordion__subpanel">
+              <img src="../images/tidmenu.svg" alt="" class="menu__imgcenter" />
+              <p>Der kan angives tid efter klokkeslæt eller tidsforløb.</p>
+              <p>
+                Ikonet for den valgte tidsangivelse bliver sort, når funktionen
+                er valgt.
+              </p>
+              <div class="flex flex-dr-cl row-gap">
+                <p>
+                  Fra forsiden kan der anvendes to simple tidsfunktioner uden at
+                  lave et program:
+                </p>
+                <ol>
+                  <li>
+                    Hvis der indstilles en tid og trykkes start fra forsiden,
+                    fungerer buzzeren som et æggeur, der giver lyd, når tiden er
+                    gået.
+                  </li>
+                  <li>
+                    Hvis der indstilles et klokkeslæt, vil gryden begynde at
+                    varme, når tiden er nået.
+                  </li>
+                </ol>
+              </div>
+              <p>
+                Tidsfunktioner anvendes særligt i forbindelse med automatiske
+                programmer.
+              </p>
+            </div>
+            <h4 class="accordion__subtoggle accordion__subtoggle--hover">
+              Undermenu – Programmer
+            </h4>
+            <div class="accordion__subpanel">
+              <img
+                src="../images/programmenu.svg"
+                alt=""
+                class="menu__imgcenter"
+              />
+              <p>
+                I programoversigten vises det valgte program med en grøn ring.
+              </p>
+              <p>
+                Programmet startes med start/stop-knappen og et eventuelt
+                igangværende program stoppes med samme knap.
+              </p>
+              <div class="flex flex-dr-cl row-gap">
+                <p>
+                  Programmer er en sekvens (rækkefølge) af grydens almindelige
+                  funktioner:
+                </p>
+                <ol>
+                  <li>Opvarmning</li>
+                  <li>Røre</li>
+                  <li>Vandpåfyldning</li>
+                  <li>Tid/klokkeslæt</li>
+                  <li>Køling</li>
+                  <li>Buzzer</li>
+                </ol>
+                <p>
+                  Der kan oprettes 10 forskellige programmer med hver 15
+                  funktioner.
+                </p>
+                <p>
+                  Der kan frit vælges rækkefølge af funktionerne. Tryk på
+                  blyanten ved et af programmerne for at komme ind i
+                  standardmenuen, hvor de forskellige funktioner kan vælges.
+                </p>
+                <img
+                  src="../images/eksempelpaaprogram.svg"
+                  alt=""
+                  class="menu__imgcenter"
+                />
+                <p>
+                  I gryder uden omrører findes funktionen køling og opvarmning
+                  efter madtemperaturen ikke.
+                </p>
+                <p>
+                  En funktion ændres ved at trykke på aktivitetsfeltet og
+                  slettes ved hjælp af skraldespanden.
+                </p>
+              </div>
+            </div>
+            <h4 class="accordion__subtoggle accordion__subtoggle--hover">
+              Kipning af gryden
+            </h4>
+            <div class="accordion__subpanel">
+              <div class="flex flex-ai-st menu__columngap">
+                <!-- TODO Fix ikoner -->
+                <img src="../images/kip.svg" alt="" class="menu__ikon" />
+                <div class="flex flex-dr-cl row-gap">
+                  <p>
+                    Kipper gryden for indhold. Der kan kun kippes, når låget er
+                    åbent.
+                  </p>
+                  <p>
+                    Der er forbrændingsfare ved kipning – pas på varmt
+                    udstrømmende indhold og sørg for, at der ikke er personer
+                    bagved gryden, når denne kippes.
+                  </p>
+                </div>
+              </div>
+              <div class="flex flex-ai-st menu__columngap">
+                <!-- TODO Fix ikoner -->
+                <img
+                  src="../images/vandretposition.svg"
+                  alt=""
+                  class="menu__ikon"
+                />
+                <div class="flex flex-dr-cl row-gap">
+                  <p>Returnerer gryden til vandret position.</p>
+                  <p>
+                    Af sikkerhedshensyn er der kun bevægelse af gryden, så længe
+                    en tast er aktiveret.
+                  </p>
+                  <p>
+                    Kip systemet indeholder en ’tilt back’ funktion. Det vil
+                    sige, at gryden tipper et lille stykke tilbage, når
+                    kip-knappen slippes. Det gør det mere bekvemt at tømme
+                    gryden.
+                  </p>
+                  <div>
+                    <p>
+                      I servicemenuen kan der indstilles en pausetid og en
+                      returkip-tid.
+                    </p>
+                    <p>Se den udvidede brugervejledning.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="accordion__elem">
-        <div class="accordion__question">
-          <p class="accordion__title">Hovedmenu</p>
-          <span class="accordion__icon"></span>
-        </div>
-        <div class="accordion__panel">
-          <h3 class="accordion__subtoggle accordion__subtoggle--hover">
-            Varme
-          </h3>
-          <div class="accordion__subpanel">
-            <p>
-              For at komme i undermenuen, tastes et vilkårligt sted på
-              varmemenuen – eks. på feltet for aktuel temperatur på bunden.
-              Her indstilles ønsket temperatur på bunden af gryden, ønsket
-              madtemperatur eller ønsket varmetrin. Ikonet bliver sort, når
-              funktionen er valgt. Grader eller varmetrin kan angives med
-              piletasterne eller ved tryk på det numeriske tastatur. Gryden
-              kan kun varme, når den står vandret. Hvis gryden ikke står
-              vandret, når varmen tændes, popper en advarsel op
-            </p>
+        <div class="accordion__elem">
+          <div class="accordion__question">
+            <h3>Alarmer</h3>
+            <span class="accordion__icon"></span>
           </div>
-          <h3 class="accordion__subtoggle accordion__subtoggle--hover">
-            Omrører
-          </h3>
-          <div class="accordion__subpanel">
+          <div class="accordion__panel flex flex-dr-cl row-gap">
+            <!-- TODO: Fix img-str -->
+            <img
+              src="../images/alarmmenu.svg"
+              alt="Alarm menu"
+              class="menu__imgcenter"
+            />
+            <p>Alle alarmer samles i ovennævnte alarmliste.</p>
             <p>
-              Der returneres til hovedmenuen viaog omrøreren startes på vanlig
-              vis med start- stop tasten i venstre side. Af sikkerhedshensyn
-              kan omrøreren kun køre med lukket låg. Hvis der forsøges kørt
-              med åbent låg, popper en advarsel op ’Luk låget’.
+              Alarmen listes med dato og klokkeslæt. Der kvitteres for alarmen
+              med ?? tasten.
+              <!-- TODO: Hvilken tast? -->
             </p>
-          </div>
-          <h3 class="accordion__subtoggle accordion__subtoggle--hover">
-            Vand
-          </h3>
-          <div class="accordion__subpanel">
             <p>
-              Af sikkerhedshensyn kan der kun være en bestemt mængde vand i
-              gryden. Hvis I har brug for at fylde mere i, skal den
-              akkumulerede vandmængde nulstilles. Gryden skal være vandret og
-              låget være åbent for at man kan fylde vand i. Advarsler: Af
-              sikkerhedshensyn kan der ikke fyldes vand i gryden, når den er
-              over 120 grader varm. Der vil derfor komme en advarsel, der skal
-              kvitteres for. Der er desuden skoldnings- og forbrændingsfare
-              ved påfyldning af vand, når der er varm olie i gryden (over 100
-              grader).
-            </p>
-          </div>
-          <h3 class="accordion__subtoggle accordion__subtoggle--hover">
-            Tid
-          </h3>
-          <div class="accordion__subpanel">
-            <p>
-              Der anvendes 2 måder at angive tid på. Den valgte måde angives
-              med sort farve – ligesom i menuen for varme. Symbolet, angiver
-              et tidsforløb, angivet i timer og minutter. Symbolet, angiver et
-              klokkeslæt. Fra forsiden kan der anvendes 2 simple
-              tidsfunktioner uden at lave et program: 1. Hvis du indstiller en
-              tid og trykker start fra forsiden fungerer buzzeren som et
-              æggeur, der giver lyd, når tiden er gået. 2. Hvis du indstiller
-              et klokkeslæt, vil gryden begynde at varme, når tiden er nået.
-              Tidsfunktioner anvendes særligt i forbindelse med automatiske
-              programmer.
-            </p>
-          </div>
-          <h3 class="accordion__subtoggle accordion__subtoggle--hover">
-            Programmer
-          </h3>
-          <div class="accordion__subpanel">
-            <p>
-              Programmer er en sekvens (rækkefølge) af grydens almindelige
-              funktioner: 1. Opvarmning 2. Røre 3. Vandpåfyldning 4. Tider /
-              klokkeslæt 5. Køling 6. Buzzer Der kan vælges 10 forskellige
-              programmer / sekvenser med hver 15 trin (funktioner) Der kan
-              frit vælges rækkefølge af funktionerne. Man taster en af
-              ovennævnte funktioner og kommer derved ind i standardmenuen for
-              funktionen, hvor de forskellige variable vælges. I gryder uden
-              omrører mangler også funktionen køling og opvarmning efter
-              madtemperaturen.
-            </p>
-          </div>
-          <h3 class="accordion__subtoggle accordion__subtoggle--hover">
-            Gennemse et eksisterende program
-          </h3>
-          <div class="accordion__subpanel">
-            <p>
-              For at gennemse en funktion i f.eks. rengøringsprogrammet, vist
-              ovenfor. Opvarmningen ses igennem. Først trykkes på
-              opvarmningssymbolet i aktivitetsfeltet, derefter trykkes på
-              varmesymbolet i højre side og undermenuen dukker op. Undermenuen
-              forlades ved at trykke på krydset og til sidst trykkes igen på
-              varmesymbolet i aktivitetsfeltet.
+              Nogle alarmer vil komme igen efter 5 minutter, hvis årsagen til
+              alarmen ikke er fjernet.
             </p>
           </div>
         </div>
       </div>
-    </div>
-  </main>
-  <footer>
-    <div></div>
-    <div>
-      <div>
-        <a href="#">Link</a>
-        <a href="#">Link</a>
-        <a href="#">Link</a>
+    </main>
+    <footer class="footer">
+      <div class="footer__wrapper container container--px flex flex-jc-sb">
+        <div class="footer__kontakt flex flex-dr-cl">
+          <h3>Kontakt os</h3>
+          <p>NORQi ApS</p>
+          <p>Cikorievej 182</p>
+          <p>DK-5220 Odense SØ</p>
+          <p>T: +45 71 95 60 31</p>
+          <p>M: info@norqi.com</p>
+          <p>CVR: DK38634216</p>
+        </div>
+        <div class="footer__links flex flex-dr-cl">
+          <h3>Link</h3>
+          <a href="#">Kipgryder</a>
+          <a href="#">Kipstegere</a>
+          <a href="#">Kogeborde</a>
+          <a href="#">Referencer</a>
+          <a href="#">Produktregistrering</a>
+          <a href="#">Kontakt</a>
+        </div>
+        <div class="footer__some flex flex-dr-cl flex-ai-st">
+          <h3>Optimizing cooking to its best!</h3>
+          <div class="footer__icons flex flex-ai-c">
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+          </div>
+        </div>
       </div>
-      <h2></h2>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>

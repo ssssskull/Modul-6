@@ -38,6 +38,9 @@
     position: relative;
     flex: 1;
     width: 100%;
+    h3 {
+      font-family: "Quicksand", sans-serif;
+    }
 
     @include breakpoint-up(ipad) {
       &:where(:not(:first-child)) {
@@ -63,7 +66,7 @@
     }
   }
   &__image {
-    margin: 2rem 0 4rem 0;
+    margin: 2.5rem 0 4rem 0;
     max-width: 170px;
 
     @include breakpoint-up(computer) {
@@ -77,10 +80,43 @@
 }
 
 .product {
-  &__elemContent {
+  // TODO tilføj position absolute til polka dot :)
+  &__elem {
+    h2 {
+      font-weight: 600;
+      margin-bottom: 2.5rem;
+      flex: 1;
+      text-align: center;
+    }
+    @include breakpoint-up(ipad) {
+      flex-direction: row;
+      align-items: center;
+
+      h2 {
+        text-align: unset;
+      }
+    }
+  }
+  // TODO fix polka :(
+  &__elemPolka {
+    // TODO: ide: column gap med dobbel så meget afstand som i produkter kunne evt løse skalering
+    background-image: url("../../images/polka-pattern3x7.svg");
+    background-size: contain;
+    max-width: 50%;
+    height: auto;
+    width: 100%;
+    margin-left: auto;
+    flex: 1;
+
     img {
-      max-width: 200px;
+      flex-basis: 150px;
+      margin-left: -85px;
+      max-width: 150px;
       height: auto;
+
+      @include breakpoint-up(computer) {
+        max-width: 360px;
+      }
     }
   }
 }
