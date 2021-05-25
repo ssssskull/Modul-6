@@ -78,6 +78,7 @@ for (let i = 0; i < accordionSubquestions.length; i++) {
     if (accordionSubpanel.style.maxHeight) {
       accordionSubpanel.style.maxHeight = null;
     } else {
+
       accordionSubpanel.style.maxHeight = `${
         accordionSubpanel.scrollHeight + 20
       }px`;
