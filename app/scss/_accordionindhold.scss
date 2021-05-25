@@ -8,6 +8,14 @@
     width: 100%;
   }
 
+  &__img-small {
+    width: 60%;
+
+    @include breakpoint-up(largeComputer) {
+      width: 100%;
+    }
+  }
+
   &__ppaddingnone {
     padding-top: 0;
   }
@@ -32,5 +40,11 @@
   &__crossimg {
     width: 30px;
     height: 30px;
+  }
+}
+
+div[class^="trykknappanel"] {
+  p:first-child {
+    font-weight: bold;
   }
 }

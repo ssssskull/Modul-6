@@ -7,8 +7,8 @@
   }
 
   &__icon {
-    width: 30px;
-    height: 30px;
+    width: 22px;
+    height: 22px;
     background-image: url("../../images/plus.svg");
     background-position: center center;
     background-repeat: no-repeat;
@@ -32,13 +32,6 @@
         background-image: url("../../images/plus-hover.svg");
       }
     }
-  }
-
-  &__title {
-    font-family: "Roboto Condensed", sans-serif;
-    font-size: $font-h2-computer-fallback;
-    font-size: $font-h2-computer;
-    color: inherit;
   }
 
   &__panel {
