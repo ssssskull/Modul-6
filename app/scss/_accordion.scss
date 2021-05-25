@@ -1,11 +1,14 @@
 .accordion {
+  max-width: 980px;
+  margin: 0 auto;
+
   &__elem {
     border-bottom: 1px solid $clr-divider;
   }
 
   &__icon {
-    width: 30px;
-    height: 30px;
+    width: 22px;
+    height: 22px;
     background-image: url("../../images/plus.svg");
     background-position: center center;
     background-repeat: no-repeat;
@@ -13,10 +16,15 @@
     transition: transform 0.3s ease-in-out;
     transform: rotate(0);
     transform-origin: center center;
+
+    @include breakpoint-up(ipad) {
+      width: 29px;
+      height: 29px;
+    }
   }
 
   &__question {
-    padding: 1rem;
+    padding: 2rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,21 +39,17 @@
     }
   }
 
-  &__title {
-    font-family: "Roboto Condensed", sans-serif;
-    font-size: $font-h2-computer-fallback;
-    font-size: $font-h2-computer;
-    color: inherit;
-  }
-
   &__panel {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-in-out;
 
-    :not(.accordion__subpanel) {
-      padding: 2rem;
-    }
+    /*:not(.accordion__subpanel) {
+      margin: 0 2rem 2rem 2rem;
+      &:last-child {
+        margin: 0 2rem 0 2rem;
+      }
+    }*/
   }
 
   &__subtoggle {
@@ -54,6 +58,15 @@
     background-size: 12px 12px;
     background-repeat: no-repeat;
     background-position: left center;
+    padding: 2rem 3rem;
+
+    &:first-child {
+      margin-top: 1rem;
+      padding: 0 2rem 0 3rem;
+      margin-bottom: 2rem;
+    }
+
+    /*TODO sidste elementer på underpaneler og divs i underpaneler skal have 2rem bottom afstand*/
   }
 
   &__subtoggle--hover {
@@ -73,6 +86,9 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
   }
 }
 .rotate {
@@ -80,7 +96,6 @@
 }
 .panel-open {
   color: $clr-primary-green;
-  background: $clr-background-hover;
 
   .accordion__icon {
     background-image: url("../../images/plus-hover.svg");

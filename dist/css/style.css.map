@@ -8,9 +8,14 @@
         "../../app/scss/_globals.scss",
         "../../app/scss/_header.scss",
         "../../app/scss/_hero.scss",
+        "../../app/scss/_products.scss",
         "../../app/scss/_accordion.scss",
         "../../app/scss/_instructions.scss",
         "../../app/scss/_menuclick.scss"
+        "../../app/scss/_accordionindhold.scss",
+        "../../app/scss/_instructions.scss",
+        "../../app/scss/_footer.scss",
+        "../../app/scss/_styleguide.scss"
     ],
     "names": [],
     "file": "style.css"
