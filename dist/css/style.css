@@ -38,6 +38,18 @@ text {
   pointer-events: none;
 }
 
+ol {
+  padding: 0 15px;
+}
+
+ol li {
+  padding: 0 2rem;
+}
+
+ol li:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
 /*======================================
 *            Typografi            *
 ======================================*/
@@ -51,7 +63,8 @@ a {
 /* Paragraf
     ============================ */
 p,
-footer a {
+footer a,
+ol {
   font-size: 16px;
   font-size: 1.6rem;
   line-height: 1.5;
@@ -59,7 +72,8 @@ footer a {
 
 @media (min-width: 40em) {
   p,
-  footer a {
+  footer a,
+  ol {
     font-size: 20px;
     font-size: 2rem;
   }
@@ -67,7 +81,8 @@ footer a {
 
 @media (min-width: 64em) {
   p,
-  footer a {
+  footer a,
+  ol {
     font-size: 22px;
     font-size: 2.2rem;
   }

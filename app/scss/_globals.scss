@@ -18,6 +18,18 @@ body {
 text {
   pointer-events: none;
 }
+
+ol {
+  padding: 0 15px;
+
+  li {
+    padding: 0 2rem;
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
 /*======================================
 *            Typografi            *
 ======================================*/
@@ -32,7 +44,8 @@ a {
 /* Paragraf
     ============================ */
 p,
-footer a {
+footer a,
+ol {
   font-size: $font-p-iphone-fallback;
   font-size: $font-p-iphone;
   line-height: 1.5;
