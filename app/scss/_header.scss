@@ -107,6 +107,7 @@
     font-weight: 500;
 
     li {
+      list-style: none;
       &:not(:first-child) {
         margin-left: 5.5rem;
       }
