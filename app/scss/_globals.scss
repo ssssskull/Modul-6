@@ -18,6 +18,18 @@ body {
 text {
   pointer-events: none;
 }
+
+ol {
+  padding: 0 15px;
+
+  li {
+    padding: 0 2rem;
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
 /*======================================
 *            Typografi            *
 ======================================*/
@@ -31,14 +43,16 @@ a {
 
 /* Paragraf
     ============================ */
-p {
-  font-size: $font-p-ipad-fallback;
-  font-size: $font-p-ipad;
+p,
+footer a,
+ol {
+  font-size: $font-p-iphone-fallback;
+  font-size: $font-p-iphone;
   line-height: 1.5;
 
   @include breakpoint-up(ipad) {
-    font-size: $font-p-computer-fallback;
-    font-size: $font-p-computer;
+    font-size: $font-p-ipad-fallback;
+    font-size: $font-p-ipad;
   }
 }
 
@@ -46,12 +60,13 @@ p {
     ============================ */
 h1,
 h2,
-h3,
 a[class^="btn"],
 .header__menu {
   font-family: "Roboto Condensed", sans-serif;
 }
-
+h3 {
+  font-family: "Quicksand", sans-serif;
+}
 h1 {
   font-size: $font-h1-iphone-fallback;
   font-size: $font-h1-iphone;
@@ -91,6 +106,18 @@ h3 {
   @include breakpoint-up(computer) {
     font-size: $font-h3-computer-fallback;
     font-size: $font-h3-computer;
+  }
+}
+/* Underunderunderoverskrift
+    ============================ */
+h4 {
+  font-size: $font-h4-iphone-fallback;
+  font-size: $font-h4-iphone;
+  line-height: 20px;
+
+  @include breakpoint-up(computer) {
+    font-size: $font-h4-computer-fallback;
+    font-size: $font-h4-computer;
   }
 }
 
@@ -181,9 +208,11 @@ h3 {
     }
   }
 }
-
+.row-gap {
+  row-gap: 2rem;
+}
 /*======================================
-*            Flexbox            *
+*          Flexbox and grid         *
 ======================================*/
 .flex {
   display: flex;
@@ -207,7 +236,18 @@ h3 {
     align-items: flex-start;
   }
 }
+.grid {
+  display: grid;
+  justify-content: start;
+  grid-template-columns: auto auto;
+  column-gap: 2rem;
 
+  &-center {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+}
 /*======================================
 *            Synlighed            *
 ======================================*/
