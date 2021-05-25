@@ -84,11 +84,11 @@ for (let i = 0; i < accordionSubquestions.length; i++) {
       accordionPanel.style.maxHeight = `${
         accordionSubpanel.scrollHeight + accordionPanel.scrollHeight + 20
       }px`;
-
     }
   });
 }
 
+// TODO test hvis det virker uden +20, det er lagt til for at give plads til margin bottom
 /* Mobil menu dropdown
     ============================ */
 const dropDown = document.querySelectorAll(".header__dropDown");
@@ -130,16 +130,20 @@ for (let i = 0; i < svgPowerButton.length; i++) {
         HovedMenuHover.innerHTML = "Omdrejningstal";
         break;
       case 5:
-        HovedMenuHover.innerHTML = "Taste for start og stop af funktion, (varme) Tasten skifter farve grå / sort";
+        HovedMenuHover.innerHTML =
+          "Taste for start og stop af funktion, (varme) Tasten skifter farve grå / sort";
         break;
       case 6:
-        HovedMenuHover.innerHTML = "Taste for start og stop af funktion, (varme) Tasten skifter farve grå / sort";
+        HovedMenuHover.innerHTML =
+          "Taste for start og stop af funktion, (varme) Tasten skifter farve grå / sort";
         break;
       case 7:
-        HovedMenuHover.innerHTML = "Taste for start og stop af funktion, (varme) Tasten skifter farve grå / sort";
+        HovedMenuHover.innerHTML =
+          "Taste for start og stop af funktion, (varme) Tasten skifter farve grå / sort";
         break;
       case 8:
-        HovedMenuHover.innerHTML = "Taste for start og stop af funktion, (varme) Tasten skifter farve grå / sort";
+        HovedMenuHover.innerHTML =
+          "Taste for start og stop af funktion, (varme) Tasten skifter farve grå / sort";
         break;
       case 9:
         HovedMenuHover.innerHTML = "Aktuel Temperatur på bunden";
@@ -172,7 +176,7 @@ for (let i = 0; i < svgPowerButton.length; i++) {
         HovedMenuHover.innerHTML = "Taster for kip af gryde";
         break;
     }
-  })
+  });
 }
 
 const svgPowerButton1 = document.querySelectorAll(".svgvandmenu__knap");
@@ -195,7 +199,7 @@ for (let i = 0; i < svgPowerButton1.length; i++) {
         VandMenuHover.innerHTML = "Retur til hovedmenu";
         break;
     }
-  })
+  });
 }
 
 const svgPowerButton2 = document.querySelectorAll(".svgprogram__knap");
@@ -269,11 +273,10 @@ for (let i = 0; i < svgPowerButton2.length; i++) {
         ProgramHover.innerHTML = "Felt for aktivitet";
         break;
     }
-  })
+  });
 }
 
-
-=======
+/*=======================================
 *            Frederikke            *
 ======================================*/
 
