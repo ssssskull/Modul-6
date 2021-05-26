@@ -11,7 +11,6 @@
         "../../app/scss/_products.scss",
         "../../app/scss/_accordion.scss",
         "../../app/scss/_accordionindhold.scss",
-        "../../app/scss/_instructions.scss",
         "../../app/scss/_footer.scss",
         "../../app/scss/_styleguide.scss",
         "../../app/scss/_dropdown.scss"

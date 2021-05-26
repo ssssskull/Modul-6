@@ -57,7 +57,7 @@ for (let i = 0; i < accordionQuestions.length; i++) {
       accordionPanel.style.maxHeight = null;
     } else {
       plusIcon.classList.add("rotate");
-      accordionPanel.style.maxHeight = `${accordionPanel.scrollHeight}px`;
+      accordionPanel.style.maxHeight = `${accordionPanel.scrollHeight + 20}px`;
     }
   });
 }
@@ -78,14 +78,17 @@ for (let i = 0; i < accordionSubquestions.length; i++) {
     if (accordionSubpanel.style.maxHeight) {
       accordionSubpanel.style.maxHeight = null;
     } else {
-      accordionSubpanel.style.maxHeight = `${accordionSubpanel.scrollHeight}px`;
+      accordionSubpanel.style.maxHeight = `${
+        accordionSubpanel.scrollHeight + 20
+      }px`;
       accordionPanel.style.maxHeight = `${
-        accordionSubpanel.scrollHeight + accordionPanel.scrollHeight
+        accordionSubpanel.scrollHeight + accordionPanel.scrollHeight + 20
       }px`;
     }
   });
 }
 
+// TODO test hvis det virker uden +20, det er lagt til for at give plads til margin bottom
 /* Mobil menu dropdown
     ============================ */
 const dropDown = document.querySelectorAll(".header__dropDown");
@@ -116,9 +119,180 @@ for (let i = 0; i < dropDown.length; i++) {
     }
 
 /*======================================
-*            Frederikke            *
+*               Victor                 *
 ======================================*/
 
+const svgPowerButton = document.querySelectorAll(".svghovedmenu__knap");
+const HovedMenuHover = document.querySelector(".hovedmenu__hover-text");
+
+for (let i = 0; i < svgPowerButton.length; i++) {
+  svgPowerButton[i].addEventListener("click", function () {
+    switch (i) {
+      case 0:
+        HovedMenuHover.innerHTML = "Aktuel madtemperatur";
+        break;
+      case 1:
+        HovedMenuHover.innerHTML = "Aktuelt varmetrin";
+        break;
+      case 2:
+        HovedMenuHover.innerHTML = "Manuel vandpåfyldning";
+        break;
+      case 3:
+        HovedMenuHover.innerHTML = "Røremønster";
+        break;
+      case 4:
+        HovedMenuHover.innerHTML = "Omdrejningstal";
+        break;
+      case 5:
+        HovedMenuHover.innerHTML =
+          "Taste for start og stop af funktion, (varme) Tasten skifter farve grå / sort";
+        break;
+      case 6:
+        HovedMenuHover.innerHTML =
+          "Taste for start og stop af funktion, (varme) Tasten skifter farve grå / sort";
+        break;
+      case 7:
+        HovedMenuHover.innerHTML =
+          "Taste for start og stop af funktion, (varme) Tasten skifter farve grå / sort";
+        break;
+      case 8:
+        HovedMenuHover.innerHTML =
+          "Taste for start og stop af funktion, (varme) Tasten skifter farve grå / sort";
+        break;
+      case 9:
+        HovedMenuHover.innerHTML = "Aktuel Temperatur på bunden";
+        break;
+      case 10:
+        HovedMenuHover.innerHTML = "Forvalgt mængde";
+        break;
+      case 11:
+        HovedMenuHover.innerHTML = "Akkumuleret mængde";
+        break;
+      case 12:
+        HovedMenuHover.innerHTML = "Tid";
+        break;
+      case 13:
+        HovedMenuHover.innerHTML = "Klokkeslet";
+        break;
+      case 14:
+        HovedMenuHover.innerHTML = "Akkumuleret tid";
+        break;
+      case 15:
+        HovedMenuHover.innerHTML = "Taster for kip af gryde";
+        break;
+      case 16:
+        HovedMenuHover.innerHTML = "Menu";
+        break;
+      case 17:
+        HovedMenuHover.innerHTML = "Klokken";
+        break;
+      case 18:
+        HovedMenuHover.innerHTML = "Taster for kip af gryde";
+        break;
+    }
+  });
+}
+
+const svgPowerButton1 = document.querySelectorAll(".svgvandmenu__knap");
+const VandMenuHover = document.querySelector(".vandmenu__hover-text");
+
+for (let i = 0; i < svgPowerButton1.length; i++) {
+  svgPowerButton1[i].addEventListener("click", function () {
+    console.log(i);
+    switch (i) {
+      case 0:
+        VandMenuHover.innerHTML = "Akkumuleret mængde";
+        break;
+      case 1:
+        VandMenuHover.innerHTML = "Forvalgt mængde";
+        break;
+      case 2:
+        VandMenuHover.innerHTML = "Nulstilling af akkumuleret mængde";
+        break;
+      case 3:
+        VandMenuHover.innerHTML = "Retur til hovedmenu";
+        break;
+    }
+  });
+}
+
+const svgPowerButton2 = document.querySelectorAll(".svgprogram__knap");
+const ProgramHover = document.querySelector(".program__hover-text");
+
+for (let i = 0; i < svgPowerButton2.length; i++) {
+  svgPowerButton2[i].addEventListener("click", function () {
+    console.log(i);
+    switch (i) {
+      case 0:
+        ProgramHover.innerHTML = "Opvarmning";
+        break;
+      case 1:
+        ProgramHover.innerHTML = "Omrøring";
+        break;
+      case 2:
+        ProgramHover.innerHTML = "Vandpåfyld";
+        break;
+      case 3:
+        ProgramHover.innerHTML = "Tid";
+        break;
+      case 4:
+        ProgramHover.innerHTML = "Buzzer";
+        break;
+      case 5:
+        ProgramHover.innerHTML = "Køling";
+        break;
+      case 6:
+        ProgramHover.innerHTML = "Felt for aktivitet";
+        break;
+      case 7:
+        ProgramHover.innerHTML = "Felt for aktivitet";
+        break;
+      case 8:
+        ProgramHover.innerHTML = "Felt for aktivitet";
+        break;
+      case 9:
+        ProgramHover.innerHTML = "Felt for aktivitet";
+        break;
+      case 10:
+        ProgramHover.innerHTML = "Felt for aktivitet";
+        break;
+      case 11:
+        ProgramHover.innerHTML = "Felt for aktivitet";
+        break;
+      case 12:
+        ProgramHover.innerHTML = "Felt for aktivitet";
+        break;
+      case 13:
+        ProgramHover.innerHTML = "Felt for aktivitet";
+        break;
+      case 14:
+        ProgramHover.innerHTML = "Felt for aktivitet";
+        break;
+      case 15:
+        ProgramHover.innerHTML = "Felt for aktivitet";
+        break;
+      case 16:
+        ProgramHover.innerHTML = "Felt for aktivitet";
+        break;
+      case 17:
+        ProgramHover.innerHTML = "Felt for aktivitet";
+        break;
+      case 18:
+        ProgramHover.innerHTML = "Felt for aktivitet";
+        break;
+      case 19:
+        ProgramHover.innerHTML = "Felt for aktivitet";
+        break;
+      case 20:
+        ProgramHover.innerHTML = "Felt for aktivitet";
+        break;
+    }
+  });
+}
+
+/*=======================================
+*            Frederikke            *
+======================================*/
 
 /* Active-class på nav
     ============================*/
@@ -144,5 +318,9 @@ for (let i = 0; i < dropDown.length; i++) {
     changeLinkState();
     window.addEventListener("scroll", changeLinkState);
 
+  navlinks.forEach((link) => link.classList.remove("active")); //<-- Active-class fjernes fra hvert element i den node-list, der er gemt i konstanten navlinks
+  navlinks[index].classList.add("active"); //<-- Tilføjer active-class til den aktuelle section fra node-listen i navlinks
+}
 
-
+changeLinkState();
+window.addEventListener("scroll", changeLinkState);

@@ -10,6 +10,16 @@
     padding-bottom: 7.5rem;
   }
 
+  h3 {
+    text-transform: uppercase;
+    color: $clr-secondary-green;
+    font-weight: bold;
+    font-size: 28px;
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+    font-family: "Roboto Condensed", sans-serif;
+  }
+
   &__wrapper {
     flex-wrap: wrap;
     row-gap: 4rem;
@@ -36,20 +46,27 @@
       // TODO brug flex-wrap wrap også min-width max content på elementerne
     }
   }
+
   &__some {
-    h2 {
+    h3 {
       text-align: start;
-      max-width: 160px;
+      max-width: 230px;
+      font-size: 28px;
+      font-size: 2.8rem;
+
       text-transform: uppercase;
       font-weight: bold;
+      color: $clr-background;
+      line-height: 1;
     }
 
     @include breakpoint-up(ipad) {
       align-items: end;
+      font-size: 40px;
+      font-size: 4rem;
 
-      h2 {
+      h3 {
         text-align: end;
-        margin: unset;
       }
     }
   }
@@ -66,7 +83,6 @@
   &__icons {
     max-width: max-content;
     column-gap: 2rem;
-    margin: 2rem 0 0 0;
 
     a {
       background-repeat: no-repeat;
@@ -85,21 +101,5 @@
         background-image: url(../../images/linkedin-brands.svg);
       }
     }
-  }
-
-  h3 {
-    text-transform: uppercase;
-    color: $clr-secondary-green;
-    font-weight: bold;
-    margin-bottom: 2rem;
-    font-size: 28px;
-    font-size: 2.8rem;
-  }
-
-  a,
-  p {
-    font-size: $font-p-ipad-fallback;
-    font-size: $font-p-ipad;
-    line-height: 1.8rem;
   }
 }

@@ -64,8 +64,8 @@
       a {
         display: inline-block;
         position: relative;
-        font-size: $font-p-computer-fallback;
-        font-size: $font-p-computer;
+        font-size: $font-p-ipad-fallback;
+        font-size: $font-p-ipad;
         color: $clr-background;
         padding: 2rem;
         width: 100%;
@@ -74,17 +74,22 @@
     }
   }
 
-  &__dropDown a span {
-    position: absolute;
-    content: " ";
-    width: 12px;
-    height: 12px;
-    background-image: url("../../images/arrowdown.svg");
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-size: 100% 100%;
-    transform: translateY(45%);
-    margin-left: 1rem;
+  &__dropDown {
+    &:first-child {
+      padding-top: 2rem;
+    }
+    span {
+      position: absolute;
+      content: " ";
+      width: 12px;
+      height: 12px;
+      background-image: url("../../images/arrowdown.svg");
+      background-repeat: no-repeat;
+      background-position: right center;
+      background-size: 100% 100%;
+      transform: translateY(45%);
+      margin-left: 1rem;
+    }
   }
 
   &__underMenu {
@@ -102,6 +107,7 @@
     font-weight: 500;
 
     li {
+      list-style: none;
       &:not(:first-child) {
         margin-left: 5.5rem;
       }
