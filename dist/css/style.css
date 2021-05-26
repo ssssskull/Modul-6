@@ -1208,7 +1208,9 @@ div[class^="trykknappanel"] p:first-child {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
-        grid-template-areas: "header1 h1code" "header2 h2code" "paragraph paragraphcode";
+        grid-template-areas: "header1 h1code"
+ "header2 h2code"
+ "paragraph paragraphcode";
   }
   .styleguide__con .grid__color {
     display: -ms-grid;
@@ -1220,7 +1222,12 @@ div[class^="trykknappanel"] p:first-child {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
-        grid-template-areas: "colorbox1 colortext1" "colorbox2 colortext2" "colorbox3 colortext3" "colorbox4 colortext4" "colorbox5 colortext5" "colorbox6 colortext6";
+        grid-template-areas: "colorbox1 colortext1"
+ "colorbox2 colortext2"
+ "colorbox3 colortext3"
+ "colorbox4 colortext4"
+ "colorbox5 colortext5"
+ "colorbox6 colortext6";
   }
   .styleguide__con .flex-dr-r {
     display: -webkit-box;
@@ -1238,5 +1245,14 @@ div[class^="trykknappanel"] p:first-child {
 
 .active {
   color: #5eb91d;
+}
+#dropdown__ctn {
+    display: none;
+    width: 100%;
+    text-align: center;
+}
+
+#dropdown__ctn.show {
+    display: block;
 }
 /*# sourceMappingURL=style.css.map */
