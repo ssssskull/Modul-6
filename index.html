@@ -107,7 +107,7 @@
         </li>
         <li class="header__underMenu">
           <a href="#" tabindex="0">Spørgsmål og svar</a>
-          <a href="#" tabindex="0">Brugsanvisning</a>
+          <a href="#" class="active-menu" tabindex="0">Brugsanvisning</a>
         </li>
         <li>
           <a href="#" tabindex="0" title="Om NORQi">Om NORQi</a>
@@ -136,7 +136,7 @@
         </div>
       </div>
     </section>
-    <main class="container--main">
+    <main class="container--main" id="main">
       <div class="products">
         <h2>Vores Induktionsprodukter</h2>
         <div
@@ -167,91 +167,6 @@
         </div>
         <!-- TODO der skal være 1 outer div, 1 div der er position absolute og en container for de 3 elementer -->
         <div class="divider flex flex-jc-c">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="179"
-            height="2"
-            viewBox="0 0 179 2"
-          >
-            <g
-              id="Group_306"
-              data-name="Group 306"
-              transform="translate(-7585 -4359)"
-            >
-              <rect
-                id="Rectangle_691"
-                data-name="Rectangle 691"
-                width="11"
-                height="2"
-                transform="translate(7585 4359)"
-                fill="#5cb720"
-              />
-              <rect
-                id="Rectangle_692"
-                data-name="Rectangle 692"
-                width="11"
-                height="2"
-                transform="translate(7606 4359)"
-                fill="#5cb720"
-              />
-              <rect
-                id="Rectangle_693"
-                data-name="Rectangle 693"
-                width="11"
-                height="2"
-                transform="translate(7627 4359)"
-                fill="#5cb720"
-              />
-              <rect
-                id="Rectangle_694"
-                data-name="Rectangle 694"
-                width="11"
-                height="2"
-                transform="translate(7648 4359)"
-                fill="#5cb720"
-              />
-              <rect
-                id="Rectangle_695"
-                data-name="Rectangle 695"
-                width="11"
-                height="2"
-                transform="translate(7669 4359)"
-                fill="#5cb720"
-              />
-              <rect
-                id="Rectangle_696"
-                data-name="Rectangle 696"
-                width="11"
-                height="2"
-                transform="translate(7690 4359)"
-                fill="#5cb720"
-              />
-              <rect
-                id="Rectangle_697"
-                data-name="Rectangle 697"
-                width="11"
-                height="2"
-                transform="translate(7711 4359)"
-                fill="#5cb720"
-              />
-              <rect
-                id="Rectangle_698"
-                data-name="Rectangle 698"
-                width="11"
-                height="2"
-                transform="translate(7732 4359)"
-                fill="#5cb720"
-              />
-              <rect
-                id="Rectangle_699"
-                data-name="Rectangle 699"
-                width="11"
-                height="2"
-                transform="translate(7753 4359)"
-                fill="#5cb720"
-              />
-            </g>
-          </svg>
         </div>
         <div class="product__container container--main">
           <div class="product__elem container container--px flex flex-dr-cl">
@@ -1451,10 +1366,11 @@
                     </g>
                   </g>
                 </svg>
+                <div class="hover-menu hovedmenu__hover-text">
+                  <p>Klik på knapperne for at lære mere</p>
+                </div>
               </div>
-              <div class="hover-menu hovedmenu__hover-text">
-                <p>Klik på knapperne for at lære mere</p>
-              </div>
+
               <p>
                 Den grønne ring om madtemperaturen angiver, at temperaturen
                 styres efter denne.
@@ -1510,7 +1426,7 @@
                   </p>
                 </div>
               </div>
-              <div class="flex flex-jc-sb flex-ai-st menu__columngap row-gap">
+              <div class="flex flex-jc-sb flex-ai-st menu__columngap">
                 <img
                   src="../images/madtemperatur.svg"
                   alt=""
@@ -1535,7 +1451,7 @@
               </div>
               <div class="flex flex-jc-sb flex-ai-st menu__columngap row-gap">
                 <img src="../images/opvarmning.svg" alt="" class="menu__ikon" />
-                <div>
+                <div class="flex flex-dr-cl flex-ai-st row-gap">
                   <p>Skånsom opvarmning:</p>
                   <p>
                     Opvarmning med varmetrin. Den ønskede temperatur på bunden
@@ -2313,10 +2229,11 @@
                     </g>
                   </g>
                 </svg>
+                <div class="hover-menu vandmenu__hover-text">
+                  <p>Klik på knapperne for at lære mere</p>
+                </div>
               </div>
-              <div class="hover-menu vandmenu__hover-text">
-                <p>Klik på knapperne for at lære mere</p>
-              </div>
+
               <p>
                 Ved automatisk fyldning af gryden kan piletasterne bruges til at
                 vælge 5 liter af gangen, eller tastaturet bruges til at vælge
@@ -3882,10 +3799,11 @@
                     </g>
                   </g>
                 </svg>
+                <div class="hover-menu program__hover-text">
+                  <p>Klik på knapperne for at lære mere</p>
+                </div>
               </div>
-              <div class="hover-menu program__hover-text">
-                <p>Klik på knapperne for at lære mere</p>
-              </div>
+
               <p>
                 I programoversigten vises det valgte program med en grøn ring.
               </p>

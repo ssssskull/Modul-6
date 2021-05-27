@@ -260,7 +260,7 @@ h4 {
 }
 
 .row-gap {
-  row-gap: 2rem;
+  row-gap: 3rem;
 }
 
 /*======================================
@@ -339,6 +339,28 @@ h4 {
   .hide-for-desktop {
     display: none;
   }
+}
+
+.divider {
+  background-image: url("../../images/divider2.svg");
+  background-position: center center;
+  background-size: 100% 100%;
+  height: 120px;
+  margin: auto;
+}
+
+@media (min-width: 64em) {
+  .divider {
+    height: 80px;
+  }
+}
+
+.active {
+  border-bottom: 2px solid #5eb91d;
+}
+
+.active-menu {
+  background-color: #525652;
 }
 
 .header {
@@ -575,7 +597,7 @@ h4 {
   /*TODO flyt det her til brugsanvisningen
     scroll-snap-align: start;
   */
-  row-gap: 2rem;
+  row-gap: 3rem;
 }
 
 .products h2 {
@@ -841,6 +863,10 @@ h4 {
   background-image: url("../../images/undermenu_plus-hover.svg");
 }
 
+.accordion__subtoggle + .accordion__subtoggle {
+  margin-bottom: 10rem;
+}
+
 .menu__imgcenter {
   display: block;
   margin-left: auto;
@@ -865,8 +891,8 @@ h4 {
 }
 
 .menu__columngap {
-  -webkit-column-gap: 20px;
-          column-gap: 20px;
+  -webkit-column-gap: 3rem;
+          column-gap: 3rem;
 }
 
 .menu__ikon {
@@ -889,6 +915,7 @@ div[class^="trykknappanel"] p:first-child {
 }
 
 .hover-menu {
+  margin-top: 2rem;
   font-family: "Quicksand", sans-serif;
   font-size: 2rem;
   display: -webkit-box;
@@ -901,6 +928,33 @@ div[class^="trykknappanel"] p:first-child {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 2rem;
+  background-color: #ededed;
+  background-image: url("../../images/icons/info.svg");
+  background-size: 22px 22px;
+  background-position: 10% center;
+  background-repeat: no-repeat;
+}
+
+.hover-menu p {
+  padding-left: 16%;
+}
+
+@media (min-width: 40em) {
+  .hover-menu p {
+    padding-left: unset;
+  }
+}
+
+p + .menu__columngap {
+  margin-top: 6rem;
+}
+
+.menu__columngap .row-gap {
+  margin-bottom: 3rem;
+}
+
+.menu__columngap .row-gap:last-of-type {
+  margin-bottom: 6rem;
 }
 
 .footer {
@@ -990,6 +1044,10 @@ div[class^="trykknappanel"] p:first-child {
   }
 }
 
+.footer__kontakt a:hover, .footer__links a:hover {
+  text-decoration: underline;
+}
+
 .footer__kontakt a:not(:last-child),
 .footer__kontakt p:not(:last-child), .footer__links a:not(:last-child),
 .footer__links p:not(:last-child) {
@@ -1055,7 +1113,7 @@ div[class^="trykknappanel"] p:first-child {
 
 .styleguide .boxed {
   background: rgba(219, 230, 236, 0.1);
-  border: 1px solid #DEE2E6;
+  border: 1px solid #dee2e6;
   border-radius: 10px;
   font-size: 13px;
   padding: 2rem;
@@ -1067,7 +1125,7 @@ div[class^="trykknappanel"] p:first-child {
 
 .styleguide .colorbox {
   border-radius: 25px;
-  background: #73AD21;
+  background: #73ad21;
   border-radius: 50%;
   width: 150px;
   height: 150px;
@@ -1099,11 +1157,11 @@ div[class^="trykknappanel"] p:first-child {
 }
 
 .styleguide .colorbox5 {
-  background: #ECECEC;
+  background: #ececec;
 }
 
 .styleguide .colorbox6 {
-  background: #F7F7F7;
+  background: #f7f7f7;
   border: solid #313331 1px;
 }
 
@@ -1234,10 +1292,6 @@ div[class^="trykknappanel"] p:first-child {
   .styleguide__con .boxed {
     margin-bottom: 5rem;
   }
-}
-
-.active {
-  color: #5eb91d;
 }
 
 .header__right > li {

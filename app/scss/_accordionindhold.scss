@@ -21,7 +21,7 @@
   }
 
   &__columngap {
-    column-gap: 20px;
+    column-gap: 3rem;
   }
 
   &__ikon {
@@ -48,10 +48,37 @@ div[class^="trykknappanel"] {
   }
 }
 .hover-menu {
+  margin-top: 2rem;
   font-family: "Quicksand", sans-serif;
   font-size: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 2rem;
+  background-color: $clr-background-hover;
+  background-image: url("../../images/icons/info.svg");
+  background-size: 22px 22px;
+  background-position: 10% center;
+  background-repeat: no-repeat;
+
+  p {
+    padding-left: 16%;
+
+    @include breakpoint-up(ipad) {
+      padding-left: unset;
+    }
+  }
+}
+
+p + .menu__columngap {
+  margin-top: 6rem;
+}
+
+.menu__columngap {
+  .row-gap {
+    margin-bottom: 3rem;
+    &:last-of-type {
+      margin-bottom: 6rem;
+    }
+  }
 }

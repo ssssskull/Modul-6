@@ -123,82 +123,84 @@ for (let i = 0; i < dropDown.length; i++) {
 }
 
 /*======================================
-*               Victor                 *
+*               Victor            *
 ======================================*/
 
 const svgPowerButton = document.querySelectorAll(".svghovedmenu__knap");
-const HovedMenuHover = document.querySelector(".hovedmenu__hover-text");
+const svgHovedMenuForklaring = document.querySelector(
+  ".hovedmenu__hover-text p"
+);
 
 for (let i = 0; i < svgPowerButton.length; i++) {
   svgPowerButton[i].addEventListener("click", function () {
     switch (i) {
       case 0:
-        HovedMenuHover.innerHTML = "Aktuel madtemperatur";
+        svgHovedMenuForklaring.innerHTML = "Aktuel madtemperatur";
         break;
       case 1:
-        HovedMenuHover.innerHTML = "Aktuelt varmetrin";
+        svgHovedMenuForklaring.innerHTML = "Aktuelt varmetrin";
         break;
       case 2:
-        HovedMenuHover.innerHTML = "Manuel vandpåfyldning";
+        svgHovedMenuForklaring.innerHTML = "Manuel vandpåfyldning";
         break;
       case 3:
-        HovedMenuHover.innerHTML = "Røremønster";
+        svgHovedMenuForklaring.innerHTML = "Røremønster";
         break;
       case 4:
-        HovedMenuHover.innerHTML = "Omdrejningstal";
+        svgHovedMenuForklaring.innerHTML = "Omdrejningstal";
         break;
       case 5:
-        HovedMenuHover.innerHTML =
+        svgHovedMenuForklaring.innerHTML =
           "Taste for start og stop af funktion, (varme) Tasten skifter farve grå / sort";
         break;
       case 6:
-        HovedMenuHover.innerHTML =
+        svgHovedMenuForklaring.innerHTML =
           "Taste for start og stop af funktion, (varme) Tasten skifter farve grå / sort";
         break;
       case 7:
-        HovedMenuHover.innerHTML =
+        svgHovedMenuForklaring.innerHTML =
           "Taste for start og stop af funktion, (varme) Tasten skifter farve grå / sort";
         break;
       case 8:
-        HovedMenuHover.innerHTML =
+        svgHovedMenuForklaring.innerHTML =
           "Taste for start og stop af funktion, (varme) Tasten skifter farve grå / sort";
         break;
       case 9:
-        HovedMenuHover.innerHTML = "Aktuel Temperatur på bunden";
+        svgHovedMenuForklaring.innerHTML = "Aktuel Temperatur på bunden";
         break;
       case 10:
-        HovedMenuHover.innerHTML = "Forvalgt mængde";
+        svgHovedMenuForklaring.innerHTML = "Forvalgt mængde";
         break;
       case 11:
-        HovedMenuHover.innerHTML = "Akkumuleret mængde";
+        svgHovedMenuForklaring.innerHTML = "Akkumuleret mængde";
         break;
       case 12:
-        HovedMenuHover.innerHTML = "Tid";
+        svgHovedMenuForklaring.innerHTML = "Tid";
         break;
       case 13:
-        HovedMenuHover.innerHTML = "Klokkeslet";
+        svgHovedMenuForklaring.innerHTML = "Klokkeslet";
         break;
       case 14:
-        HovedMenuHover.innerHTML = "Akkumuleret tid";
+        svgHovedMenuForklaring.innerHTML = "Akkumuleret tid";
         break;
       case 15:
-        HovedMenuHover.innerHTML = "Taster for kip af gryde";
+        svgHovedMenuForklaring.innerHTML = "Taster for kip af gryde";
         break;
       case 16:
-        HovedMenuHover.innerHTML = "Menu";
+        svgHovedMenuForklaring.innerHTML = "Menu";
         break;
       case 17:
-        HovedMenuHover.innerHTML = "Klokken";
+        svgHovedMenuForklaring.innerHTML = "Klokken";
         break;
       case 18:
-        HovedMenuHover.innerHTML = "Taster for kip af gryde";
+        svgHovedMenuForklaring.innerHTML = "Taster for kip af gryde";
         break;
     }
   });
 }
 
 const svgPowerButton1 = document.querySelectorAll(".svgvandmenu__knap");
-const VandMenuHover = document.querySelector(".vandmenu__hover-text");
+const VandMenuHover = document.querySelector(".vandmenu__hover-text p");
 
 for (let i = 0; i < svgPowerButton1.length; i++) {
   svgPowerButton1[i].addEventListener("click", function () {
@@ -221,7 +223,7 @@ for (let i = 0; i < svgPowerButton1.length; i++) {
 }
 
 const svgPowerButton2 = document.querySelectorAll(".svgprogram__knap");
-const ProgramHover = document.querySelector(".program__hover-text");
+const ProgramHover = document.querySelector(".program__hover-text p");
 
 for (let i = 0; i < svgPowerButton2.length; i++) {
   svgPowerButton2[i].addEventListener("click", function () {
