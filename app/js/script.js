@@ -19,6 +19,10 @@ for (let y = 0; y < dropdownElement.length; y++) {
 function openMenu() {
   let dropdownChild = this.nextElementSibling;
   dropdownChild.classList.toggle("show");
+
+  let otherChild = this.parentElement.element;
+  //otherChild.classList.remove("show");
+  console.log(otherChild);
 }
 
 /*======================================

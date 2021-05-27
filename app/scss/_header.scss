@@ -105,9 +105,9 @@
     font-size: $font-p-ipad-fallback;
     font-size: $font-p-ipad;
     font-weight: 500;
+    list-style: none;
 
-    li {
-      list-style: none;
+    > li {
       &:not(:first-child) {
         margin-left: 5.5rem;
       }
