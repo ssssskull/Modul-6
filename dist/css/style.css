@@ -357,10 +357,23 @@ h4 {
 
 .active {
   border-bottom: 2px solid #5eb91d;
+  cursor: pointer;
 }
 
 .active-menu {
   background-color: #525652;
+}
+
+.arrow-down {
+  position: absolute;
+  content: " ";
+  background-image: url("../../images/arrowdown.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 100% 100%;
+  -webkit-transform: translateY(45%);
+          transform: translateY(45%);
+  margin-left: 1rem;
 }
 
 .header {
@@ -448,17 +461,8 @@ h4 {
 }
 
 .header__dropDown span {
-  position: absolute;
-  content: " ";
   width: 12px;
   height: 12px;
-  background-image: url("../../images/arrowdown.svg");
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: 100% 100%;
-  -webkit-transform: translateY(45%);
-          transform: translateY(45%);
-  margin-left: 1rem;
 }
 
 .header__underMenu {
@@ -476,6 +480,15 @@ h4 {
   font-size: 2rem;
   font-weight: 500;
   list-style: none;
+}
+
+.header__right span {
+  width: 13px;
+  height: 13px;
+}
+
+.header__right > li a:hover {
+  border-bottom: 2px solid #5eb91d;
 }
 
 .header__right > li:not(:first-child) {

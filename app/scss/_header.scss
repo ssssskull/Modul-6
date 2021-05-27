@@ -79,16 +79,8 @@
       padding-top: 2rem;
     }
     span {
-      position: absolute;
-      content: " ";
       width: 12px;
       height: 12px;
-      background-image: url("../../images/arrowdown.svg");
-      background-repeat: no-repeat;
-      background-position: right center;
-      background-size: 100% 100%;
-      transform: translateY(45%);
-      margin-left: 1rem;
     }
   }
 
@@ -107,7 +99,18 @@
     font-weight: 500;
     list-style: none;
 
+    span {
+      width: 13px;
+      height: 13px;
+    }
+
     > li {
+      a {
+        &:hover {
+          border-bottom: 2px solid #5eb91d;
+          // TODO fix at buder bottom ikke gælder undermenuen
+        }
+      }
       &:not(:first-child) {
         margin-left: 5.5rem;
       }
