@@ -6,13 +6,19 @@
 /* dropdown
     ============================*/
 
-const menuUnderMenu = document.getElementById("undermenu__dropdown");
-const dropdownElement = document.getElementById("dropdown__ctn");
+//const menuUnderMenu = document.getElementById("undermenu__dropdown");
+let dropdownElement = document.querySelectorAll(".undermenu__dropdown");
+console.log(dropdownElement);
 
-menuUnderMenu.addEventListener("click", openMenu);
+dropdownElement = Array.from(dropdownElement);
+console.log(dropdownElement);
 
+for (let y = 0; y < dropdownElement.length; y++) {
+  dropdownElement[y].addEventListener("click", openMenu);
+}
 function openMenu() {
-  dropdownElement.classList.toggle("show");
+  let dropdownChild = this.nextElementSibling;
+  dropdownChild.classList.toggle("show");
 }
 
 /*======================================
@@ -33,7 +39,12 @@ window.addEventListener("scroll", function () {
     header.style.top = "0";
   } else {
     header.style.top = `-${header.clientHeight}px`;
-    dropdownElement.classList.remove("show");
+
+    const showClassSelector = document.querySelectorAll(".show");
+
+    for (let z = 0; z < showClassSelector.length; z++) {
+      showClassSelector[z].classList.remove("show");
+    }
   }
   prevScrollPos = currentScrollPos;
 });
