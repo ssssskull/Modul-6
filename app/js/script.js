@@ -1,5 +1,21 @@
 "use strict";
 /*======================================
+*            simone          *
+======================================*/
+
+/* dropdown
+    ============================*/
+
+const menuUnderMenu = document.getElementById("undermenu__dropdown");
+const dropdownElement = document.getElementById("dropdown__ctn");
+
+menuUnderMenu.addEventListener("click", openMenu);
+
+function openMenu() {
+  dropdownElement.classList.toggle("show");
+}
+
+/*======================================
 *            Daniel            *
 ======================================*/
 
@@ -10,12 +26,14 @@ let prevScrollPos = window.pageYOffset;
 
 window.addEventListener("scroll", function () {
   let currentScrollPos = window.pageYOffset;
+
   if (prevScrollPos > currentScrollPos) {
     header.style.top = "0";
   } else if (header.classList.contains("open")) {
     header.style.top = "0";
   } else {
     header.style.top = `-${header.clientHeight}px`;
+    dropdownElement.classList.remove("show");
   }
   prevScrollPos = currentScrollPos;
 });
@@ -102,21 +120,6 @@ for (let i = 0; i < dropDown.length; i++) {
       underMenu.style.height = `${underMenu.scrollHeight}px`;
     }
   });
-}
-
-/*======================================
-*            simone          *
-======================================*/
-
-/* dropdown
-    ============================*/
-
-document
-  .getElementById("undermenu__dropdown")
-  .addEventListener("click", openMenu);
-
-function openMenu() {
-  document.getElementById("dropdown__ctn").classList.toggle("show");
 }
 
 /*======================================
@@ -290,5 +293,3 @@ for (let i = 0; i < svgPowerButton2.length; i++) {
     }
   });
 }
-
-
