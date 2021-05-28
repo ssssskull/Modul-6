@@ -5,9 +5,13 @@
   }
   .overskrift_elm {
     margin: 0;
-    padding-right: 2.4rem;
+    flex: 1;
   }
-
+  .overskrift-illustration {
+    height: 150px;
+    background-image: url("../../images/polka-pattern3x7.svg");
+    flex: 5;
+  }
   .product__elem {
     width: 100%;
   }
@@ -32,7 +36,6 @@
     font-weight: normal;
     display: block;
     min-height: 150px;
-    margin: 2rem auto 0 auto;
   }
 
   .colorbox {
@@ -76,22 +79,33 @@
   .typografi_afstand {
     padding-bottom: 3.2rem;
   }
-
+  .boxed_grafik {
+    flex: 1;
+  }
   &__image {
     background-image: url("../../images/produkt-kipgryder.svg");
     background-repeat: no-repeat;
     max-width: 100%;
-    height: auto;
-    margin-top: 1.25rem;
+    height: 180px;
+    background-position: center center;
+
+    @include breakpoint-up(ipad) {
+      background-position: initial;
+    }
   }
 
   &__productimage {
     width: 90%;
     height: 100%;
     object-fit: cover;
-    margin: 2rem auto 0 auto;
     display: grid;
     justify-content: center;
+
+    margin: 0 auto;
+
+    @include breakpoint-up(ipad) {
+      margin: unset;
+    }
   }
 
   .test__productimage {
@@ -100,18 +114,14 @@
   }
 
   &__con {
-    row-gap: 5rem;
+    row-gap: 3rem;
     @include breakpoint-up(ipad) {
       flex-direction: row;
+      row-gap: 5rem;
 
       p {
         flex-basis: 300px;
         flex: 2;
-        max-width: 50%;
-      }
-
-      .styleguide__subcon {
-        flex: 1;
         max-width: 50%;
       }
 
@@ -125,10 +135,6 @@
 
       .boxed {
         margin-right: 0;
-      }
-
-      .styleguide__productimage {
-        margin: 2rem auto 0 0;
       }
 
       @include breakpoint-up(computer) {
@@ -151,17 +157,6 @@
     }
 
     @include breakpoint-up(ipad) {
-      .grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        align-items: start;
-        grid-template-areas:
-          "header1 h1code"
-          "header2 h2code"
-          "paragraph paragraphcode";
-      }
-
       .grid__color {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -180,10 +175,37 @@
         display: flex;
         flex-direction: row;
       }
+    }
+  }
+}
+.row-gapStyleguide {
+  display: grid;
+  row-gap: 3rem;
+  @include breakpoint-up(ipad) {
+    row-gap: 5rem;
+  }
+}
+.gridStyleguide {
+  display: grid;
+  row-gap: 3rem;
+  justify-content: center;
 
-      .boxed {
-        margin-bottom: 5rem;
-      }
+  a {
+    margin: 0 auto;
+    width: max-content;
+  }
+  @include breakpoint-up(ipad) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: start;
+    row-gap: 5rem;
+    grid-template-areas:
+      "header1 h1code"
+      "header2 h2code"
+      "paragraph paragraphcode";
+
+    a {
+      margin: unset;
     }
   }
 }

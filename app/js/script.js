@@ -16,13 +16,10 @@ console.log(dropdownElement);
 for (let y = 0; y < dropdownElement.length; y++) {
   dropdownElement[y].addEventListener("click", openMenu);
 }
+
 function openMenu() {
   let dropdownChild = this.nextElementSibling;
   dropdownChild.classList.toggle("show");
-
-  let otherChild = this.parentElement.element;
-  //otherChild.classList.remove("show");
-  console.log(otherChild);
 }
 
 /*======================================

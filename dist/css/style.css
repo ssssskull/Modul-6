@@ -1103,7 +1103,17 @@ p + .menu__columngap {
 
 .styleguide .overskrift_elm {
   margin: 0;
-  padding-right: 2.4rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.styleguide .overskrift-illustration {
+  height: 150px;
+  background-image: url("../../images/polka-pattern3x7.svg");
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
 }
 
 .styleguide .product__elem {
@@ -1130,7 +1140,6 @@ p + .menu__columngap {
   font-weight: normal;
   display: block;
   min-height: 150px;
-  margin: 2rem auto 0 auto;
 }
 
 .styleguide .colorbox {
@@ -1179,12 +1188,24 @@ p + .menu__columngap {
   padding-bottom: 3.2rem;
 }
 
+.styleguide .boxed_grafik {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
 .styleguide__image {
   background-image: url("../../images/produkt-kipgryder.svg");
   background-repeat: no-repeat;
   max-width: 100%;
-  height: auto;
-  margin-top: 1.25rem;
+  height: 180px;
+  background-position: center center;
+}
+
+@media (min-width: 40em) {
+  .styleguide__image {
+    background-position: initial;
+  }
 }
 
 .styleguide__productimage {
@@ -1192,12 +1213,18 @@ p + .menu__columngap {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  margin: 2rem auto 0 auto;
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 0 auto;
+}
+
+@media (min-width: 40em) {
+  .styleguide__productimage {
+    margin: unset;
+  }
 }
 
 .styleguide .test__productimage {
@@ -1206,7 +1233,7 @@ p + .menu__columngap {
 }
 
 .styleguide__con {
-  row-gap: 5rem;
+  row-gap: 3rem;
 }
 
 @media (min-width: 40em) {
@@ -1215,6 +1242,7 @@ p + .menu__columngap {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    row-gap: 5rem;
   }
   .styleguide__con p {
     -ms-flex-preferred-size: 300px;
@@ -1222,12 +1250,6 @@ p + .menu__columngap {
     -webkit-box-flex: 2;
         -ms-flex: 2;
             flex: 2;
-    max-width: 50%;
-  }
-  .styleguide__con .styleguide__subcon {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
     max-width: 50%;
   }
   .styleguide__con .logo__image {
@@ -1238,9 +1260,6 @@ p + .menu__columngap {
   }
   .styleguide__con .boxed {
     margin-right: 0;
-  }
-  .styleguide__con .styleguide__productimage {
-    margin: 2rem auto 0 0;
   }
 }
 
@@ -1266,18 +1285,6 @@ p + .menu__columngap {
 }
 
 @media (min-width: 40em) {
-  .styleguide__con .grid {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start;
-        grid-template-areas: "header1 h1code" "header2 h2code" "paragraph paragraphcode";
-  }
   .styleguide__con .grid__color {
     display: -ms-grid;
     display: grid;
@@ -1299,8 +1306,50 @@ p + .menu__columngap {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .styleguide__con .boxed {
-    margin-bottom: 5rem;
+}
+
+.row-gapStyleguide {
+  display: -ms-grid;
+  display: grid;
+  row-gap: 3rem;
+}
+
+@media (min-width: 40em) {
+  .row-gapStyleguide {
+    row-gap: 5rem;
+  }
+}
+
+.gridStyleguide {
+  display: -ms-grid;
+  display: grid;
+  row-gap: 3rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.gridStyleguide a {
+  margin: 0 auto;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+@media (min-width: 40em) {
+  .gridStyleguide {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    row-gap: 5rem;
+        grid-template-areas: "header1 h1code" "header2 h2code" "paragraph paragraphcode";
+  }
+  .gridStyleguide a {
+    margin: unset;
   }
 }
 
