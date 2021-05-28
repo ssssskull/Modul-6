@@ -15,6 +15,12 @@
 
   li {
     list-style: none;
+
+    > .active-menu {
+      background-color: $clr-active-menu;
+      border-bottom: 2px solid $clr-primary-green;
+    }
+
     a {
       display: block;
       min-width: 180px;
