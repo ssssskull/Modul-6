@@ -138,8 +138,6 @@ h4 {
   text-align: center;
   letter-spacing: 2px;
   line-height: 18px;
-  // TODO dynamic line-height
-  // BUG font-family matcher ikke med deres
   text-transform: uppercase;
 }
 
@@ -209,7 +207,7 @@ h4 {
   }
 }
 .row-gap {
-  row-gap: 2rem;
+  row-gap: 3rem;
 }
 /*======================================
 *          Flexbox and grid         *
@@ -261,4 +259,35 @@ h4 {
   @include breakpoint-up(computer) {
     display: none;
   }
+}
+
+.divider {
+  background-image: url("../../images/divider2.svg");
+  background-position: center center;
+  background-size: 100% 100%;
+  height: 120px;
+  margin: auto;
+
+  @include breakpoint-up(computer) {
+    height: 80px;
+  }
+}
+
+.active {
+  border-bottom: 2px solid $clr-primary-green;
+  cursor: pointer;
+}
+
+.active-menu {
+  background-color: $clr-active-menu;
+}
+.arrow-down {
+  position: absolute;
+  content: " ";
+  background-image: url("../../images/arrowdown.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 100% 100%;
+  transform: translateY(45%);
+  margin-left: 1rem;
 }

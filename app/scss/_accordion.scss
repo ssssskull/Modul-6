@@ -89,6 +89,8 @@
     display: flex;
     flex-direction: column;
     row-gap: 2rem;
+    // TODO fix margin 2rem bottom
+    // TODO hvis panel er åben, display block på en usynlig divider element mellem submenuer
   }
 }
 .rotate {
@@ -106,4 +108,8 @@
       background-image: url("../../images/undermenu_plus-hover.svg");
     }
   }
+}
+//TODO test
+.accordion__subtoggle + .accordion__subtoggle {
+  margin-bottom: 10rem;
 }
