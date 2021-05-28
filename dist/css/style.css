@@ -1311,6 +1311,7 @@ p + .menu__columngap {
 .dropdown__ctn {
   display: none;
   position: absolute;
+  line-height: 1.5;
   z-index: 1;
   text-align: left;
   left: 0px;
@@ -1328,14 +1329,11 @@ p + .menu__columngap {
   display: block;
   min-width: 180px;
   padding: 1.2rem 1.6rem;
+  border-bottom: 2px solid #323432;
 }
 
-.dropdown__ctn {
-  line-height: 2;
-}
-
-.dropDown-elem {
-  list-style: none;
+.dropdown__ctn li a:hover {
+  background-color: #525652;
 }
 
 .show {

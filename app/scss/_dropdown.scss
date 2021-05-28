@@ -5,7 +5,8 @@
 .dropdown__ctn {
   display: none;
   position: absolute;
-  z-index: 1;
+  line-height: 1.5;
+  z-index: 1; // 2 tidligere
   text-align: left;
   left: 0px;
   top: 200%;
@@ -18,15 +19,12 @@
       display: block;
       min-width: 180px;
       padding: 1.2rem 1.6rem;
+      border-bottom: 2px solid $clr-contrast-green;
+      &:hover {
+        background-color: $clr-active-menu;
+      }
     }
   }
-}
-
-.dropdown__ctn {
-  line-height: 2;
-}
-.dropDown-elem {
-  list-style: none;
 }
 .show {
   display: block;
