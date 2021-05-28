@@ -204,7 +204,7 @@
         <div class="typografi__subcon typografi__heading1 header1">
           <h1 class="typografi_afstand">Heading 1</h1>
           <p>Roboto Condensed</p>
-          <p>40px/45px/60px</p>
+          <p>40px/45px/45px</p>
         </div>
         <div class="boxed h1code">
           <code> h1 {
@@ -336,21 +336,35 @@
   <div class="styleguide__con container--py">
     <p>Knapperne på hjemmesiden, har den primære grønne farve. Derved står de klart frem på siden. Og brugeren ved hurtigt hvad de skal trykke, for at læse mere</p>
     <div class="gridStyleguide container--py">
-      <a href="#" class="product__button btn-primary">Læs mere</a>
+      <a href="#" class="product__button btn_sekund">Læs mere</a>
       <div class="boxed knap1">
-        <code> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim reiciendis beatae fugiat nulla? Aspernatur, et!
+        <code> font-family: "Quicksand", Sans-serif;
+          font-weight: 400;
+          text-transform: none;
+          letter-spacing: 1px;
+          font-size: 18px;
+          color: #5eb91d;
         </code>
       </div>
       <a href="#" class="product__button btn-primary">Læs mere</a>
       <div class="boxed knap2">
-        <code> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim reiciendis beatae fugiat nulla? Aspernatur, et!
+        <code> background-color: #5eb91d;
+          color: #f7f7f7;
+          padding: 1.2rem 2.4rem;
+          outline: transparent;
+          box-shadow: none;
+          border: none;
+          border-radius: 50px;
+          font-size: 16px;
+          font-size: 1.6rem;
+          font-weight: 700;
+          text-align: center;
+          letter-spacing: 2px;
+          line-height: 18px;
+          text-transform: uppercase;
         </code>
       </div>
-      <a href="#" class="product__button btn-primary">Læs mere</a>
-      <div class="boxed knap3">
-        <code>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim reiciendis beatae fugiat nulla? Aspernatur, et!
-        </code>
-      </div>
+      
     </div>
   </div>
 </div>
@@ -367,7 +381,29 @@
       <div class="overskrift-illustration">
       </div>
       <div class="boxed">
-        <code> Lorem ipsum dolor sit.
+        <code> .products__background {
+          position: absolute;
+          left: 0;
+          top: 105px;
+          z-index: -1;
+          background-image: url("../../images/polka-pattern3x7.svg");
+          background-size: contain;
+          height: 150px;
+          width: 50%;
+        }
+
+        .product__elemPolka img {
+          flex-basis: 150px;
+          margin-left: -85px;
+          max-width: 150px;
+          height: auto;
+        }
+        
+        @media (min-width: 64em) {
+          .product__elemPolka img {
+            max-width: 360px;
+          }
+        }
         </code>
       </div>
     </div>
@@ -385,19 +421,19 @@
       <div class="styleguide__image typografi__subcon typografi__heading1 header1">
       </div>
       <div class="boxed">
-        <code> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim reiciendis beatae fugiat nulla? Aspernatur, et!
+        <code> https://norqi.wp.side-walk.dk/wp-content/uploads/2020/09/icon_kipgryder.svg
         </code>
       </div>
       <div class="styleguide__image typografi__subcon typografi__heading2 header2">
       </div>
       <div class="boxed">
-        <code> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim reiciendis beatae fugiat nulla? Aspernatur, et!
+        <code> https://norqi.wp.side-walk.dk/wp-content/uploads/2020/09/icon_kipstegere.svg
         </code>
       </div>
       <div class=" styleguide__image  typografi__subcon typografi__heading2 paragraph">
       </div>
       <div class="boxed">
-        <code>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim reiciendis beatae fugiat nulla? Aspernatur, et!
+        <code>https://norqi.wp.side-walk.dk/kogeborde/
         </code>
       </div>
     </div>

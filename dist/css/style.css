@@ -1007,6 +1007,16 @@ p + .menu__columngap {
   margin-right: auto;
 }
 
+.styleguide .btn_sekund {
+  font-family: "Quicksand", Sans-serif;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 1px;
+  font-size: 18px;
+  color: #5eb91d;
+  padding: 1.2rem 2.4rem;
+}
+
 .styleguide .boxed {
   background: rgba(219, 230, 236, 0.1);
   border: 1px solid #dee2e6;
