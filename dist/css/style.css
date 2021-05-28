@@ -360,10 +360,6 @@ h4 {
   cursor: pointer;
 }
 
-.active-menu {
-  background-color: #525652;
-}
-
 .arrow-down {
   position: absolute;
   content: " ";
@@ -612,13 +608,6 @@ h4 {
 
 .products h2 {
   text-align: center;
-}
-
-.products__polkabg {
-  position: absolute;
-  width: 50%;
-  height: 200px;
-  background: red;
 }
 
 .products__container {
@@ -1372,6 +1361,11 @@ p + .menu__columngap {
 
 .dropdown__ctn li {
   list-style: none;
+}
+
+.dropdown__ctn li > .active-menu {
+  background-color: #525652;
+  border-bottom: 2px solid #5eb91d;
 }
 
 .dropdown__ctn li a {
