@@ -9,9 +9,29 @@
   }
 
   &__container {
-    position: relative;
     column-gap: 8rem;
     row-gap: 6rem;
+    position: relative;
+
+    @include breakpoint-up(ipad) {
+      &::before {
+        position: absolute;
+        left: 0;
+        top: 40%;
+        display: block;
+        content: "";
+        background-image: url("../../images/polka-pattern3x7.svg");
+        background-size: contain;
+        height: 40%;
+        width: 50vw;
+      }
+    }
+
+    @include breakpoint-up(largeComputer) {
+      &::before {
+        left: -120px;
+      }
+    }
 
     @include breakpoint-up(ipad) {
       flex-direction: row;

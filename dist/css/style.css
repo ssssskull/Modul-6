@@ -611,10 +611,30 @@ h4 {
 }
 
 .products__container {
-  position: relative;
   -webkit-column-gap: 8rem;
           column-gap: 8rem;
   row-gap: 6rem;
+  position: relative;
+}
+
+@media (min-width: 40em) {
+  .products__container::before {
+    position: absolute;
+    left: 0;
+    top: 40%;
+    display: block;
+    content: "";
+    background-image: url("../../images/polka-pattern3x7.svg");
+    background-size: contain;
+    height: 40%;
+    width: 50vw;
+  }
+}
+
+@media (min-width: 87.5em) {
+  .products__container::before {
+    left: -120px;
+  }
 }
 
 @media (min-width: 40em) {
