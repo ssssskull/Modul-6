@@ -22,26 +22,20 @@ function openMenu() {
   dropdownChild.classList.toggle("show");
 }
 
-
-/* Apper effect 
+/* Apper effect
     ============================*/
 
-    function scrollAppear(){
-      let screenDivider = document.querySelector('.divider');
-      let dividerPosition = screenDivider.getBoundingClientRect().top;
-      let screenPosition = window.innerHeight / 1.1;
-  
-      if(dividerPosition < screenPosition) {
-        screenDivider.classList.add('divider--appear');
-      }
-  
+function scrollAppear() {
+  let screenDivider = document.querySelector(".divider");
+  let dividerPosition = screenDivider.getBoundingClientRect().top;
+  let screenPosition = window.innerHeight / 1.1;
+
+  if (dividerPosition < screenPosition) {
+    screenDivider.classList.add("divider--appear");
   }
-  
-  window.addEventListener('scroll', scrollAppear);
-  
+}
 
-
-
+window.addEventListener("scroll", scrollAppear);
 
 /*======================================
 *            Daniel            *
@@ -108,7 +102,7 @@ for (let i = 0; i < accordionQuestions.length; i++) {
       accordionPanel.style.maxHeight = null;
     } else {
       plusIcon.classList.add("rotate");
-      accordionPanel.style.maxHeight = `${accordionPanel.scrollHeight + 20}px`;
+      accordionPanel.style.maxHeight = `${accordionPanel.scrollHeight + 60}px`;
     }
   });
 }
@@ -130,10 +124,10 @@ for (let i = 0; i < accordionSubquestions.length; i++) {
       accordionSubpanel.style.maxHeight = null;
     } else {
       accordionSubpanel.style.maxHeight = `${
-        accordionSubpanel.scrollHeight + 20
+        accordionSubpanel.scrollHeight + 60
       }px`;
       accordionPanel.style.maxHeight = `${
-        accordionSubpanel.scrollHeight + accordionPanel.scrollHeight + 20
+        accordionSubpanel.scrollHeight + accordionPanel.scrollHeight + 60
       }px`;
     }
   });

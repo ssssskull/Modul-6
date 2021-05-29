@@ -44,12 +44,14 @@
     overflow: hidden;
     transition: max-height 0.3s ease-in-out;
 
-    /*:not(.accordion__subpanel) {
-      margin: 0 2rem 2rem 2rem;
+    > p {
       &:last-child {
-        margin: 0 2rem 0 2rem;
+        margin-bottom: 3rem;
+        @include breakpoint-up(ipad) {
+          margin-bottom: 5rem;
+        }
       }
-    }*/
+    }
   }
 
   &__subtoggle {
@@ -57,12 +59,12 @@
     background-image: url("../../images/undermenu_plus.svg");
     background-size: 12px 12px;
     background-repeat: no-repeat;
-    background-position: left center;
-    padding: 2rem 3rem;
+    background-position: 30px center;
+    padding: 2rem 6rem;
 
     &:first-child {
       margin-top: 1rem;
-      padding: 0 2rem 0 3rem;
+      padding: 0 2rem 0 6rem;
       margin-bottom: 2rem;
     }
 
@@ -89,11 +91,22 @@
     display: flex;
     flex-direction: column;
     row-gap: 2rem;
-    // TODO fix margin 2rem bottom
-    // TODO hvis panel er åben, display block på en usynlig divider element mellem submenuer
 
-    p {
-      padding: 0 2rem;
+    > div,
+    > img,
+    > p {
+      &:last-child {
+        margin-bottom: 3rem;
+        @include breakpoint-up(ipad) {
+          margin-bottom: 5rem;
+        }
+      }
+      &:first-child {
+        margin-top: 1rem;
+        @include breakpoint-up(ipad) {
+          margin-top: 3rem;
+        }
+      }
     }
   }
 }
@@ -113,7 +126,10 @@
     }
   }
 }
-//TODO test
-.accordion__subtoggle + .accordion__subtoggle {
-  margin-bottom: 10rem;
+
+.marginQuickfix {
+  margin-bottom: 3rem;
+  @include breakpoint-up(ipad) {
+    margin-bottom: 5rem;
+  }
 }

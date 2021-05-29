@@ -89,6 +89,10 @@
     max-width: max-content;
     column-gap: 2rem;
 
+    @include breakpoint-up(ipad) {
+      margin-left: auto;
+    }
+
     a {
       background-repeat: no-repeat;
       background-size: 100% 100%;

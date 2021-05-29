@@ -3,9 +3,13 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 300px;
+    max-width: 330px;
     height: auto;
     width: 100%;
+
+    @include breakpoint-up(ipad) {
+      max-width: 540px;
+    }
   }
 
   &__img-small {
@@ -51,11 +55,13 @@ div[class^="trykknappanel"] {
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  background-color: $clr-background-hover;
   background-image: url("../../images/icons/info.svg");
   background-size: 22px 22px;
   background-position: 10% center;
   background-repeat: no-repeat;
+  border: 1px solid #dee2e6;
+  background-color: hsla(201, 31%, 89%, 0.1);
+  border-radius: 10px;
 
   p {
     padding-left: 16%;
@@ -70,11 +76,12 @@ p + .menu__columngap {
   margin-top: 6rem;
 }
 
-.menu__columngap {
-  .row-gap {
+.accordion__subpanel {
+  > .menu__columngap {
     margin-bottom: 3rem;
-    &:last-of-type {
-      margin-bottom: 6rem;
+
+    &:last-child {
+      margin-bottom: unset;
     }
   }
 }

@@ -55,10 +55,22 @@
   &__bg {
     width: 100vw;
     height: 100vh;
-    background-image: url(../../images/Hero-desktop.jpg);
+    background-image: url(../../images/Hero-blank-1080w.webp);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    position: relative;
+    z-index: 0;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 100%;
+      display: block;
+      background-color: hsla(0, 0%, 17%, 0.85);
+      z-index: -1;
+    }
   }
 }
 
