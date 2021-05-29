@@ -3,17 +3,13 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 530px;
+    max-width: 300px;
     height: auto;
     width: 100%;
   }
 
   &__img-small {
-    width: 60%;
-
-    @include breakpoint-up(largeComputer) {
-      width: 100%;
-    }
+    max-width: 230px;
   }
 
   &__ppaddingnone {

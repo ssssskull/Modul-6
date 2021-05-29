@@ -64,8 +64,8 @@
       a {
         display: inline-block;
         position: relative;
-        font-size: $font-p-ipad-fallback;
-        font-size: $font-p-ipad;
+        font-size: $font-p-computer-fallback;
+        font-size: $font-p-computer;
         color: $clr-background;
         padding: 2rem;
         width: 100%;
@@ -94,8 +94,8 @@
 
   &__right {
     color: $clr-background;
-    font-size: $font-p-ipad-fallback;
-    font-size: $font-p-ipad;
+    font-size: $font-p-computer-fallback;
+    font-size: $font-p-computer;
     font-weight: 500;
     list-style: none;
 
