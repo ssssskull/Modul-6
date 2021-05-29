@@ -42,8 +42,8 @@
     height: 30px;
     width: 30px;
     animation-name: scrollindicator;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.45, 0.05, 0.55, 0.95);
     animation-iteration-count: infinite;
 
     @include breakpoint-up(ipad) {
