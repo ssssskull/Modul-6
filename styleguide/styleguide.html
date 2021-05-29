@@ -66,36 +66,36 @@
     </a>
     <ul class="header__right flex hide-for-mobile">
       <li>
-        <a class="header__links active" href="#" tabindex="0" title="Logo"
+        <a class="header__links active" href="#logo" tabindex="0" title="Logo"
         >Logo</a
         >
       </li>
       <li>
-        <a class="header__links" href="#" tabindex="0" title="Typografi"
+        <a class="header__links" href="#typografi" tabindex="0" title="Typografi"
         >Typografi</a
         >
       </li>
       <li>
-        <a class="header__links" href="#" tabindex="0" title="Farver"
+        <a class="header__links" href="#farver" tabindex="0" title="Farver"
         >Farver</a
         >
       </li>
       <li>
-        <a class="header__links" href="#" tabindex="0" title="Ikoner"
+        <a class="header__links" href="#knapper" tabindex="0" title="Ikoner"
         >Knapper</a
         >
       </li>
       <li>
-        <a class="header__links" href="#" tabindex="0" title="Knapper"
+        <a class="header__links" href="#grafiske-elementer" tabindex="0" title="Knapper"
         >Grafiske elementer</a
         >
       </li>
       <li>
-        <a class="header__links" href="#" tabindex="0" title="Illustrationer"
+        <a class="header__links" href="#illustrationer" tabindex="0" title="Illustrationer"
         >Illustrationer</a
         >
       </li> <li>
-        <a class="header__links" href="#" tabindex="0" title="Billeder"
+        <a class="header__links" href="#billeder" tabindex="0" title="Billeder"
         >Billeder</a
         >
       </li>
@@ -164,7 +164,7 @@
   </div>
 
   <div class="hero__scroll-indicator flex flex-jc-c">
-    <a href="#main" title="Hop til brugsanvisningen">
+    <a href="#logo" title="Logo">
       <div class="hero__scroll-animation"></div>
     </a>
   </div>
@@ -195,12 +195,16 @@
       </div>
     </div>
     <div class="styleguide__con container--py row-gapStyleguide">
-      <p>Der anvendes to forskellige fonte, for at øge proximity.</p>
+      <p>Der anvendes to forskellige fonte, for at øge proximity.
+        Den ene font er RobotoCondensed. Denne font er simpel af natur pga.geometriske udtryk og ingen brug af seriffer. Derfor er denne skrift godt til skærme. 
+        Den anden font er Quicksand, denne font er ligesom RobotoCondensed simple og geometrisk, men mere rund i sine forme. 
+        Der er forskellige størrelser alt efter enhed. 
+      </p>
       <div class="gridStyleguide">
         <div class="typografi__subcon typografi__heading1 header1">
           <h1 class="typografi_afstand">Heading 1</h1>
           <p>Roboto Condensed</p>
-          <p>40px/45px/60px</p>
+          <p>40px/45px/45px</p>
         </div>
         <div class="boxed h1code">
           <code> h1 {
@@ -278,7 +282,7 @@
     </div>
   </div>
   <div class="styleguide__con container--py">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, nesciunt?
+    <p>Den primæere farve er den grønne farve som kendetegner NORQi. De sekundære farver er gråtonet for at den primære farve skiller sig mest ud. Dog skal den bruges med varsomhed, da det er farve der skiller sig meget ud. 
     </p>
     <div class="gridStyleguide container--py">
       <div class="colorbox colorbox1">  </div>
@@ -330,23 +334,37 @@
     </div>
   </div>
   <div class="styleguide__con container--py">
-    <p>Knapperne på hjemmeside, har den primæere grønne farve. Derved står de klart frem på siden. Og brugeren ved hurtigt hvad de skal trykke, for at læse mere</p>
+    <p>Knapperne på hjemmesiden, har den primære grønne farve. Derved står de klart frem på siden. Og brugeren ved hurtigt hvad de skal trykke, for at læse mere</p>
     <div class="gridStyleguide container--py">
-      <a href="#" class="product__button btn-primary">Læs mere</a>
+      <a href="#" class="product__button btn_sekund">Læs mere</a>
       <div class="boxed knap1">
-        <code> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim reiciendis beatae fugiat nulla? Aspernatur, et!
+        <code> font-family: "Quicksand", Sans-serif;
+          font-weight: 400;
+          text-transform: none;
+          letter-spacing: 1px;
+          font-size: 18px;
+          color: #5eb91d;
         </code>
       </div>
       <a href="#" class="product__button btn-primary">Læs mere</a>
       <div class="boxed knap2">
-        <code> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim reiciendis beatae fugiat nulla? Aspernatur, et!
+        <code> background-color: #5eb91d;
+          color: #f7f7f7;
+          padding: 1.2rem 2.4rem;
+          outline: transparent;
+          box-shadow: none;
+          border: none;
+          border-radius: 50px;
+          font-size: 16px;
+          font-size: 1.6rem;
+          font-weight: 700;
+          text-align: center;
+          letter-spacing: 2px;
+          line-height: 18px;
+          text-transform: uppercase;
         </code>
       </div>
-      <a href="#" class="product__button btn-primary">Læs mere</a>
-      <div class="boxed knap3">
-        <code>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim reiciendis beatae fugiat nulla? Aspernatur, et!
-        </code>
-      </div>
+      
     </div>
   </div>
 </div>
@@ -363,7 +381,29 @@
       <div class="overskrift-illustration">
       </div>
       <div class="boxed">
-        <code> Lorem ipsum dolor sit.
+        <code> .products__background {
+          position: absolute;
+          left: 0;
+          top: 105px;
+          z-index: -1;
+          background-image: url("../../images/polka-pattern3x7.svg");
+          background-size: contain;
+          height: 150px;
+          width: 50%;
+        }
+
+        .product__elemPolka img {
+          flex-basis: 150px;
+          margin-left: -85px;
+          max-width: 150px;
+          height: auto;
+        }
+        
+        @media (min-width: 64em) {
+          .product__elemPolka img {
+            max-width: 360px;
+          }
+        }
         </code>
       </div>
     </div>
@@ -376,24 +416,24 @@
     </div>
   </div>
   <div class="styleguide__con container--py">
-    <p>Der anvendes to forskellige fonte, for at øge proximity.</p>
+    <p>Illustrationer er enkle og kun med den nødvendigeste detalje grad. Dog gerne i simpel 3D</p>
     <div class="gridStyleguide container--py">
       <div class="styleguide__image typografi__subcon typografi__heading1 header1">
       </div>
       <div class="boxed">
-        <code> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim reiciendis beatae fugiat nulla? Aspernatur, et!
+        <code> https://norqi.wp.side-walk.dk/wp-content/uploads/2020/09/icon_kipgryder.svg
         </code>
       </div>
       <div class="styleguide__image typografi__subcon typografi__heading2 header2">
       </div>
       <div class="boxed">
-        <code> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim reiciendis beatae fugiat nulla? Aspernatur, et!
+        <code> https://norqi.wp.side-walk.dk/wp-content/uploads/2020/09/icon_kipstegere.svg
         </code>
       </div>
       <div class=" styleguide__image  typografi__subcon typografi__heading2 paragraph">
       </div>
       <div class="boxed">
-        <code>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim reiciendis beatae fugiat nulla? Aspernatur, et!
+        <code>https://norqi.wp.side-walk.dk/kogeborde/
         </code>
       </div>
     </div>

@@ -22,6 +22,27 @@ function openMenu() {
   dropdownChild.classList.toggle("show");
 }
 
+
+/* Apper effect 
+    ============================*/
+
+    function scrollAppear(){
+      let screenDivider = document.querySelector('.divider');
+      let dividerPosition = screenDivider.getBoundingClientRect().top;
+      let screenPosition = window.innerHeight / 1.1;
+  
+      if(dividerPosition < screenPosition) {
+        screenDivider.classList.add('divider--appear');
+      }
+  
+  }
+  
+  window.addEventListener('scroll', scrollAppear);
+  
+
+
+
+
 /*======================================
 *            Daniel            *
 ======================================*/
