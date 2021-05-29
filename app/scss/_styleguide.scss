@@ -50,7 +50,7 @@
 
   .colorbox {
     border-radius: 25px;
-    background: #73ad21;
+    background: #5eb91d;
     border-radius: 50%;
     width: 150px;
     height: 150px;
@@ -67,23 +67,24 @@
   }
 
   .colorbox2 {
-    background: #292928;
+    background: hsl(120, 2%, 20);
   }
 
   .colorbox3 {
-    background: #313331;
+    background: hsl(0, 0%, 17%);
   }
 
   .colorbox4 {
-    background: #737373;
+    background: hsl(120, 2%, 33%);
   }
 
   .colorbox5 {
-    background: #ececec;
+    background: hsl(60, 3%, 6%);
   }
   .colorbox6 {
-    background: #f7f7f7;
-    border: solid #313331 1px;
+    background: hsl(0, 0%, 97%);
+    border: solid 1px hsl(60, 3%, 6%);
+    
   }
 
   .typografi_afstand {
