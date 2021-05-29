@@ -268,7 +268,7 @@ h4 {
   height: 120px;
   margin: auto;
 
-  @include breakpoint-up(computer) {
+  @include breakpoint-up(ipad) {
     height: 80px;
   }
 }
@@ -286,5 +286,5 @@ h4 {
   background-position: right center;
   background-size: 100% 100%;
   transform: translateY(45%);
-  margin-left: 1rem;
+  padding-left: 1rem;
 }

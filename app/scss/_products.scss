@@ -1,17 +1,45 @@
 .products {
-  /*TODO flyt det her til brugsanvisningen
-    scroll-snap-align: start;
-  */
-
+  scroll-snap-align: start;
   row-gap: 3rem;
+
   h2 {
     text-align: center;
   }
 
+  &__title--left {
+    flex: 1;
+    display: flex;
+    justify-content: start;
+  }
+
+  &__title--right {
+    flex: 1;
+    visibility: hidden;
+    display: flex;
+    justify-content: end;
+  }
+
   &__container {
-    position: relative;
     column-gap: 8rem;
     row-gap: 6rem;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 40%;
+      content: "";
+      background-size: contain;
+      height: 40%;
+      width: 51vw;
+
+      @include breakpoint-up(ipad) {
+        background-image: url("../../images/polka-pattern3x7.svg");
+      }
+      @include breakpoint-up(largeComputer) {
+        left: -120px;
+      }
+    }
 
     @include breakpoint-up(ipad) {
       flex-direction: row;
@@ -31,6 +59,7 @@
     position: relative;
     flex: 1;
     width: 100%;
+
     h3 {
       font-family: "Quicksand", sans-serif;
     }
@@ -67,13 +96,38 @@
     }
 
     // TODO fix padding på container og kig på polka!
-    // TODO tilføj polka på selve containeren og ikke element på ipad og op --> virker ikke
-    // TODO måske lav en overlay div til containeren også brug position absolute og width 50% på den
+  }
+
+  &__single {
+    row-gap: 2rem;
+
+    &::before {
+      left: unset;
+      right: 0;
+      top: 30%;
+      background-image: url("../../images/polka-pattern3x7.svg");
+
+      @include breakpoint-up(largeComputer) {
+        right: -130px;
+      }
+    }
+
+    .products__elem {
+      display: flex;
+      justify-content: center;
+
+      @include breakpoint-up(ipad) {
+        justify-content: usnet;
+      }
+    }
+
+    .products__image {
+      margin: unset;
+    }
   }
 }
 
 .product {
-  // TODO tilføj position absolute til polka dot :)
   &__elem {
     h2 {
       font-weight: 600;
@@ -90,26 +144,10 @@
       }
     }
   }
-  // TODO fix polka :(
-  &__elemPolka {
-    // TODO: ide: column gap med dobbel så meget afstand som i produkter kunne evt løse skalering
-    background-image: url("../../images/polka-pattern3x7.svg");
-    background-size: contain;
-    max-width: 50%;
-    height: auto;
-    width: 100%;
-    margin-left: auto;
-    flex: 1;
+}
 
-    img {
-      flex-basis: 150px;
-      margin-left: -85px;
-      max-width: 150px;
-      height: auto;
-
-      @include breakpoint-up(computer) {
-        max-width: 360px;
-      }
-    }
+@include breakpoint-up(largeComputer) {
+  body {
+    overflow-x: hidden;
   }
 }
