@@ -1,12 +1,10 @@
+.divider {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: 0.5s all ease-in-out;
+}
 
-.divider { 
-    opacity: 0;
-    transform: translateY(100px);
-    transition: 0.5s all ease-in-out;
-  
-  }
-  
-  .divider--appear{
-    opacity: 1;
-    transform: translateY(0px);
-  }
+.divider--appear {
+  opacity: 1;
+  transform: translateY(0px);
+}
