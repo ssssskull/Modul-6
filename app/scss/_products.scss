@@ -92,6 +92,19 @@
     // TODO tilføj polka på selve containeren og ikke element på ipad og op --> virker ikke
     // TODO måske lav en overlay div til containeren også brug position absolute og width 50% på den
   }
+
+  &__single {
+    row-gap: 2rem;
+    &::before {
+      left: unset;
+      right: 0;
+      top: 30%;
+
+      @include breakpoint-up(largeComputer) {
+        right: -120px;
+      }
+    }
+  }
 }
 
 .product {
@@ -133,5 +146,11 @@
         max-width: 360px;
       }
     }
+  }
+}
+
+@include breakpoint-up(largeComputer) {
+  body {
+    overflow-x: hidden;
   }
 }

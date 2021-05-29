@@ -706,6 +706,22 @@ h4 {
   }
 }
 
+.products__single {
+  row-gap: 2rem;
+}
+
+.products__single::before {
+  left: unset;
+  right: 0;
+  top: 30%;
+}
+
+@media (min-width: 87.5em) {
+  .products__single::before {
+    right: -120px;
+  }
+}
+
 .product__elem h2 {
   font-weight: 600;
   margin-bottom: 2.5rem;
@@ -753,6 +769,12 @@ h4 {
 @media (min-width: 64em) {
   .product__elemPolka img {
     max-width: 360px;
+  }
+}
+
+@media (min-width: 87.5em) {
+  body {
+    overflow-x: hidden;
   }
 }
 
