@@ -737,7 +737,7 @@ h4 {
 
 @media (min-width: 87.5em) {
   .products__single::before {
-    right: -130px;
+    right: -180px;
   }
 }
 

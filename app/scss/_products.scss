@@ -93,8 +93,6 @@
     @include breakpoint-up(computer) {
       max-width: 360px;
     }
-
-    // TODO fix padding på container og kig på polka!
   }
 
   &__single {
@@ -107,7 +105,7 @@
       background-image: url("../../images/polka-pattern3x7.svg");
 
       @include breakpoint-up(largeComputer) {
-        right: -130px;
+        right: -180px;
       }
     }
 
