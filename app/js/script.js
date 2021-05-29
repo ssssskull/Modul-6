@@ -27,12 +27,12 @@ function openMenu() {
     ============================*/
 
     function scrollAppear(){
-      let introText = document.querySelector('.divider');
-      let introPosition = introText.getBoundingClientRect().top;
+      let screenDivider = document.querySelector('.divider');
+      let dividerPosition = screenDivider.getBoundingClientRect().top;
       let screenPosition = window.innerHeight / 1.1;
   
-      if(introPosition < screenPosition) {
-          introText.classList.add('divider--appear');
+      if(dividerPosition < screenPosition) {
+        screenDivider.classList.add('divider--appear');
       }
   
   }
