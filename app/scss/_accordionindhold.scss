@@ -6,6 +6,10 @@
     max-width: 300px;
     height: auto;
     width: 100%;
+
+    @include breakpoint-up(ipad) {
+      max-width: 540px;
+    }
   }
 
   &__img-small {
@@ -70,11 +74,12 @@ p + .menu__columngap {
   margin-top: 6rem;
 }
 
-.menu__columngap {
-  .row-gap {
+.accordion__subpanel {
+  > .menu__columngap {
     margin-bottom: 3rem;
-    &:last-of-type {
-      margin-bottom: 6rem;
+
+    &:last-child {
+      margin-bottom: unset;
     }
   }
 }

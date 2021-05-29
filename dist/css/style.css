@@ -375,7 +375,7 @@ h4 {
   width: 100%;
   -webkit-transition: top 0.3s;
   transition: top 0.3s;
-  z-index: 1;
+  z-index: 99;
 }
 
 .header__logo {
@@ -573,10 +573,22 @@ h4 {
 .hero__bg {
   width: 100vw;
   height: 100vh;
-  background-image: url(../../images/Hero-desktop.jpg);
+  background-image: url(../../images/Hero-blank-1080w.webp);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  position: relative;
+  z-index: 0;
+}
+
+.hero__bg::before {
+  position: absolute;
+  content: "";
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  background-color: rgba(43, 43, 43, 0.85);
+  z-index: -1;
 }
 
 @-webkit-keyframes scrollindicator {
@@ -651,7 +663,7 @@ h4 {
 
 @media (min-width: 87.5em) {
   .products__container::before {
-    left: -120px;
+    left: -190px;
   }
 }
 
@@ -852,12 +864,16 @@ h4 {
   overflow: hidden;
   -webkit-transition: max-height 0.3s ease-in-out;
   transition: max-height 0.3s ease-in-out;
-  /*:not(.accordion__subpanel) {
-      margin: 0 2rem 2rem 2rem;
-      &:last-child {
-        margin: 0 2rem 0 2rem;
-      }
-    }*/
+}
+
+.accordion__panel > p:last-child {
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 40em) {
+  .accordion__panel > p:last-child {
+    margin-bottom: 5rem;
+  }
 }
 
 .accordion__subtoggle {
@@ -865,14 +881,14 @@ h4 {
   background-image: url("../../images/undermenu_plus.svg");
   background-size: 12px 12px;
   background-repeat: no-repeat;
-  background-position: left center;
-  padding: 2rem 3rem;
+  background-position: 30px center;
+  padding: 2rem 6rem;
   /*TODO sidste elementer på underpaneler og divs i underpaneler skal have 2rem bottom afstand*/
 }
 
 .accordion__subtoggle:first-child {
   margin-top: 1rem;
-  padding: 0 2rem 0 3rem;
+  padding: 0 2rem 0 6rem;
   margin-bottom: 2rem;
 }
 
@@ -901,8 +917,32 @@ h4 {
   row-gap: 2rem;
 }
 
-.accordion__subpanel p {
-  padding: 0 2rem;
+.accordion__subpanel > div:last-child,
+.accordion__subpanel > img:last-child,
+.accordion__subpanel > p:last-child {
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 40em) {
+  .accordion__subpanel > div:last-child,
+  .accordion__subpanel > img:last-child,
+  .accordion__subpanel > p:last-child {
+    margin-bottom: 5rem;
+  }
+}
+
+.accordion__subpanel > div:first-child,
+.accordion__subpanel > img:first-child,
+.accordion__subpanel > p:first-child {
+  margin-top: 1rem;
+}
+
+@media (min-width: 40em) {
+  .accordion__subpanel > div:first-child,
+  .accordion__subpanel > img:first-child,
+  .accordion__subpanel > p:first-child {
+    margin-top: 3rem;
+  }
 }
 
 .rotate {
@@ -922,8 +962,14 @@ h4 {
   background-image: url("../../images/undermenu_plus-hover.svg");
 }
 
-.accordion__subtoggle + .accordion__subtoggle {
-  margin-bottom: 10rem;
+.marginQuickfix {
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 40em) {
+  .marginQuickfix {
+    margin-bottom: 5rem;
+  }
 }
 
 .menu__imgcenter {
@@ -933,6 +979,12 @@ h4 {
   max-width: 300px;
   height: auto;
   width: 100%;
+}
+
+@media (min-width: 40em) {
+  .menu__imgcenter {
+    max-width: 540px;
+  }
 }
 
 .menu__img-small {
@@ -1002,12 +1054,12 @@ p + .menu__columngap {
   margin-top: 6rem;
 }
 
-.menu__columngap .row-gap {
+.accordion__subpanel > .menu__columngap {
   margin-bottom: 3rem;
 }
 
-.menu__columngap .row-gap:last-of-type {
-  margin-bottom: 6rem;
+.accordion__subpanel > .menu__columngap:last-child {
+  margin-bottom: unset;
 }
 
 .footer {
