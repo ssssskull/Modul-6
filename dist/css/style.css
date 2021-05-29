@@ -812,6 +812,10 @@ h4 {
   row-gap: 2rem;
 }
 
+.accordion__subpanel p {
+  padding: 0 2rem;
+}
+
 .rotate {
   transform: rotate(45deg);
 }

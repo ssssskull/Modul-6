@@ -91,6 +91,10 @@
     row-gap: 2rem;
     // TODO fix margin 2rem bottom
     // TODO hvis panel er åben, display block på en usynlig divider element mellem submenuer
+
+    p {
+      padding: 0 2rem;
+    }
   }
 }
 .rotate {
