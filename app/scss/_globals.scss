@@ -1,10 +1,6 @@
 /*======================================
 *         Generelle regler         *
 ======================================*/
-html,
-body {
-  scroll-snap-type: y proximity;
-}
 html {
   scroll-behavior: smooth;
   font-size: 62.5%;
