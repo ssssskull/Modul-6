@@ -131,7 +131,6 @@ for (let i = 0; i < accordionSubquestions.length; i++) {
   });
 }
 
-// TODO test hvis det virker uden +20, det er lagt til for at give plads til margin bottom
 /* Mobil menu dropdown
     ============================ */
 const dropDown = document.querySelectorAll(".header__dropDown");
