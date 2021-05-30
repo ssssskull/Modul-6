@@ -5,8 +5,6 @@
 
 /* dropdown
     ============================*/
-
-//const menuUnderMenu = document.getElementById("undermenu__dropdown");
 let dropdownElement = document.querySelectorAll(".undermenu__dropdown");
 console.log(dropdownElement);
 
