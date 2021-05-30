@@ -592,16 +592,22 @@ h4 {
 }
 
 .products__title--right {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  visibility: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  display: none;
+}
+
+@media (min-width: 40em) {
+  .products__title--right {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    visibility: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
 }
 
 .products__container {

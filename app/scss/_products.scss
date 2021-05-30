@@ -12,10 +12,13 @@
   }
 
   &__title--right {
-    flex: 1;
-    visibility: hidden;
-    display: flex;
-    justify-content: end;
+    display: none;
+    @include breakpoint-up(ipad) {
+      flex: 1;
+      visibility: hidden;
+      display: flex;
+      justify-content: end;
+    }
   }
 
   &__container {
