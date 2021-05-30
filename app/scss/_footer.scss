@@ -25,7 +25,6 @@
     row-gap: 4rem;
     column-gap: 2rem;
 
-    // TODO kig på afstande: flex 1, flex 1, flex 2
     div {
       min-width: max-content;
 
@@ -41,9 +40,6 @@
     @include breakpoint-up(ipad) {
       flex-direction: row;
       align-items: start;
-
-      // TODO BUG flyt link containeren så de 3 elementer er på samme niveau for at lave space between
-      // TODO brug flex-wrap wrap også min-width max content på elementerne
     }
   }
 

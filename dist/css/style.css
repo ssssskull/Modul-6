@@ -1,23 +1,11 @@
-@charset "UTF-8";
-/*======================================
-*            Typografi             *
-======================================*/
-/* Paragraf
-    ============================ */
-/* Overskrift
-    ============================ */
-/* Underoverskrift
-    ============================ */
-/* Underunderoverskrift
-    ============================ */
-/* Undeunderorunderoverskrift
-    ============================ */
-/*======================================
-*             Farver              *
-======================================*/
-/*======================================
-*         Generelle regler         *
-======================================*/
+/*Typografi*/
+/*-Paragraffer*/
+/*-H1*/
+/*-H2*/
+/*-H3*/
+/*-H4*/
+/*Farver*/
+/* Generelle regler */
 html {
   scroll-behavior: smooth;
   font-size: 62.5%;
@@ -44,18 +32,12 @@ ol li:not(:last-child) {
   margin-bottom: 2rem;
 }
 
-/*======================================
-*            Typografi            *
-======================================*/
-/* Links
-    ============================ */
+/* Typografi */
 a {
   color: inherit;
   text-decoration: none;
 }
 
-/* Paragraf
-    ============================ */
 p,
 footer a,
 ol {
@@ -73,8 +55,6 @@ ol {
   }
 }
 
-/* Overskrift
-    ============================ */
 h1,
 h2,
 a[class^="btn"],
@@ -106,8 +86,6 @@ h1 {
   }
 }
 
-/* Underoverskrift
-    ============================ */
 h2 {
   font-size: 30px;
   font-size: 3rem;
@@ -121,8 +99,6 @@ h2 {
   }
 }
 
-/* Underunderoverskrift
-    ============================ */
 h3 {
   font-size: 22px;
   font-size: 2.2rem;
@@ -136,8 +112,6 @@ h3 {
   }
 }
 
-/* Underunderunderoverskrift
-    ============================ */
 h4 {
   font-size: 18px;
   font-size: 1.8rem;
@@ -151,9 +125,7 @@ h4 {
   }
 }
 
-/*======================================
-*            Knapper            *
-======================================*/
+/* Knapper */
 .btn-primary {
   background-color: #5eb91d;
   color: #f7f7f7;
@@ -172,9 +144,7 @@ h4 {
   text-transform: uppercase;
 }
 
-/*======================================
-*            Afstande            *
-======================================*/
+/* Afstande */
 .container {
   max-width: 1400px;
   margin: 0 auto;
@@ -257,9 +227,7 @@ h4 {
   row-gap: 3rem;
 }
 
-/*======================================
-*          Flexbox and grid         *
-======================================*/
+/* Flexbox og grid */
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -320,9 +288,7 @@ h4 {
           align-items: center;
 }
 
-/*======================================
-*            Synlighed            *
-======================================*/
+/* Synlighed */
 @media (max-width: 63.9375em) {
   .hide-for-mobile {
     display: none;
@@ -883,7 +849,6 @@ h4 {
   background-repeat: no-repeat;
   background-position: 30px center;
   padding: 2rem 6rem;
-  /*TODO sidste elementer på underpaneler og divs i underpaneler skal have 2rem bottom afstand*/
 }
 
 .accordion__subtoggle:first-child {

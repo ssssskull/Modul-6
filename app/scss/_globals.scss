@@ -1,6 +1,4 @@
-/*======================================
-*         Generelle regler         *
-======================================*/
+/* Generelle regler */
 html {
   scroll-behavior: smooth;
   font-size: 62.5%;
@@ -26,19 +24,13 @@ ol {
   }
 }
 
-/*======================================
-*            Typografi            *
-======================================*/
+/* Typografi */
 
-/* Links
-    ============================ */
 a {
   color: inherit;
   text-decoration: none;
 }
 
-/* Paragraf
-    ============================ */
 p,
 footer a,
 ol {
@@ -52,8 +44,6 @@ ol {
   }
 }
 
-/* Overskrift
-    ============================ */
 h1,
 h2,
 a[class^="btn"],
@@ -79,8 +69,6 @@ h1 {
   }
 }
 
-/* Underoverskrift
-    ============================ */
 h2 {
   font-size: $font-h2-iphone-fallback;
   font-size: $font-h2-iphone;
@@ -92,8 +80,6 @@ h2 {
   }
 }
 
-/* Underunderoverskrift
-    ============================ */
 h3 {
   font-size: $font-h3-iphone-fallback;
   font-size: $font-h3-iphone;
@@ -104,8 +90,7 @@ h3 {
     font-size: $font-h3-computer;
   }
 }
-/* Underunderunderoverskrift
-    ============================ */
+
 h4 {
   font-size: $font-h4-iphone-fallback;
   font-size: $font-h4-iphone;
@@ -117,9 +102,7 @@ h4 {
   }
 }
 
-/*======================================
-*            Knapper            *
-======================================*/
+/* Knapper */
 .btn-primary {
   background-color: $clr-primary-green;
   color: $clr-background;
@@ -137,9 +120,7 @@ h4 {
   text-transform: uppercase;
 }
 
-/*======================================
-*            Afstande            *
-======================================*/
+/* Afstande */
 .container {
   max-width: 1400px;
   margin: 0 auto;
@@ -205,9 +186,7 @@ h4 {
 .row-gap {
   row-gap: 3rem;
 }
-/*======================================
-*          Flexbox and grid         *
-======================================*/
+/* Flexbox og grid */
 .flex {
   display: flex;
 
@@ -242,9 +221,8 @@ h4 {
     align-items: center;
   }
 }
-/*======================================
-*            Synlighed            *
-======================================*/
+
+/* Synlighed */
 .hide-for-mobile {
   @include breakpoint-down(ipad) {
     display: none;
