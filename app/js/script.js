@@ -6,10 +6,7 @@
 /* dropdown
     ============================*/
 let dropdownElement = document.querySelectorAll(".undermenu__dropdown");
-console.log(dropdownElement);
-
 dropdownElement = Array.from(dropdownElement);
-console.log(dropdownElement);
 
 for (let y = 0; y < dropdownElement.length; y++) {
   dropdownElement[y].addEventListener("click", openMenu);
@@ -228,7 +225,6 @@ const VandMenuHover = document.querySelector(".vandmenu__hover-text p");
 
 for (let i = 0; i < svgPowerButton1.length; i++) {
   svgPowerButton1[i].addEventListener("click", function () {
-    console.log(i);
     switch (i) {
       case 0:
         VandMenuHover.innerHTML = "Akkumuleret mængde";
@@ -251,7 +247,6 @@ const ProgramHover = document.querySelector(".program__hover-text p");
 
 for (let i = 0; i < svgPowerButton2.length; i++) {
   svgPowerButton2[i].addEventListener("click", function () {
-    console.log(i);
     switch (i) {
       case 0:
         ProgramHover.innerHTML = "Opvarmning";

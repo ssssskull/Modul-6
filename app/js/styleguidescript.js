@@ -112,7 +112,13 @@ for (let i = 0; i < dropDown.length; i++) {
 const navlinks = document.querySelectorAll(".header__links");
 const sections = Array.from(document.querySelectorAll("section"));
 
+console.log(navlinks, sections);
+
 sections.splice(0, 1); //<-- Fjerner det første element i det array, der er gemt i konstanten sections
+
+
+console.log(navlinks, sections);
+
 function changeLinkState() {
   let index = sections.length; //<-- Gemmer længden arrayet fra konstanten sections i en variabel
 
